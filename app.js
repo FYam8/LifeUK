@@ -53,7 +53,7 @@
       const detail=element('p','exam-status',status);
       const meta=element('p','tiny muted',`${qs.filter(q=>qState(q.id).mastered).length} mastered`);
       card.append(title,metric,detail,meta);
-      const actions=element('div','exam-actions'),start=element('button','btn exam-btn','Start exam'),mistakes=element('button','btn secondary mistakes-exam-btn',`Mistakes only (${wrongQs.length})`);
+      const actions=element('div','exam-actions'),start=element('button','btn exam-btn','Start'),mistakes=element('button','btn secondary mistakes-exam-btn',`Mistakes (${wrongQs.length})`);
       start.type=mistakes.type='button';start.onclick=()=>startExam(exam);mistakes.disabled=!wrongQs.length;mistakes.onclick=()=>startMistakes(exam);actions.append(start,mistakes);card.append(actions);grid.append(card);
     }
     renderResume();
