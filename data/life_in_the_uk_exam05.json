@@ -1,0 +1,784 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 5",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 5",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam05-q01",
+      "exam_id": "exam05",
+      "number": 1,
+      "type": "single_choice",
+      "question": "When does Easter take place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "November or December"
+        },
+        {
+          "id": "b",
+          "text": "January or February"
+        },
+        {
+          "id": "c",
+          "text": "March or April"
+        },
+        {
+          "id": "d",
+          "text": "May or June"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Easter takes place in March or April.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q02",
+      "exam_id": "exam05",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Which of the following is not a valid UK coin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1p"
+        },
+        {
+          "id": "b",
+          "text": "5p"
+        },
+        {
+          "id": "c",
+          "text": "25p"
+        },
+        {
+          "id": "d",
+          "text": "£1"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are no 25p coins in the UK currency.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q03",
+      "exam_id": "exam05",
+      "number": 3,
+      "type": "single_choice",
+      "question": "Where is the Eden Project located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dorset"
+        },
+        {
+          "id": "b",
+          "text": "Cornwall"
+        },
+        {
+          "id": "c",
+          "text": "Devon"
+        },
+        {
+          "id": "d",
+          "text": "Somerset"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Eden Project is located in Cornwall, in the south west of England.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q04",
+      "exam_id": "exam05",
+      "number": 4,
+      "type": "true_false",
+      "question": "St Helena and the Falkland Islands are part of Great Britain.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. There are several British overseas territories in other parts of the world, such as St Helena and the Falkland Islands. They are also linked to the UK but are not part of it.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q05",
+      "exam_id": "exam05",
+      "number": 5,
+      "type": "multiple_choice",
+      "question": "Which two of the following are fundamental principles of British life?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monarchy"
+        },
+        {
+          "id": "b",
+          "text": "The rule of law"
+        },
+        {
+          "id": "c",
+          "text": "Democracy"
+        },
+        {
+          "id": "d",
+          "text": "Join a political party"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The fundamental principles of British life include: democracy, the rule of law, individual liberty, tolerance of those with different faiths and beliefs and participation in community life.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q06",
+      "exam_id": "exam05",
+      "number": 6,
+      "type": "single_choice",
+      "question": "Where should you register if you want to become part of a jury?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The electoral register"
+        },
+        {
+          "id": "b",
+          "text": "Your local church"
+        },
+        {
+          "id": "c",
+          "text": "The NHS"
+        },
+        {
+          "id": "d",
+          "text": "The British Embassy"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "People on the electoral register are randomly selected to serve on a jury. Therefore, if you want to be selected to form part of a jury you have to be on the electoral register and be between 18 to 70 years old.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Jury age range in explanation needs current, jurisdiction-specific verification."
+      ]
+    },
+    {
+      "id": "lituk-exam05-q07",
+      "exam_id": "exam05",
+      "number": 7,
+      "type": "single_choice",
+      "question": "What sort of church is the Church of Scotland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Catholic"
+        },
+        {
+          "id": "b",
+          "text": "Baptist"
+        },
+        {
+          "id": "c",
+          "text": "Presbyterian"
+        },
+        {
+          "id": "d",
+          "text": "Methodist"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Scotland, the national Church is the Church of Scotland, which is a Presbyterian Church.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q08",
+      "exam_id": "exam05",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Where does golf come from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wales"
+        },
+        {
+          "id": "b",
+          "text": "Australia"
+        },
+        {
+          "id": "c",
+          "text": "Ireland"
+        },
+        {
+          "id": "d",
+          "text": "Scotland"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The modern game of golf can be traced back to 15th century Scotland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q09",
+      "exam_id": "exam05",
+      "number": 9,
+      "type": "single_choice",
+      "question": "When do the television and newspapers have stories that are jokes until midday?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Valentine’s Day"
+        },
+        {
+          "id": "b",
+          "text": "Boxing Day"
+        },
+        {
+          "id": "c",
+          "text": "Halloween"
+        },
+        {
+          "id": "d",
+          "text": "April Fool’s Day"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "On April Fool’s Day, the 1st of April the television and newspapers often have stories that are April Fool jokes.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q10",
+      "exam_id": "exam05",
+      "number": 10,
+      "type": "single_choice",
+      "question": "What king was defeated by Oliver Cromwell during the Civil War and hid in an oak tree before escaping to Europe?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Richard III"
+        },
+        {
+          "id": "b",
+          "text": "Charles II"
+        },
+        {
+          "id": "c",
+          "text": "James I"
+        },
+        {
+          "id": "d",
+          "text": "Henry IV"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is Charles II.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q11",
+      "exam_id": "exam05",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Who was the father of Queen Elizabeth I?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Edward I"
+        },
+        {
+          "id": "b",
+          "text": "Henry V"
+        },
+        {
+          "id": "c",
+          "text": "Henry VII"
+        },
+        {
+          "id": "d",
+          "text": "Henry VIII"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The father of Queen Elizabeth I was Henry VIII.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q12",
+      "exam_id": "exam05",
+      "number": 12,
+      "type": "true_false",
+      "question": "Complaints against the police can ONLY be made by writing to the Police Complaints Commissioner.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. Anyone can make a complaint about the police by going to a police station and writing to the Chief Constable of the police force involved. Complaints can also be made to an independent body: the Independent Police Complaints Commission in England and Wales, the Police Complaints Commissioner for Scotland or the Police Ombudsman for Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Names of police complaints bodies in the explanation may be outdated and need current verification."
+      ]
+    },
+    {
+      "id": "lituk-exam05-q13",
+      "exam_id": "exam05",
+      "number": 13,
+      "type": "single_choice",
+      "question": "Who is the patron Saint of Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "St George"
+        },
+        {
+          "id": "b",
+          "text": "St Patrick"
+        },
+        {
+          "id": "c",
+          "text": "St Andrew"
+        },
+        {
+          "id": "d",
+          "text": "St David"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The patron Saint of Northern Ireland is St Patrick.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q14",
+      "exam_id": "exam05",
+      "number": 14,
+      "type": "single_choice",
+      "question": "What is the name of the period when new ideas about politics, philosophy and science were developed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Enlightenment"
+        },
+        {
+          "id": "b",
+          "text": "The Glorious Revolution"
+        },
+        {
+          "id": "c",
+          "text": "The Swinging Sixties"
+        },
+        {
+          "id": "d",
+          "text": "The Reformation"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "During the 18th century, new ideas about politics, philosophy and science were developed. This is often called ‘the Enlightenment’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q15",
+      "exam_id": "exam05",
+      "number": 15,
+      "type": "single_choice",
+      "question": "Which of the following statements is TRUE:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mary Stuart (‘Mary, Queen of Scots’) was a Protestant"
+        },
+        {
+          "id": "b",
+          "text": "Mary Stuart (‘Mary, Queen of Scots’) was a Catholic"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Mary Stuart (‘Mary, Queen of Scots’) was a Catholic.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q16",
+      "exam_id": "exam05",
+      "number": 16,
+      "type": "single_choice",
+      "question": "Which of the following is an example of civil law?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To sell tobacco products to anyone under the age of 18"
+        },
+        {
+          "id": "b",
+          "text": "To buy alcohol for people who are under the age of 18"
+        },
+        {
+          "id": "c",
+          "text": "Discrimination in the workplace"
+        },
+        {
+          "id": "d",
+          "text": "To carry a weapon of any kind, even if it is for self-defence"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Discrimination in the workplace is an example of civil law.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q17",
+      "exam_id": "exam05",
+      "number": 17,
+      "type": "single_choice",
+      "question": "In which battle did Admiral Nelson die?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Battle of Hastings"
+        },
+        {
+          "id": "b",
+          "text": "The Battle of Waterloo"
+        },
+        {
+          "id": "c",
+          "text": "The Battle of Trafalgar"
+        },
+        {
+          "id": "d",
+          "text": "The Battle of Bannockburn"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Admiral Nelson was in charge of the British fleet at the Battle of Trafalgar and was killed in the battle.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q18",
+      "exam_id": "exam05",
+      "number": 18,
+      "type": "single_choice",
+      "question": "William of Orange was asked by Protestants to invade England and proclaim himself king. But, when William reached England, there was no resistance and he took over the throne. This event was later known as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ‘Glorious Revolution’"
+        },
+        {
+          "id": "b",
+          "text": "The Restoration"
+        },
+        {
+          "id": "c",
+          "text": "The ‘Great Depression’"
+        },
+        {
+          "id": "d",
+          "text": "The ‘Blitz’"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William of Orange was asked by Protestants to invade England and proclaim himself king. When William reached England, there was no resistance and he took over the throne. This event was later called the ‘Glorious Revolution’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q19",
+      "exam_id": "exam05",
+      "number": 19,
+      "type": "single_choice",
+      "question": "What sort of charity is ‘Friends of the Earth’?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An environmental charity"
+        },
+        {
+          "id": "b",
+          "text": "A medical research charity"
+        },
+        {
+          "id": "c",
+          "text": "A charity working with pets"
+        },
+        {
+          "id": "d",
+          "text": "A charity working with older people"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Friends of the Earth is an environmental charity.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q20",
+      "exam_id": "exam05",
+      "number": 20,
+      "type": "true_false",
+      "question": "If a husband forces his wife to have sex he can be charged with rape.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q21",
+      "exam_id": "exam05",
+      "number": 21,
+      "type": "single_choice",
+      "question": "In which country of the British Empire did the Boer War (1899-1902) take place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Netherlands"
+        },
+        {
+          "id": "b",
+          "text": "Falkland Islands"
+        },
+        {
+          "id": "c",
+          "text": "Gibraltar"
+        },
+        {
+          "id": "d",
+          "text": "South Africa"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Boer War of 1899 to 1902 took place in South Africa with settlers from the Netherlands called the Boers.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q22",
+      "exam_id": "exam05",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Which of the following actions is known as “canvassing”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Donating blood to help people"
+        },
+        {
+          "id": "b",
+          "text": "Volunteering for an environmental charity"
+        },
+        {
+          "id": "c",
+          "text": "Caring for animals at a local rescue shelter"
+        },
+        {
+          "id": "d",
+          "text": "Persuading people to vote for a political party"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Members of political parties persuade people to vote for their candidates – for instance, by handing out leaflets in the street or by knocking on people’s doors and asking for their support. This is called ‘canvassing’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q23",
+      "exam_id": "exam05",
+      "number": 23,
+      "type": "single_choice",
+      "question": "Which novel written by JRR Tolkien was voted the country’s best-loved novel in 2003?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oliver Twist"
+        },
+        {
+          "id": "b",
+          "text": "James Bond"
+        },
+        {
+          "id": "c",
+          "text": "Pride and Prejudice"
+        },
+        {
+          "id": "d",
+          "text": "The Lord of the Rings"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 2003, the Lord of the Rings by JRR Tolkien was voted the country’s best-loved novel.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam05-q24",
+      "exam_id": "exam05",
+      "number": 24,
+      "type": "single_choice",
+      "question": "When did Germany invade Poland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1942"
+        },
+        {
+          "id": "b",
+          "text": "1941"
+        },
+        {
+          "id": "c",
+          "text": "1940"
+        },
+        {
+          "id": "d",
+          "text": "1939"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Germany invaded Poland in 1939.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
