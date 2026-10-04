@@ -77,6 +77,7 @@ with sync_playwright() as p:
             const state=JSON.parse(localStorage.getItem(S)),id='exam'+String(exam+1).padStart(2,'0'),expectedAttempts=wrong?48:24;
             if(attempts!==expectedAttempts||state.lastExams[id].answered!==24||state.lastExams[id].wrong!==(wrong?24:0)||state.lastExams[id].correct!==(wrong?0:24)||state.lastExams[id].percent!==(wrong?0:100))throw Error('Bad completed exam');
             const card=document.querySelectorAll('.exam-card')[exam];if(!card.querySelector('.exam-accuracy').textContent.endsWith((wrong?'0':'100')+'%'))throw Error('Wrong latest accuracy');
+            const mistakeText=card.querySelector('.mistakes-exam-btn').textContent;if(!mistakeText.includes('Mistakes ('+(wrong?24:0)+')'))throw Error('Completed exam mistakes mismatch: '+mistakeText);
             attemptCounts.push(attempts);
           }
           return {exams:attemptCounts.length,attempts:attemptCounts.reduce((a,b)=>a+b,0),all_wrong:wrong};
@@ -120,6 +121,10 @@ with sync_playwright() as p:
         page.click('#mistakesBtn');s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession");assert s['queue']==[c]
         answer_current(page,True);open_page(page);page.click('#resumeBtn');assert page.locator('#checkBtn').is_hidden();page.click('#nextBtn')
         assert '(1)' in page.locator('#mistakesBtn').inner_text();page.click('#mistakesBtn');answer_current(page);page.click('#nextBtn');assert page.locator('#mistakesBtn').is_disabled()
+        # Legacy completed-exam scores without stored wrong IDs infer sticky Mistakes from existing history.
+        seed(page,{a:st(True,100),b:st(True,110)})
+        page.evaluate('''({a,b})=>{const s=JSON.parse(localStorage.getItem('lifeuk_state_v1'));s.questions[a].wrong=1;s.questions[b].wrong=1;s.lastExams.exam05={total:24,answered:24,correct:22,wrong:2,percent:92,complete:true,completedAt:120};localStorage.setItem('lifeuk_state_v1',JSON.stringify(s));}''',{'a':a,'b':b})
+        open_page(page);assert 'Mistakes (2)' in page.locator('[data-exam-id="exam05"] .mistakes-exam-btn').inner_text()
         # Legacy queue cleanup and legacy recent-answer reconstruction preserve Q23 history.
         seed(page,{a:st(False,100),'lituk-exam17-q23':{'seen':7,'correct':6,'wrong':1,'streak':2,'mastered':False,'lastSeen':1,'nextDue':2}},legacy=True)
         page.evaluate('''({a,b,c})=>{const s=JSON.parse(localStorage.getItem('lifeuk_state_v1'));delete s.sessionStoreVersion;delete s.activeSession;localStorage.setItem('lifeuk_state_v1',JSON.stringify(s));localStorage.setItem('lifeuk_active_session_v1',JSON.stringify({mode:'exam',label:'Legacy',queue:[a,b,a,c],index:2,startedAt:50}));}''',{'a':a,'b':b,'c':'lituk-exam05-q03'})
