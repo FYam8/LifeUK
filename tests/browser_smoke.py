@@ -96,18 +96,25 @@ with sync_playwright() as p:
         page.click('#nextBtn');page.click('.option[data-id="a"]');page.click('#checkBtn');page.click('#homeBtn');page.click('#resumeBtn')
         assert page.locator('#feedback b').inner_text()=='Not quite';page.click('#nextBtn');assert not page.locator('#resumeBtn').is_disabled()
         assert page.locator('#questionText').inner_text()==qs[1]['question'];answer_current(page);page.click('#nextBtn');assert page.locator('#resumeBtn').is_disabled()
-        assert page.locator('[data-exam-id="exam06"] .exam-accuracy').inner_text()=='50%'
-        assert '1/2 correct · 1 wrong' in page.locator('[data-exam-id="exam06"]').inner_text()
+        assert page.locator('[data-exam-id="exam06"] .exam-accuracy').inner_text()=='—'
+        assert 'No completed exam yet' in page.locator('[data-exam-id="exam06"]').inner_text()
+        # Random 24 uses 24 distinct questions, survives as a learning mode, and does not create an official Exam score.
+        seed(page)
+        page.click('#randomBtn');s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession")
+        assert s['mode']=='random' and len(s['queue'])==24 and len(set(s['queue']))==24 and s['examId'] is None
+        random_exam_id=DATA[s['queue'][0]]['exam_id'];answer_current(page);page.click('#exitBtn');open_page(page);page.click('#resumeBtn')
+        assert 'Random 24' in page.locator('#sessionLabel').inner_text();page.click('#exitBtn')
+        assert page.locator(f'[data-exam-id="{random_exam_id}"] .exam-accuracy').inner_text()=='—'
         # Latest accuracy excludes unseen; only last-wrong records enter either wrong-only scope.
         def st(ok,t=100):return {'seen':2,'correct':1 if ok else 0,'wrong':1 if ok else 2,'streak':1 if ok else 0,'mastered':False,'lastSeen':t,'nextDue':0,'lastCorrect':ok}
         a,b,c='lituk-exam05-q01','lituk-exam05-q02','lituk-exam06-q06'
         seed(page,{a:st(False),b:st(True),c:st(False,200)})
-        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='50%'
+        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='—'
         assert '(2)' in page.locator('#mistakesBtn').inner_text()
         page.click('[data-exam-id="exam05"] .mistakes-exam-btn')
         s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession");assert s['queue']==[a] and s['mode']=='mistakes'
         answer_current(page);page.click('#nextBtn')
-        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='100%'
+        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='—'
         assert page.locator('[data-exam-id="exam05"] .mistakes-exam-btn').is_disabled()
         assert page.locator('[data-exam-id="exam05"] .last-exam').count()==0
         page.click('#mistakesBtn');s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession");assert s['queue']==[c]
@@ -117,7 +124,7 @@ with sync_playwright() as p:
         seed(page,{a:st(False,100),'lituk-exam17-q23':{'seen':7,'correct':6,'wrong':1,'streak':2,'mastered':False,'lastSeen':1,'nextDue':2}},legacy=True)
         page.evaluate('''({a,b,c})=>{const s=JSON.parse(localStorage.getItem('lifeuk_state_v1'));delete s.sessionStoreVersion;delete s.activeSession;localStorage.setItem('lifeuk_state_v1',JSON.stringify(s));localStorage.setItem('lifeuk_active_session_v1',JSON.stringify({mode:'exam',label:'Legacy',queue:[a,b,a,c],index:2,startedAt:50}));}''',{'a':a,'b':b,'c':'lituk-exam05-q03'})
         open_page(page);page.click('#resumeBtn');assert 'Source Q3' in page.locator('#counter').inner_text();page.click('#exitBtn')
-        assert page.locator('[data-exam-id="exam17"] .exam-accuracy').inner_text()=='100%'
+        assert page.locator('[data-exam-id="exam17"] .exam-accuracy').inner_text()=='—'
         # Export / Reset / Import including old-format progress and new per-exam data.
         with page.expect_download() as info:page.click('#exportBtn')
         backup=OUT/f'{label}-round{ROUND}-progress.json';info.value.save_as(backup);exported=json.loads(backup.read_text())
