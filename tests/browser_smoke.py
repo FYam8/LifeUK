@@ -50,15 +50,14 @@ with sync_playwright() as p:
         page.add_init_script('window.confirm=()=>true;window.alert=()=>{};')
         if OFFLINE:page.evaluate('''exams=>{window.confirm=()=>true;window.alert=()=>{};const data={};Object.defineProperty(window,'localStorage',{value:{getItem:k=>data[k]??null,setItem:(k,v)=>{data[k]=String(v)},removeItem:k=>{delete data[k]}}});window.fetch=async path=>({ok:!!exams[path],json:async()=>exams[path]});}''',EXAMS)
         open_page(page);assert page.locator('.exam-card').count()==17
-        assert '408 source questions' in page.locator('#examSummary').inner_text()
-        assert '407 questions after' in page.locator('#examSummary').inner_text()
-        assert '23 questions' in page.locator('.exam-card').last.inner_text()
+        assert '408 questions' in page.locator('#examSummary').inner_text()
+        assert '24 questions' in page.locator('.exam-card').last.inner_text()
         assert page.locator('.exam-accuracy').first.inner_text()=='Latest accuracy: —'
         assert page.locator('#mistakesBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
           const S='lifeuk_state_v1',counts=[];
           for(let exam=0;exam<17;exam++){
-            document.querySelectorAll('.exam-btn')[exam].click();const expected=exam===16?23:24,visited=new Set(),keys=new Set();
+            document.querySelectorAll('.exam-btn')[exam].click();const expected=24,visited=new Set(),keys=new Set();
             for(let i=0;i<expected;i++){
               let state=JSON.parse(localStorage.getItem(S)),s=state.activeSession,id=s.queue[s.index],q=data[id],key=LifeUKSession.questionKey(q);
               if(s.queue.length!==expected||visited.has(id)||keys.has(key))throw Error('Duplicate or growing queue');visited.add(id);keys.add(key);
@@ -77,7 +76,7 @@ with sync_playwright() as p:
           }
           return {exams:counts.length,attempts:counts.reduce((a,b)=>a+b,0),all_wrong:wrong};
         }''',{'data':DATA,'wrong':ROUND==1})
-        assert bulk['attempts']==407
+        assert bulk['attempts']==408
         # Correct / wrong feedback, drafts and statistics across Home/Save/Resume/reload.
         qs=[DATA['lituk-exam06-q06'],DATA['lituk-exam06-q07']];seed(page,qs=qs)
         page.click('#resumeBtn');assert 'Select 3 answers' in page.locator('#multiHint').inner_text()
