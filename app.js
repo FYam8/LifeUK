@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const Core=globalThis.LifeUKSession,BUILD='20261005-random24-1';
+  const Core=globalThis.LifeUKSession,BUILD='20261005-exam-score-separation-1';
   const DATA_FILES=Array.from({length:17},(_,i)=>`data/life_in_the_uk_exam${String(i+1).padStart(2,'0')}.json`);
   const STORAGE_KEY='lifeuk_state_v1',ACTIVE_KEY='lifeuk_active_session_v1',SCHEMA_VERSION=1;
   const $=id=>document.getElementById(id),now=()=>Date.now(),copy=x=>JSON.parse(JSON.stringify(x));
@@ -45,13 +45,13 @@
     const wrong=Core.mistakes(all,state.questions);$('mistakesBtn').textContent=`Mistakes only (${wrong.length})`;$('mistakesBtn').disabled=!wrong.length;
     const grid=$('examGrid');grid.replaceChildren();
     for(const exam of exams){
-      const source=exam.questions,qs=Core.uniqueQuestions(source),summary=Core.latestSummary(source,state.questions),wrongQs=Core.mistakes(source,state.questions),examId=source[0].exam_id;
+      const source=exam.questions,qs=Core.uniqueQuestions(source),wrongQs=Core.mistakes(source,state.questions),examId=source[0].exam_id;
       const card=element('article','exam-card');card.dataset.examId=examId;
-      const last=state.lastExams[examId],latestPercent=last?last.percent:summary.percent;
+      const last=state.lastExams[examId],latestPercent=last?last.percent:null;
       const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',latestPercent===null?'—':latestPercent+'%');
-      const status=last?`${last.correct}/${last.total} correct · ${last.wrong||0} wrong`:`${summary.answered}/${summary.total} answered · ${summary.wrong} wrong`;
+      const status=last?`Latest exam: ${last.correct}/${last.total} correct · ${last.wrong||0} wrong`:'No completed exam yet';
       const detail=element('p','exam-status',status);
-      const meta=element('p','tiny muted',`${qs.filter(q=>qState(q.id).mastered).length} mastered`);
+      const meta=element('p','tiny muted',`${qs.filter(q=>qState(q.id).mastered).length} mastered · ${wrongQs.length} mistakes`);
       card.append(title,metric,detail,meta);
       const actions=element('div','exam-actions'),start=element('button','btn exam-btn','Start'),mistakes=element('button','btn secondary mistakes-exam-btn',`Mistakes (${wrongQs.length})`);
       start.type=mistakes.type='button';start.onclick=()=>startExam(exam);mistakes.disabled=!wrongQs.length;mistakes.onclick=()=>startMistakes(exam);actions.append(start,mistakes);card.append(actions);grid.append(card);
@@ -88,7 +88,7 @@
     if(checked||!current||syncOtherTab())return;const answer=Core.recordAnswer(session,current,[...selected],now());if(!answer)return;checked=true;
     const s=qState(current.id);s.seen++;s.lastSeen=answer.answeredAt;s.lastCorrect=answer.ok;state.stats.answered++;
     if(answer.ok){s.correct++;s.streak++;state.stats.correct++;s.mastered=s.streak>=4;s.nextDue=now()+dueDelay(s.streak);}else{s.wrong++;s.streak=0;s.mastered=false;s.nextDue=now()+5*60*1000;}
-    const score=Core.sessionScore(session);if(session.mode==='exam'&&score.complete)state.lastExams[session.examId]={...score,sessionId:session.id,completedAt:answer.answeredAt};
+    const score=Core.sessionScore(session);if(session.mode==='exam'&&score.complete&&score.total===24)state.lastExams[session.examId]={...score,sessionId:session.id,completedAt:answer.answeredAt};
     save();renderAnswer(answer);renderHome();$('feedback').scrollIntoView({block:'nearest'});
   }
   function renderAnswer(answer){
