@@ -66,7 +66,8 @@
   }
   function startExam(exam){begin('exam',exam.source.exam_label,exam.questions);}
   function startMistakes(exam){begin('mistakes',exam?`${exam.source.exam_label} · Mistakes only`:'All exams · Mistakes only',Core.mistakes(exam?exam.questions:all,state.questions));}
-  function startReview(){const t=now();const qs=all.filter(q=>{const s=qState(q.id);return s.seen>0&&(!s.mastered||s.nextDue<=t);}).sort((a,b)=>(qState(a.id).streak-qState(b.id).streak)||(qState(a.id).lastSeen-qState(b.id).lastSeen));begin('review','Review due / weak',qs);}\n  function startRandom24(){const pool=Core.uniqueQuestions(all);begin('random','Random 24',shuffle(pool).slice(0,Math.min(24,pool.length)));}
+  function startReview(){const t=now();const qs=all.filter(q=>{const s=qState(q.id);return s.seen>0&&(!s.mastered||s.nextDue<=t);}).sort((a,b)=>(qState(a.id).streak-qState(b.id).streak)||(qState(a.id).lastSeen-qState(b.id).lastSeen));begin('review','Review due / weak',qs);}
+  function startRandom24(){const pool=Core.uniqueQuestions(all);begin('random','Random 24',shuffle(pool).slice(0,Math.min(24,pool.length)));}
   function showStudy(){$('homeView').classList.add('hidden');$('studyView').classList.remove('hidden');$('homeBtn').classList.remove('hidden');window.scrollTo(0,0);}
   function showHome(){$('studyView').classList.add('hidden');$('homeView').classList.remove('hidden');$('homeBtn').classList.add('hidden');renderHome();window.scrollTo(0,0);}
   function loadCurrent(){
