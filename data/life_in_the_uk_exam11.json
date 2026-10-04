@@ -1,0 +1,782 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 11",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 11",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect/Correct markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam11-q01",
+      "exam_id": "exam11",
+      "number": 1,
+      "type": "single_choice",
+      "question": "Is St Helena part of the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "British overseas territories, such as St Helena and the Falkland Islands are linked to the UK but are not part of it.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q02",
+      "exam_id": "exam11",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Where is Theatreland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Docklands"
+        },
+        {
+          "id": "b",
+          "text": "London’s East End"
+        },
+        {
+          "id": "c",
+          "text": "London’s West End"
+        },
+        {
+          "id": "d",
+          "text": "London’s South End"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "London’s West End, also known as ‘Theatreland’, is particularly well known for its theatres.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q03",
+      "exam_id": "exam11",
+      "number": 3,
+      "type": "single_choice",
+      "question": "What is the name of the UK currency?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Euro"
+        },
+        {
+          "id": "b",
+          "text": "Pound Sterling"
+        },
+        {
+          "id": "c",
+          "text": "Peso"
+        },
+        {
+          "id": "d",
+          "text": "Dollar"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The currency in the UK is the pound sterling (symbol £).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q04",
+      "exam_id": "exam11",
+      "number": 4,
+      "type": "single_choice",
+      "question": "What other name is given to Diwali?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Festival of Lights"
+        },
+        {
+          "id": "b",
+          "text": "Ash Wednesday"
+        },
+        {
+          "id": "c",
+          "text": "Good Friday"
+        },
+        {
+          "id": "d",
+          "text": "Easter Monday"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Diwali is often called the Festival of Lights.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q05",
+      "exam_id": "exam11",
+      "number": 5,
+      "type": "single_choice",
+      "question": "What is the Enlightenment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A period of total peace in England"
+        },
+        {
+          "id": "b",
+          "text": "A period when new ideas about politics, philosophy and science were developed"
+        },
+        {
+          "id": "c",
+          "text": "A period when England became the largest empire the world had ever seen"
+        },
+        {
+          "id": "d",
+          "text": "A period of economic recovery after the Second World War"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Enlightenment was a period during the 18th century when new ideas about politics, philosophy and science were developed.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q06",
+      "exam_id": "exam11",
+      "number": 6,
+      "type": "single_choice",
+      "question": "Which of the following charities helps the environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NSPCC"
+        },
+        {
+          "id": "b",
+          "text": "Shelter"
+        },
+        {
+          "id": "c",
+          "text": "Friends of the Earth"
+        },
+        {
+          "id": "d",
+          "text": "Crisis"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Friends of the Earth is an environmental charity.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q07",
+      "exam_id": "exam11",
+      "number": 7,
+      "type": "single_choice",
+      "question": "Which of the following was a crucial aerial battle fought between Germany and Britain during WWII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Battle of Britain"
+        },
+        {
+          "id": "b",
+          "text": "The Battle of Worcester"
+        },
+        {
+          "id": "c",
+          "text": "The Battle of Dunbar"
+        },
+        {
+          "id": "d",
+          "text": "The Battle of Marston Moor"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is the Battle of Britain.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q08",
+      "exam_id": "exam11",
+      "number": 8,
+      "type": "single_choice",
+      "question": "What was Margaret Thatcher famous for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She fought for the right to vote for women"
+        },
+        {
+          "id": "b",
+          "text": "She was the first woman Prime Minister of the UK"
+        },
+        {
+          "id": "c",
+          "text": "She set up the women’s Franchise League"
+        },
+        {
+          "id": "d",
+          "text": "She was the founder of modern nursing"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Margaret Thatcher was the first woman Prime Minister of the UK.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q09",
+      "exam_id": "exam11",
+      "number": 9,
+      "type": "multiple_choice",
+      "question": "Which two languages combined to become one English language?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Latin"
+        },
+        {
+          "id": "b",
+          "text": "Anglo-Saxon"
+        },
+        {
+          "id": "c",
+          "text": "Proto-Celtic"
+        },
+        {
+          "id": "d",
+          "text": "Norman French"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "After the Norman Conquest, the king and his noblemen had spoken Norman French and the peasants had continued to speak Anglo-Saxon. Gradually these two languages combined to become one English language.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q10",
+      "exam_id": "exam11",
+      "number": 10,
+      "type": "true_false",
+      "question": "By law, radio and television coverage of the political parties must be balanced and so equal time has to be given to rival viewpoints.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q11",
+      "exam_id": "exam11",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Where did the Spanish Armada come from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "France"
+        },
+        {
+          "id": "b",
+          "text": "Spain"
+        },
+        {
+          "id": "c",
+          "text": "Italy"
+        },
+        {
+          "id": "d",
+          "text": "South America"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1588 the English defeated the Spanish Armada (a large fleet of ships), which had been sent by Spain to conquer England and restore Catholicism.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q12",
+      "exam_id": "exam11",
+      "number": 12,
+      "type": "single_choice",
+      "question": "What is the name of the War Memorial located in Whitehall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dumfries"
+        },
+        {
+          "id": "b",
+          "text": "Cenotaph"
+        },
+        {
+          "id": "c",
+          "text": "Royal Crescent"
+        },
+        {
+          "id": "d",
+          "text": "The White Tower"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Cenotaph is a war memorial located in Whitehall.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q13",
+      "exam_id": "exam11",
+      "number": 13,
+      "type": "true_false",
+      "question": "The UK government has never suspended the Northern Ireland Assembly.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. The Northern Ireland Assembly has been suspended on a few occasions.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q14",
+      "exam_id": "exam11",
+      "number": 14,
+      "type": "single_choice",
+      "question": "What kind of church did Scotland establish in 1560?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Catholic church"
+        },
+        {
+          "id": "b",
+          "text": "A Protestant church"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1560, the predominantly Protestant Scottish Parliament abolished the authority of the Pope in Scotland and Roman Catholic religious services became illegal. A Protestant Church of Scotland with an elected leadership was established but, unlike in England, this was not a state Church.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q15",
+      "exam_id": "exam11",
+      "number": 15,
+      "type": "single_choice",
+      "question": "When was the Domesday Book written?",
+      "options": [
+        {
+          "id": "a",
+          "text": "After the Viking invasion"
+        },
+        {
+          "id": "b",
+          "text": "After the Norman conquest"
+        },
+        {
+          "id": "c",
+          "text": "After the last Roman invasion"
+        },
+        {
+          "id": "d",
+          "text": "After the Anglo-Saxon invasion"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William the conqueror sent people all over England to draw up lists of all the towns and villages. The people who lived there, who owned the land and what animals they owned were also listed. This was called the Domesday Book, which gives a picture of society in England just after the Norman Conquest.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q16",
+      "exam_id": "exam11",
+      "number": 16,
+      "type": "multiple_choice",
+      "question": "The Northern Ireland Assembly cannot make decisions on which two of the following issues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Immigration"
+        },
+        {
+          "id": "b",
+          "text": "Education"
+        },
+        {
+          "id": "c",
+          "text": "Agriculture"
+        },
+        {
+          "id": "d",
+          "text": "Defence"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The Northern Ireland Assembly can make decisions on issues such as: education, agriculture, the environment health and social services, but it cannot make decisions on immigration or defence issues.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q17",
+      "exam_id": "exam11",
+      "number": 17,
+      "type": "multiple_choice",
+      "question": "What should you do to make a complaint about the police (choose two answers)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Write a complaint letter to the House of Commons"
+        },
+        {
+          "id": "b",
+          "text": "Go to the Police station directly"
+        },
+        {
+          "id": "c",
+          "text": "Write to the Chief Constable of the police force involved"
+        },
+        {
+          "id": "d",
+          "text": "Write to your MP"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "Anyone can make a complaint about the police by going to a police station and writing to the Chief Constable of the police force involved. Complaints can also be made to an independent body: the Independent Police Complaints Commission in England and Wales, the Police Complaints Commissioner for Scotland or the Police Ombudsman for Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q18",
+      "exam_id": "exam11",
+      "number": 18,
+      "type": "single_choice",
+      "question": "What flower did William Wordsworth write about?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rose"
+        },
+        {
+          "id": "b",
+          "text": "Daffodil"
+        },
+        {
+          "id": "c",
+          "text": "Thistle"
+        },
+        {
+          "id": "d",
+          "text": "Shamrock"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William Wordsworth wrote ‘The Daffodils’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q19",
+      "exam_id": "exam11",
+      "number": 19,
+      "type": "single_choice",
+      "question": "When is St Andrew’s day celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17th April"
+        },
+        {
+          "id": "b",
+          "text": "31st December"
+        },
+        {
+          "id": "c",
+          "text": "1st March"
+        },
+        {
+          "id": "d",
+          "text": "30th November"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "St Andrew’s day, patron of Scotland, is celebrated on the 30th of November.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q20",
+      "exam_id": "exam11",
+      "number": 20,
+      "type": "single_choice",
+      "question": "Who was the architect that rebuilt Saint Paul’s cathedral after the Great Fire in 1666?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Robert Adam"
+        },
+        {
+          "id": "b",
+          "text": "Sir Christopher Wren"
+        },
+        {
+          "id": "c",
+          "text": "Sir Norman Foster"
+        },
+        {
+          "id": "d",
+          "text": "Dame Zaha Hadid"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1666, a great fire destroyed much of the city, including many churches and St Paul’s Cathedral. London was rebuilt with a new St Paul\\\\\\'s, which was designed by a famous architect, Sir Christopher Wren.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q21",
+      "exam_id": "exam11",
+      "number": 21,
+      "type": "single_choice",
+      "question": "When were the first coins in Britain made?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Stone Age"
+        },
+        {
+          "id": "b",
+          "text": "The Bronze Age"
+        },
+        {
+          "id": "c",
+          "text": "The Iron Age"
+        },
+        {
+          "id": "d",
+          "text": "The Middle Ages"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The people of the Iron Age made the first coins to be minted in Britain.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q22",
+      "exam_id": "exam11",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Who was Emmeline Pankhurst?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A suffragette"
+        },
+        {
+          "id": "b",
+          "text": "A nurse"
+        },
+        {
+          "id": "c",
+          "text": "A doctor"
+        },
+        {
+          "id": "d",
+          "text": "A scientist"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Emmeline Pankhurst was born in Manchester in 1858. She set up the women’s Franchise League in 1889, which fought to get the vote in local elections for married women. In 1903 she helped found the Women’s Social and Political Union (WSPU). This was the first group whose members were called ‘suffragettes’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q23",
+      "exam_id": "exam11",
+      "number": 23,
+      "type": "single_choice",
+      "question": "Who did Britain fight against in the Crimean War?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Turkey"
+        },
+        {
+          "id": "b",
+          "text": "Russia"
+        },
+        {
+          "id": "c",
+          "text": "France"
+        },
+        {
+          "id": "d",
+          "text": "Germany"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "From 1853 to 1856, Britain fought with Turkey and France against Russia in the Crimean War.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam11-q24",
+      "exam_id": "exam11",
+      "number": 24,
+      "type": "single_choice",
+      "question": "How old do you have to be to buy alcohol in the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "17"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "19"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "It is a criminal offence to sell alcohol to anyone who is under 18 or to buy alcohol for people who are under the age of 18. (There is one exception: people aged 16 or over can drink alcohol with a meal in a hotel or restaurant).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
