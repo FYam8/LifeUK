@@ -1,9 +1,9 @@
 /* LifeUK session rules. Raw questions and lifetime history are never deleted. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.LifeUKSession=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
-  const VERSION=3;
+  const VERSION=4;
   // Manually reviewed equivalent learning objective, not a general topic filter.
-  const EQUIVALENTS=Object.freeze({'lituk-exam17-q03':'exam17-shadow-cabinet','lituk-exam17-q23':'exam17-shadow-cabinet'});
+  const EQUIVALENTS=Object.freeze({});
   const norm=text=>String(text).normalize('NFKC').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g,' ').trim();
   function questionKey(q){return EQUIVALENTS[q.id]||JSON.stringify([norm(q.question),q.type,q.required_selection_count,q.options.map(o=>norm(o.text)).sort(),q.options.filter(o=>q.correct_option_ids.includes(o.id)).map(o=>norm(o.text)).sort()]);}
   function groups(qs){const map=new Map();for(const q of qs){const key=questionKey(q);if(!map.has(key))map.set(key,[]);map.get(key).push(q);}return [...map.values()];}
