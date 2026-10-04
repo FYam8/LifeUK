@@ -58,7 +58,7 @@ test('review sessions also finish after one pass, even if every answer is wrong'
  const s=C.createSession('review','Review',[all[0],all[0]],100);assert.equal(s.queue.length,1);C.recordAnswer(s,all[0],wrong(all[0]),101);assert.equal(s.queue.length,1);assert(C.advance(s));assert.equal(C.restoreSession(s,bank),null);
 });
 test('HTML loads the actual validated app with a versioned session core',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261005-exam-score-separation-1/);assert.match(html,/app\.js\?v=20261005-exam-score-separation-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261005-sticky-mistakes-1/);assert.match(html,/app\.js\?v=20261005-sticky-mistakes-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
 });
 
 const progress=(lastCorrect,lastSeen=100)=>({seen:3,correct:lastCorrect?2:1,wrong:lastCorrect?1:2,streak:lastCorrect?1:0,lastSeen,lastCorrect});
@@ -102,4 +102,31 @@ test('version 2 answer receipts remain graded after the version 3 upgrade',()=>{
 
 test('Random 24 sessions survive resume without becoming official exam sessions',()=>{
  const qs=exams[0].questions.slice(0,4),s=C.createSession('random','Random 24',qs,100);C.recordAnswer(s,qs[0],qs[0].correct_option_ids,101);assert(C.advance(s));const r=C.restoreSession(clone(s),bank);assert(r);assert.equal(r.mode,'random');assert.equal(r.examId,null);assert.equal(r.index,1);
+});
+
+
+test('completed exam wrong questions stay in Mistakes after retry-correct and clear after later study correction',()=>{
+ const qs=exams[1].questions.slice(0,3),s=C.createSession('exam','Exam 2',qs,100);
+ C.recordAnswer(s,qs[0],wrong(qs[0]),110);C.advance(s);
+ const retry=q(s.queue[s.index]);C.recordAnswer(s,retry,retry.correct_option_ids,120);
+ const wrongIds=C.sessionWrongQuestionIds(s);assert.deepEqual(wrongIds,[qs[0].id]);
+ const progress={
+  [qs[0].id]:{seen:2,correct:1,wrong:1,streak:1,lastSeen:120,lastCorrect:true},
+  [qs[1].id]:{seen:1,correct:1,wrong:0,streak:1,lastSeen:115,lastCorrect:true}
+ };
+ const last={wrong:1,completedAt:130,wrongQuestionIds:wrongIds};
+ assert.deepEqual(C.mistakesWithExam(qs,progress,last).map(x=>x.id),[qs[0].id]);
+ progress[qs[0].id].lastSeen=140;progress[qs[0].id].lastCorrect=true;
+ assert.equal(C.mistakesWithExam(qs,progress,last).length,0);
+});
+
+test('legacy completed exam can infer sticky mistake IDs from stored wrong count and history',()=>{
+ const qs=exams[1].questions.slice(0,4),progress={
+  [qs[0].id]:{seen:2,correct:1,wrong:1,streak:1,lastSeen:100,lastCorrect:true},
+  [qs[1].id]:{seen:2,correct:1,wrong:1,streak:1,lastSeen:110,lastCorrect:true},
+  [qs[2].id]:{seen:1,correct:1,wrong:0,streak:1,lastSeen:90,lastCorrect:true}
+ };
+ const last={wrong:2,completedAt:120};
+ assert.deepEqual(C.inferLegacyWrongQuestionIds(qs,progress,last),[qs[1].id,qs[0].id]);
+ assert.deepEqual(C.mistakesWithExam(qs,progress,last).map(x=>x.id),[qs[1].id,qs[0].id]);
 });
