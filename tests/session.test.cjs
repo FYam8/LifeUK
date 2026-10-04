@@ -14,7 +14,7 @@ test('17 exams / 408 source records / 408 unique IDs / unchanged source bytes',(
 });
 for(const e of exams) test(`${e.source.exam_label}: finite all-wrong queue, unique IDs and learning objectives`,()=>{
  const before=JSON.stringify(e), s=C.createSession('exam',e.source.exam_label,[...e.questions,...e.questions],100);
- const expected=e.source.exam_label==='Exam 17'?23:24;
+ const expected=24;
  assert.equal(s.queue.length,expected);assert.equal(new Set(s.queue).size,expected);assert.equal(new Set(s.queue.map(id=>C.questionKey(q(id)))).size,expected);
  while(s.index<s.queue.length){const cur=q(s.queue[s.index]);assert.equal(C.advance(s),false);assert.equal(C.recordAnswer(s,cur,[],110),null);const a=C.recordAnswer(s,cur,wrong(cur),120);assert(a&&!a.ok);assert.equal(s.queue.length,expected);assert.equal(C.recordAnswer(s,cur,wrong(cur),130),null);assert(C.advance(s));}
  assert.equal(Object.keys(s.answers).length,expected);assert.equal(C.restoreSession(s,bank),null);assert.equal(JSON.stringify(e),before);
@@ -25,11 +25,11 @@ test('single, true/false, two- and three-answer grading: all selection subsets',
   if(selected.length!==x.required_selection_count)assert.equal(a,null);else{assert(a);assert.equal(a.ok,x.correct_option_ids.every(id=>selected.includes(id)));}
  }
 });
-test('source semantic duplicate only groups Exam 17 Q3/Q23',()=>{
- assert.equal(C.questionKey(q('lituk-exam17-q03')),C.questionKey(q('lituk-exam17-q23')));
+test('all 17 exams retain 24 distinct source questions',()=>{
+ assert.notEqual(C.questionKey(q('lituk-exam17-q03')),C.questionKey(q('lituk-exam17-q23')));
  assert.notEqual(C.questionKey(q('lituk-exam16-q09')),C.questionKey(q('lituk-exam16-q24')));
  assert.notEqual(C.questionKey(q('lituk-exam17-q08')),C.questionKey(q('lituk-exam17-q11')));
- const keys=exams.map(e=>C.uniqueQuestions(e.questions).length);assert.equal(keys.reduce((a,b)=>a+b,0),407);
+ const keys=exams.map(e=>C.uniqueQuestions(e.questions).length);assert.deepEqual(keys,Array(17).fill(24));assert.equal(keys.reduce((a,b)=>a+b,0),408);
 });
 test('exact reordered options deduplicate; generic stems with different options do not',()=>{
  const a=q('lituk-exam05-q01'), b={...a,id:'copy',options:[...a.options].reverse()};assert.equal(C.uniqueQuestions([a,b]).length,1);
@@ -59,7 +59,7 @@ test('review sessions also finish after one pass, even if every answer is wrong'
  const s=C.createSession('review','Review',[all[0],all[0]],100);assert.equal(s.queue.length,1);C.recordAnswer(s,all[0],wrong(all[0]),101);assert.equal(s.queue.length,1);assert(C.advance(s));assert.equal(C.restoreSession(s,bank),null);
 });
 test('HTML loads the actual validated app with a versioned session core',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261004-progress-1/);assert.match(html,/app\.js\?v=20261004-progress-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261004-exam17-24/);assert.match(html,/app\.js\?v=20261004-exam17-24/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
 });
 
 const progress=(lastCorrect,lastSeen=100)=>({seen:3,correct:lastCorrect?2:1,wrong:lastCorrect?1:2,streak:lastCorrect?1:0,lastSeen,lastCorrect});
@@ -81,10 +81,10 @@ test('mistakes only excludes unseen and latest-correct questions',()=>{
  assert.deepEqual(C.mistakes(qs,p).map(x=>x.id),[qs[2].id,qs[0].id]);p[qs[0].id]=progress(true,300);
  assert.deepEqual(C.mistakes(qs,p).map(x=>x.id),[qs[2].id]);
 });
-test('latest reviewed equivalent variant controls rate and wrong-only selection without erasing history',()=>{
+test('Exam 17 Q3 and Q23 keep independent latest accuracy and mistake state',()=>{
  const qs=exams[16].questions,a='lituk-exam17-q03',b='lituk-exam17-q23',p={[a]:progress(true,10),[b]:progress(false,20)},before=clone(p);
- assert.deepEqual(C.mistakes(qs,p).map(x=>x.id),[b]);assert.equal(C.latestSummary(qs,p).answered,1);assert.equal(C.latestSummary(qs,p).percent,0);assert.deepEqual(p,before);
- p[a]=progress(true,30);assert.equal(C.mistakes(qs,p).length,0);assert.equal(C.latestSummary(qs,p).percent,100);
+ assert.deepEqual(C.mistakes(qs,p).map(x=>x.id),[b]);assert.equal(C.latestSummary(qs,p).answered,2);assert.equal(C.latestSummary(qs,p).percent,50);assert.deepEqual(p,before);
+ p[b]=progress(true,30);assert.equal(C.mistakes(qs,p).length,0);assert.equal(C.latestSummary(qs,p).percent,100);
 });
 test('wrong-only session survives resume and has a fixed finite queue',()=>{
  const x=exams[0].questions[0],s=C.createSession('mistakes','Mistakes only',[x,x],100);C.recordAnswer(s,x,wrong(x),101);
