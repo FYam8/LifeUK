@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 17",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 17",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam17-q01",
+      "exam_id": "exam17",
+      "number": 1,
+      "type": "single_choice",
+      "question": "Which of the following is not a constitutional institution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Parliament"
+        },
+        {
+          "id": "b",
+          "text": "The cabinet"
+        },
+        {
+          "id": "c",
+          "text": "The armed forces"
+        },
+        {
+          "id": "d",
+          "text": "The police"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Constitutional institutions in the UK include: the monarchy, the Parliament (the House of Commons and the House of Lords), the Prime Minister, the cabinet, the judiciary (courts), the police, the civil service and the local government. The armed forces are not a constitutional institution.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q02",
+      "exam_id": "exam17",
+      "number": 2,
+      "type": "single_choice",
+      "question": "What food shortage caused the famine in Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corn"
+        },
+        {
+          "id": "b",
+          "text": "Potato"
+        },
+        {
+          "id": "c",
+          "text": "Wheat"
+        },
+        {
+          "id": "d",
+          "text": "Oats"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In the middle of the century the potato crop failed, and Ireland suffered a famine. A million people died from disease and starvation.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q03",
+      "exam_id": "exam17",
+      "number": 3,
+      "type": "single_choice",
+      "question": "The leader of the opposition appoints senior opposition MPs. They form a group whose role is to challenge the government and put forward alternative policies. What are they called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shadow Cabinet"
+        },
+        {
+          "id": "b",
+          "text": "Lobby groups"
+        },
+        {
+          "id": "c",
+          "text": "Civil servants"
+        },
+        {
+          "id": "d",
+          "text": "Support peers"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The leader of the opposition appoints senior opposition MPs to be ‘shadow ministers’. Their role is to challenge the government and put forward alternative policies. They form the shadow cabinet.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q04",
+      "exam_id": "exam17",
+      "number": 4,
+      "type": "multiple_choice",
+      "question": "Which of the following are TWO responsibilities of the MPs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Protect life and property"
+        },
+        {
+          "id": "b",
+          "text": "Represent everyone in their constituency"
+        },
+        {
+          "id": "c",
+          "text": "Help to create new laws"
+        },
+        {
+          "id": "d",
+          "text": "Scrutinise and comment on what the monarch is doing"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "MPs responsibilities include: to represent everyone in their constituency, to help to create new laws, to scrutinise and comment on what the government is doing and to debate important national issues.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q05",
+      "exam_id": "exam17",
+      "number": 5,
+      "type": "single_choice",
+      "question": "Who was the longest serving PM in the 20th century?",
+      "options": [
+        {
+          "id": "a",
+          "text": "John Major"
+        },
+        {
+          "id": "b",
+          "text": "Sir Alec Douglas-Home"
+        },
+        {
+          "id": "c",
+          "text": "Robert Walpole"
+        },
+        {
+          "id": "d",
+          "text": "Margaret Thatcher"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Margaret Thatcher was the first woman Prime Minister of the UK. She was the longest-serving Prime Minister of the 20th century, remaining in office from 1979 until 1990.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q06",
+      "exam_id": "exam17",
+      "number": 6,
+      "type": "single_choice",
+      "question": "What name is given to the territories which are linked to the UK but not part of it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crown Dependencies"
+        },
+        {
+          "id": "b",
+          "text": "Offshore Territories"
+        },
+        {
+          "id": "c",
+          "text": "Crown Independencies"
+        },
+        {
+          "id": "d",
+          "text": "British Colonies"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are several islands which are closely linked with the UK but are not part of it: the Channel Islands and the Isle of Man. These have their own governments and are called ‘Crown dependencies’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q07",
+      "exam_id": "exam17",
+      "number": 7,
+      "type": "single_choice",
+      "question": "What area did David Hume contribute to during the Enlightenment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architecture"
+        },
+        {
+          "id": "b",
+          "text": "Poetry"
+        },
+        {
+          "id": "c",
+          "text": "Cinema"
+        },
+        {
+          "id": "d",
+          "text": "Philosophy"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "David Hume was a famous philosopher who developed ideas about human nature during the 18th century and that have continued to influence philosophers over the years.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q08",
+      "exam_id": "exam17",
+      "number": 8,
+      "type": "single_choice",
+      "question": "What proportion of the population died as a result of the Black Death in England?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Half of the population"
+        },
+        {
+          "id": "b",
+          "text": "One third of the population"
+        },
+        {
+          "id": "c",
+          "text": "55% of the population"
+        },
+        {
+          "id": "d",
+          "text": "One quarter of the population"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "As a result of the Black Death, one third of the population of England died and a similar proportion in Scotland and Wales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q09",
+      "exam_id": "exam17",
+      "number": 9,
+      "type": "single_choice",
+      "question": "What happened to Charles I after he was in prison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He moved to Spain"
+        },
+        {
+          "id": "b",
+          "text": "He became a priest"
+        },
+        {
+          "id": "c",
+          "text": "He escaped to France"
+        },
+        {
+          "id": "d",
+          "text": "He was executed"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Charles I’s army was defeated at the Battles of Marston Moor and Naseby. Charles was held prisoner by the parliamentary army. As he was unwilling to reach any agreement with the Parliament, in 1649 he was executed.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q10",
+      "exam_id": "exam17",
+      "number": 10,
+      "type": "multiple_choice",
+      "question": "What are TWO responsibilities of the monarch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To appoint the members of the cabinet"
+        },
+        {
+          "id": "b",
+          "text": "To advise, warn and encourage the Prime Minister‘s decisions on government policies"
+        },
+        {
+          "id": "c",
+          "text": "To debate important national issues"
+        },
+        {
+          "id": "d",
+          "text": "To appoint the government"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The monarch does not rule the country but appoints the government, which the people have chosen in a democratic election. The monarch also has regular meetings with the Prime Minister and can advise, warn and encourage, but the decisions on government policies are made by the Prime Minister and cabinet.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q11",
+      "exam_id": "exam17",
+      "number": 11,
+      "type": "single_choice",
+      "question": "What kind of disaster was the Black Death?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A plague"
+        },
+        {
+          "id": "b",
+          "text": "An earthquake"
+        },
+        {
+          "id": "c",
+          "text": "A famine"
+        },
+        {
+          "id": "d",
+          "text": "A civil war"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Black Death was a disease, probably a form of plague, that came to Britain in 1348.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q12",
+      "exam_id": "exam17",
+      "number": 12,
+      "type": "single_choice",
+      "question": "What country was in conflict with the UK for trading reasons during the 18th century?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andorra"
+        },
+        {
+          "id": "b",
+          "text": "Germany"
+        },
+        {
+          "id": "c",
+          "text": "France"
+        },
+        {
+          "id": "d",
+          "text": "Luxembourg"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "During the 18th century, trading and settlements overseas sometimes brought Britain into conflict with other countries, particularly France, which was expanding and trading in a similar way in many of the same areas of the world.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q13",
+      "exam_id": "exam17",
+      "number": 13,
+      "type": "true_false",
+      "question": "The Speaker is an MP, he or she represents a constituency and deals with the constituents.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q14",
+      "exam_id": "exam17",
+      "number": 14,
+      "type": "single_choice",
+      "question": "Where is Skara Brae, the best preserved prehistoric village in northern Europe, located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scotland"
+        },
+        {
+          "id": "b",
+          "text": "Wales"
+        },
+        {
+          "id": "c",
+          "text": "England"
+        },
+        {
+          "id": "d",
+          "text": "Northern Ireland"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Skara Brae on Orkney, off the north coast of Scotland, is the best preserved prehistoric village in northern Europe.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q15",
+      "exam_id": "exam17",
+      "number": 15,
+      "type": "single_choice",
+      "question": "Which of the following plays was written by William Shakespeare?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MacBeth"
+        },
+        {
+          "id": "b",
+          "text": "The Canterbury Tales"
+        },
+        {
+          "id": "c",
+          "text": "Doctor Faustus"
+        },
+        {
+          "id": "d",
+          "text": "The Mikado"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William Shakespeare’s most famous plays include MacBeth.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q16",
+      "exam_id": "exam17",
+      "number": 16,
+      "type": "single_choice",
+      "question": "Where was William the Conqueror from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Italy"
+        },
+        {
+          "id": "b",
+          "text": "Portugal"
+        },
+        {
+          "id": "c",
+          "text": "France"
+        },
+        {
+          "id": "d",
+          "text": "Ireland"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William the Conqueror was the Duke of Normandy (now northern France). He defeated Harold, the Saxon king of England, at the Battle of Hastings in 1066.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q17",
+      "exam_id": "exam17",
+      "number": 17,
+      "type": "single_choice",
+      "question": "How do you call the settlers from the Netherlands who went to war with the British in South Africa?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Blacksmiths"
+        },
+        {
+          "id": "b",
+          "text": "Boers"
+        },
+        {
+          "id": "c",
+          "text": "Conquistadors"
+        },
+        {
+          "id": "d",
+          "text": "Beefeaters"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The British went to war in South Africa with settlers from the Netherlands called the Boers. The Boers fought fiercely and the war went on for over three years.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q18",
+      "exam_id": "exam17",
+      "number": 18,
+      "type": "true_false",
+      "question": "In Northern Ireland, up to three specially trained magistrates or a District Judge are required for Youth Court cases.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q19",
+      "exam_id": "exam17",
+      "number": 19,
+      "type": "single_choice",
+      "question": "What made Roger Bannister famous?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He was the first man in the world to run a mile in under four minutes."
+        },
+        {
+          "id": "b",
+          "text": "He won gold medals for ice dancing at the Olympic Games in 1984."
+        },
+        {
+          "id": "c",
+          "text": "He won gold medals in rowing in five consecutive Olympic Games."
+        },
+        {
+          "id": "d",
+          "text": "He was the first British to climb Mount Everest."
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Sir Roger Bannister was the first man in the world to run a mile in under four minutes, in 1954.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q20",
+      "exam_id": "exam17",
+      "number": 20,
+      "type": "single_choice",
+      "question": "Who was invited to invade and rule England in 1688?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Duke of Medina Sidonia"
+        },
+        {
+          "id": "b",
+          "text": "Napoleon"
+        },
+        {
+          "id": "c",
+          "text": "King Philip II of Spain"
+        },
+        {
+          "id": "d",
+          "text": "William of Orange"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1688, important Protestants in England asked William of Orange to invade England and proclaim himself king.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q21",
+      "exam_id": "exam17",
+      "number": 21,
+      "type": "single_choice",
+      "question": "Who was defeated at the Battle of the Boyne?",
+      "options": [
+        {
+          "id": "a",
+          "text": "James I"
+        },
+        {
+          "id": "b",
+          "text": "James II"
+        },
+        {
+          "id": "c",
+          "text": "Richard I"
+        },
+        {
+          "id": "d",
+          "text": "Richard II"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William of Orange defeated James II at the Battle of the Boyne in Ireland in 1690.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q22",
+      "exam_id": "exam17",
+      "number": 22,
+      "type": "single_choice",
+      "question": "What did the Factories Act of 1847 introduce?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It limited the number of hours that everybody could work to 10 hours per day."
+        },
+        {
+          "id": "b",
+          "text": "It increased the number of hours that women and children could work to 12 hours per day."
+        },
+        {
+          "id": "c",
+          "text": "It increased the number of hours that men could work to 12 hours per day."
+        },
+        {
+          "id": "d",
+          "text": "It limited the number of hours that women and children could work to 10 hours per day."
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Factories Act of 1847 limited the number of hours that women and children could work to 10 hours per day.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q23",
+      "exam_id": "exam17",
+      "number": 23,
+      "type": "single_choice",
+      "question": "What name is given to the group of MPs from the opposition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roundheads"
+        },
+        {
+          "id": "b",
+          "text": "Cavaliers"
+        },
+        {
+          "id": "c",
+          "text": "Shadow Cabinet"
+        },
+        {
+          "id": "d",
+          "text": "Quakers"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Opposition MPs form the shadow cabinet and their role is to challenge the government and put forward alternative policies.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam17-q24",
+      "exam_id": "exam17",
+      "number": 24,
+      "type": "single_choice",
+      "question": "In which of the following matters can the Scottish Parliament legislate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Education"
+        },
+        {
+          "id": "b",
+          "text": "Immigration"
+        },
+        {
+          "id": "c",
+          "text": "Security"
+        },
+        {
+          "id": "d",
+          "text": "Defence"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Scottish Parliament can legislate on: civil and criminal law, health, education, planning and additional tax-raising powers.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
