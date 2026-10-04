@@ -1,0 +1,812 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 16",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 16",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam16-q01",
+      "exam_id": "exam16",
+      "number": 1,
+      "type": "single_choice",
+      "question": "When was the United Nations set up?",
+      "options": [
+        {
+          "id": "a",
+          "text": "After the First World War."
+        },
+        {
+          "id": "b",
+          "text": "After the Second World War."
+        },
+        {
+          "id": "c",
+          "text": "Before the First World War."
+        },
+        {
+          "id": "d",
+          "text": "Before the Second World War."
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The UN was set up after the Second World War and aims to prevent war and promote international peace and security.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q02",
+      "exam_id": "exam16",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Where is the Giant’s Causeway located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scotland"
+        },
+        {
+          "id": "b",
+          "text": "England"
+        },
+        {
+          "id": "c",
+          "text": "Wales"
+        },
+        {
+          "id": "d",
+          "text": "Northern Ireland"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Giant’s Causeway is a land formation of columns made from volcanic lava located on the north-east coast of Northern Ireland. It was formed about 50 million years ago. There are many legends about the Causeway and how it was formed.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q03",
+      "exam_id": "exam16",
+      "number": 3,
+      "type": "single_choice",
+      "question": "What happened to Mary, Queen of Scots, after being sent to prison for 20 years by her cousin Queen Elizabeth I?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She got married."
+        },
+        {
+          "id": "b",
+          "text": "She was sent to France."
+        },
+        {
+          "id": "c",
+          "text": "She was executed."
+        },
+        {
+          "id": "d",
+          "text": "She was sent to Scotland."
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Mary was executed, accused of plotting against Elizabeth I.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q04",
+      "exam_id": "exam16",
+      "number": 4,
+      "type": "single_choice",
+      "question": "Which tribe came to Britain from northern Europe after the Romans left in AD 410?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Gepids"
+        },
+        {
+          "id": "b",
+          "text": "The Jutes"
+        },
+        {
+          "id": "c",
+          "text": "The Frisians"
+        },
+        {
+          "id": "d",
+          "text": "The Burgundians"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Britain was invaded by tribes from northern Europe: the Jutes, the Angles and the Saxons.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q05",
+      "exam_id": "exam16",
+      "number": 5,
+      "type": "single_choice",
+      "question": "What is one of the highest-grossing film franchises produced in the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "James Bond"
+        },
+        {
+          "id": "b",
+          "text": "Star Wars"
+        },
+        {
+          "id": "c",
+          "text": "The Lord of the Rings"
+        },
+        {
+          "id": "d",
+          "text": "Superman"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Some of the most commercially successful films of all time, including the two highest-grossing film franchises (Harry Potter and James Bond), have been produced in the UK.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q06",
+      "exam_id": "exam16",
+      "number": 6,
+      "type": "multiple_choice",
+      "question": "Who can hear cases in Youth Courts in England, Wales and Northern Ireland (two answers)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Specially trained magistrates."
+        },
+        {
+          "id": "b",
+          "text": "Social workers."
+        },
+        {
+          "id": "c",
+          "text": "District judges."
+        },
+        {
+          "id": "d",
+          "text": "Members of the public."
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "In England, Wales and Northern Ireland, if an accused person is aged 10 to 17, the case is normally heard in a Youth Court in front of up to three specially trained magistrates or a District Judge. The most serious cases will go the Crown Court. The parents or carers of the young person are expected to attend the hearing. Members of the public are not allowed in Youth Courts, and the name or photographs of the accused young person cannot be published in newspapers or used by the media.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q07",
+      "exam_id": "exam16",
+      "number": 7,
+      "type": "single_choice",
+      "question": "Who came from the Netherlands to become the British monarch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "William II"
+        },
+        {
+          "id": "b",
+          "text": "Charles II"
+        },
+        {
+          "id": "c",
+          "text": "Edward II"
+        },
+        {
+          "id": "d",
+          "text": "George II"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In May 1660, Parliament invited Charles II to come back from exile in the Netherlands. He was crowned King Charles II of England, Wales, Scotland and Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q08",
+      "exam_id": "exam16",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Who can apply for the National Citizen Service programme?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14- and 15-year-olds"
+        },
+        {
+          "id": "b",
+          "text": "15- and 16-year-olds"
+        },
+        {
+          "id": "c",
+          "text": "16- and 17-year-olds"
+        },
+        {
+          "id": "d",
+          "text": "17- and 18-year-olds"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The National Citizen Service programme gives 16- and 17-year-olds the opportunity to enjoy outdoor activities, develop their skills and take part in a community project.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q09",
+      "exam_id": "exam16",
+      "number": 9,
+      "type": "single_choice",
+      "question": "Nick Park has won four Oscars for his animated films, including three for films featuring:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chariots of Fire"
+        },
+        {
+          "id": "b",
+          "text": "Wallace and Gromit"
+        },
+        {
+          "id": "c",
+          "text": "Four Weddings and a Funeral"
+        },
+        {
+          "id": "d",
+          "text": "Women in Love"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Nick Park, who has won four Oscars for his animated films, including three for films featuring Wallace and Gromit.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q10",
+      "exam_id": "exam16",
+      "number": 10,
+      "type": "single_choice",
+      "question": "Who was the British scientist who co-discovered the structure of the DNA molecule in the 1950s?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sir Ian Wilmot"
+        },
+        {
+          "id": "b",
+          "text": "Keith Campbell"
+        },
+        {
+          "id": "c",
+          "text": "James Watt"
+        },
+        {
+          "id": "d",
+          "text": "Francis Crick"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The structure of the DNA molecule was discovered in 1953 through work at British universities in London and Cambridge. This discovery contributed to many scientific advances, particularly in medicine and fighting crime. Francis Crick (1916-2004), was one of those awarded the Nobel Prize for this discovery.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q11",
+      "exam_id": "exam16",
+      "number": 11,
+      "type": "single_choice",
+      "question": "What percentage of the UK population has a parent or grandparent born outside of the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Around 5%"
+        },
+        {
+          "id": "b",
+          "text": "Around 10%"
+        },
+        {
+          "id": "c",
+          "text": "Around 15%"
+        },
+        {
+          "id": "d",
+          "text": "Around 20%"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Nearly 10% of the population has a parent or grandparent born outside the UK.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q12",
+      "exam_id": "exam16",
+      "number": 12,
+      "type": "single_choice",
+      "question": "How old do you have to be to drive a moped in the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15 years old"
+        },
+        {
+          "id": "b",
+          "text": "16 years old"
+        },
+        {
+          "id": "c",
+          "text": "17 years old"
+        },
+        {
+          "id": "d",
+          "text": "18 years old"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In the UK, you need to be at least 16 years old to ride a moped, and there are other age requirements and special tests for driving large vehicles.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q13",
+      "exam_id": "exam16",
+      "number": 13,
+      "type": "single_choice",
+      "question": "Who was the leader of the Labour Party who introduced a Scottish Parliament and a Welsh Assembly?",
+      "options": [
+        {
+          "id": "a",
+          "text": "James Callaghan"
+        },
+        {
+          "id": "b",
+          "text": "Clement Attlee"
+        },
+        {
+          "id": "c",
+          "text": "Gordon Brown"
+        },
+        {
+          "id": "d",
+          "text": "Tony Blair"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1997 the Labour Party led by Tony Blair was elected. The Blair government introduced a Scottish Parliament and a Welsh Assembly.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q14",
+      "exam_id": "exam16",
+      "number": 14,
+      "type": "single_choice",
+      "question": "What is the maximum amount you can claim through the small claims procedure in Scotland and Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "£3,000"
+        },
+        {
+          "id": "b",
+          "text": "£5,000"
+        },
+        {
+          "id": "c",
+          "text": "£8,000"
+        },
+        {
+          "id": "d",
+          "text": "£10,000"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The small claims procedure is an informal way of helping people to settle minor disputes without spending a lot of time and money using a lawyer. This procedure is used for claims of less than £10,000 in England and Wales, £5,000 in Scotland and Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q15",
+      "exam_id": "exam16",
+      "number": 15,
+      "type": "single_choice",
+      "question": "Which historical monument did William the Conqueror build?",
+      "options": [
+        {
+          "id": "a",
+          "text": "St Paul’s Cathedral"
+        },
+        {
+          "id": "b",
+          "text": "The Cenotaph"
+        },
+        {
+          "id": "c",
+          "text": "Dumfries House"
+        },
+        {
+          "id": "d",
+          "text": "The White Tower"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The White Tower in the Tower of London is an example of a Norman castle keep, built on the orders of William the Conqueror.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q16",
+      "exam_id": "exam16",
+      "number": 16,
+      "type": "single_choice",
+      "question": "Who became Prime Minister after Margaret Thatcher and played an important part in the Northern Ireland peace process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "James Callaghan"
+        },
+        {
+          "id": "b",
+          "text": "John Major"
+        },
+        {
+          "id": "c",
+          "text": "Tony Blair"
+        },
+        {
+          "id": "d",
+          "text": "Harold Wilson"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "John Major became Prime Minister after Margaret Thatcher and played an important part in the Northern Ireland peace process.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q17",
+      "exam_id": "exam16",
+      "number": 17,
+      "type": "single_choice",
+      "question": "Who should you contact to report a terrorist activity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Your local Council."
+        },
+        {
+          "id": "b",
+          "text": "Your local MP."
+        },
+        {
+          "id": "c",
+          "text": "Your local police force."
+        },
+        {
+          "id": "d",
+          "text": "The Prime Minister."
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "If you think someone is trying to persuade you to join an extremist or terrorist cause, you should notify your local police force.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q18",
+      "exam_id": "exam16",
+      "number": 18,
+      "type": "single_choice",
+      "question": "Which Paralympic athlete has won gold medals for swimming at the 2008, 2012 and 2016 Paralympic Games?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sophie Christiansen"
+        },
+        {
+          "id": "b",
+          "text": "Ellie Simmonds"
+        },
+        {
+          "id": "c",
+          "text": "Baroness Tanni Grey-Thompson"
+        },
+        {
+          "id": "d",
+          "text": "David Weir"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Ellie Simmonds is a Paralympian who won gold medals for swimming at the 2008, 2012 and 2016 Paralympic Games and holds a number of world records. She was the youngest member of the British team at the 2008 Games.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q19",
+      "exam_id": "exam16",
+      "number": 19,
+      "type": "single_choice",
+      "question": "Each of the UK countries is associated with a flower symbol, which country is associated with the rose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wales"
+        },
+        {
+          "id": "b",
+          "text": "Northern Ireland"
+        },
+        {
+          "id": "c",
+          "text": "Scotland"
+        },
+        {
+          "id": "d",
+          "text": "England"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The countries that make up the UK all have flowers which are particularly associated with them and which are sometimes worn on national saints’ days. The flowers associated to each country are as follows: England – the rose, Scotland – the thistle, Wales – the daffodil and Northern Ireland – the shamrock.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q20",
+      "exam_id": "exam16",
+      "number": 20,
+      "type": "single_choice",
+      "question": "Isambard Kingdom Brunel was responsible for:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The construction of the Great Western Railway."
+        },
+        {
+          "id": "b",
+          "text": "The invention of the television."
+        },
+        {
+          "id": "c",
+          "text": "The construction of the Tower of London."
+        },
+        {
+          "id": "d",
+          "text": "The discovery of insulin."
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Brunel was originally from Portsmouth, England. He was an engineer who built tunnels, bridges, railway lines and ships. He was responsible for constructing the Great Western Railway, which was the first major railway built in Britain. It runs from Paddington Station in London to the south west of England, the West Midlands and Wales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q21",
+      "exam_id": "exam16",
+      "number": 21,
+      "type": "single_choice",
+      "question": "What is the Commonwealth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An organization responsible for the protection and promotion of human rights in its member countries."
+        },
+        {
+          "id": "b",
+          "text": "A group of European and North American countries that have agreed to help each other if they come under attack."
+        },
+        {
+          "id": "c",
+          "text": "An association of countries that support each other and work together towards shared goals in democracy and development."
+        },
+        {
+          "id": "d",
+          "text": "An international organization that aims to prevent war and promote international peace and security."
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Commonwealth is an association of countries that support each other and work together towards shared goals in democracy and development. Most member states were once part of the British Empire, although a few countries which were not have also joined.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q22",
+      "exam_id": "exam16",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Under which name was the movement of opinion against the authority of the Pope during the times of Henry VIII known?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Spanish Inquisition"
+        },
+        {
+          "id": "b",
+          "text": "The Holy Wars"
+        },
+        {
+          "id": "c",
+          "text": "The Reformation"
+        },
+        {
+          "id": "d",
+          "text": "The Enlightenment"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is the Reformation.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q23",
+      "exam_id": "exam16",
+      "number": 23,
+      "type": "single_choice",
+      "question": "What did Isaac Newton discover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gravity"
+        },
+        {
+          "id": "b",
+          "text": "Penicillin"
+        },
+        {
+          "id": "c",
+          "text": "Insulin"
+        },
+        {
+          "id": "d",
+          "text": "Lightbulb"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Newton’s most famous published work was Philosophiae Naturalis Principia Mathematica (‘Mathematical Principle of Natural Philosophy’), which showed how gravity applied to the whole universe. Newton also discovered that white light is made up of the colours of the rainbow.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam16-q24",
+      "exam_id": "exam16",
+      "number": 24,
+      "type": "single_choice",
+      "question": "What kind of movies did Academy Award winner Nick Park specialise in?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Action movies"
+        },
+        {
+          "id": "b",
+          "text": "Animated movies"
+        },
+        {
+          "id": "c",
+          "text": "Thrillers"
+        },
+        {
+          "id": "d",
+          "text": "Horror movies"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Britain continues to be particularly strong in special effects and animation. One example is the work of Nick Park, who has won four Oscars for his animated films, including three for films featuring Wallace and Gromit.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
