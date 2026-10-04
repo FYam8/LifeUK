@@ -1,0 +1,795 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 14",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 14",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam14-q01",
+      "exam_id": "exam14",
+      "number": 1,
+      "type": "single_choice",
+      "question": "When is St Patrick’s day celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "23rd April"
+        },
+        {
+          "id": "b",
+          "text": "30th November"
+        },
+        {
+          "id": "c",
+          "text": "1st April"
+        },
+        {
+          "id": "d",
+          "text": "17th March"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "St Patrick’s day, patron of Northern Ireland is celebrated on the 17th of March.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q02",
+      "exam_id": "exam14",
+      "number": 2,
+      "type": "single_choice",
+      "question": "How are the members of the Northern Ireland Parliament elected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By a system of proportional representation"
+        },
+        {
+          "id": "b",
+          "text": "Using a system of ranked voting"
+        },
+        {
+          "id": "c",
+          "text": "Using the first past the post system"
+        },
+        {
+          "id": "d",
+          "text": "Using a runoff system"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Northern Ireland Assembly has 90 elected members, known as MLAs (members of the Legislative Assembly). They are elected with a form of proportional representation.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q03",
+      "exam_id": "exam14",
+      "number": 3,
+      "type": "single_choice",
+      "question": "Who was the first British Prime Minister?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Winston Churchill"
+        },
+        {
+          "id": "b",
+          "text": "Earl of Wilmington"
+        },
+        {
+          "id": "c",
+          "text": "Henry Pelham"
+        },
+        {
+          "id": "d",
+          "text": "Sir Robert Walpole"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The most important minister in Parliament became known as the Prime Minister. The first man to be called this was Sir Robert Walpole, who was Prime Minister from 1721 to 1742.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q04",
+      "exam_id": "exam14",
+      "number": 4,
+      "type": "single_choice",
+      "question": "Which of the following actresses has not won an Oscar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tilda Swinton"
+        },
+        {
+          "id": "b",
+          "text": "Emily Watson"
+        },
+        {
+          "id": "c",
+          "text": "Dame Judi Dench"
+        },
+        {
+          "id": "d",
+          "text": "Kate Winslet"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "British actors to have won Oscars include Colin Firth, Sir Antony Hopkins, Dame Judi Dench, Kate Winslet and Tilda Swinton. Emily Watson has not won an Oscar yet.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q05",
+      "exam_id": "exam14",
+      "number": 5,
+      "type": "single_choice",
+      "question": "During the Enlightenment, Adam Smith developed ideas about:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Physics"
+        },
+        {
+          "id": "b",
+          "text": "Economics"
+        },
+        {
+          "id": "c",
+          "text": "Science"
+        },
+        {
+          "id": "d",
+          "text": "Engineering"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "During ’the Enlightenment’ Adam Smith developed ideas about economics which are still referred to today.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q06",
+      "exam_id": "exam14",
+      "number": 6,
+      "type": "single_choice",
+      "question": "Who died at the Battle of Trafalgar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Admiral Nelson"
+        },
+        {
+          "id": "b",
+          "text": "Henry VIII"
+        },
+        {
+          "id": "c",
+          "text": "Oliver Cromwell"
+        },
+        {
+          "id": "d",
+          "text": "Napoleon"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Admiral Nelson was in charge of the British fleet at Trafalgar and was killed in the battle.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q07",
+      "exam_id": "exam14",
+      "number": 7,
+      "type": "single_choice",
+      "question": "When is Hogmanay celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25th of December"
+        },
+        {
+          "id": "b",
+          "text": "2nd of January"
+        },
+        {
+          "id": "c",
+          "text": "1st of January"
+        },
+        {
+          "id": "d",
+          "text": "31st of December"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Scotland, the 31st of December is called Hogmanay.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q08",
+      "exam_id": "exam14",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Proceedings in Parliament are broadcast on television and published in official reports known as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Canvassing"
+        },
+        {
+          "id": "b",
+          "text": "Hansard"
+        },
+        {
+          "id": "c",
+          "text": "Cabinets"
+        },
+        {
+          "id": "d",
+          "text": "Domesday Book"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Proceedings in Parliament are broadcast on television and published in official reports called Hansard.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q09",
+      "exam_id": "exam14",
+      "number": 9,
+      "type": "single_choice",
+      "question": "Which of the following is a rugby competition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Scottish Grand National"
+        },
+        {
+          "id": "b",
+          "text": "The Wimbledon Championships"
+        },
+        {
+          "id": "c",
+          "text": "The Ashes"
+        },
+        {
+          "id": "d",
+          "text": "The Six Nations Championship"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The most famous rugby union competition is the Six Nations Championship between England, Ireland, Scotland, Wales, France and Italy.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q10",
+      "exam_id": "exam14",
+      "number": 10,
+      "type": "single_choice",
+      "question": "Who appoints life peers in the House of Lords?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Speaker"
+        },
+        {
+          "id": "b",
+          "text": "The Archbishop of Canterbury"
+        },
+        {
+          "id": "c",
+          "text": "The Prime Minister"
+        },
+        {
+          "id": "d",
+          "text": "The monarch"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Life peers are appointed by the monarch on the advice of the Prime Minister.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q11",
+      "exam_id": "exam14",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Who mapped the coast of Australia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "James Cook"
+        },
+        {
+          "id": "b",
+          "text": "Admiral Nelson"
+        },
+        {
+          "id": "c",
+          "text": "Isaac Newton"
+        },
+        {
+          "id": "d",
+          "text": "Sake Dean Mahomet"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Captain James Cook mapped the coast of Australia and a few colonies were established there.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q12",
+      "exam_id": "exam14",
+      "number": 12,
+      "type": "single_choice",
+      "question": "What was the first war to be extensively covered by the media?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Boer War"
+        },
+        {
+          "id": "b",
+          "text": "The First World War"
+        },
+        {
+          "id": "c",
+          "text": "The Second World War"
+        },
+        {
+          "id": "d",
+          "text": "The Crimean War"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Crimean War was the first war to be extensively covered by the media through news stories and photographs.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q13",
+      "exam_id": "exam14",
+      "number": 13,
+      "type": "single_choice",
+      "question": "Which of the following monuments is located in Wiltshire?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hadrian’s Wall"
+        },
+        {
+          "id": "b",
+          "text": "St Paul’s Cathedral"
+        },
+        {
+          "id": "c",
+          "text": "Nelson’s Column"
+        },
+        {
+          "id": "d",
+          "text": "Stonehenge"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Stonehenge stands in what is now the English county of Wiltshire.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q14",
+      "exam_id": "exam14",
+      "number": 14,
+      "type": "single_choice",
+      "question": "Who was the first Archbishop of Canterbury?",
+      "options": [
+        {
+          "id": "a",
+          "text": "St Patrick"
+        },
+        {
+          "id": "b",
+          "text": "St Augustine"
+        },
+        {
+          "id": "c",
+          "text": "St Andrew"
+        },
+        {
+          "id": "d",
+          "text": "St Columba"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "St Augustine led missionaries from Rome, who spread Christianity in the south. St Augustine became the first Archbishop of Canterbury.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q15",
+      "exam_id": "exam14",
+      "number": 15,
+      "type": "single_choice",
+      "question": "How old do you have to be to go into betting shops or gambling clubs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "20"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "21"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "You have to be 18 to go into betting shops or gambling clubs.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q16",
+      "exam_id": "exam14",
+      "number": 16,
+      "type": "true_false",
+      "question": "The system of government in the UK is a parliamentary democracy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q17",
+      "exam_id": "exam14",
+      "number": 17,
+      "type": "single_choice",
+      "question": "What is the traditional food of Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Haggis"
+        },
+        {
+          "id": "b",
+          "text": "Pancakes"
+        },
+        {
+          "id": "c",
+          "text": "Paella"
+        },
+        {
+          "id": "d",
+          "text": "Ulster Fry"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Ulster fry is the correct answer.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q18",
+      "exam_id": "exam14",
+      "number": 18,
+      "type": "single_choice",
+      "question": "Who was elected as British Prime Minister in 1945?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clement Attlee"
+        },
+        {
+          "id": "b",
+          "text": "Winston Churchill"
+        },
+        {
+          "id": "c",
+          "text": "Harold Wilson"
+        },
+        {
+          "id": "d",
+          "text": "Harold Macmillan"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1945 the British people elected a Labour government. The new Prime Minister was Clement Attlee.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q19",
+      "exam_id": "exam14",
+      "number": 19,
+      "type": "single_choice",
+      "question": "How many times has the UK hosted the Olympic games?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "text": "3"
+        },
+        {
+          "id": "c",
+          "text": "4"
+        },
+        {
+          "id": "d",
+          "text": "8"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The UK has hosted the Olympic games on three occasions: 1908, 1948 and 2012.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q20",
+      "exam_id": "exam14",
+      "number": 20,
+      "type": "single_choice",
+      "question": "Why were canals built during the Industrial Revolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To link the factories to towns and cities and to the ports"
+        },
+        {
+          "id": "b",
+          "text": "To make space for the large fleet of British ships"
+        },
+        {
+          "id": "c",
+          "text": "To increase the number of water mills in the UK"
+        },
+        {
+          "id": "d",
+          "text": "To increase the amount of water in towns and cities"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Canals were built to link the factories to towns and cities and to the ports, particularly in the new industrial areas in the middle and north of England.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q21",
+      "exam_id": "exam14",
+      "number": 21,
+      "type": "single_choice",
+      "question": "Are civil servants appointed by the government?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Civil servants are accountable to ministers. They are chosen on merit and are politically neutral – they are not political appointees.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q22",
+      "exam_id": "exam14",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Which of the following countries helped Britain to develop the Concorde?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Germany"
+        },
+        {
+          "id": "b",
+          "text": "Norway"
+        },
+        {
+          "id": "c",
+          "text": "Italy"
+        },
+        {
+          "id": "d",
+          "text": "France"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Britain and France developed the world’s only supersonic commercial airliner, Concorde.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q23",
+      "exam_id": "exam14",
+      "number": 23,
+      "type": "single_choice",
+      "question": "Which invention led to the development of Britain during the Industrial Revolution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Magnetic Resonance Imaging"
+        },
+        {
+          "id": "b",
+          "text": "Steam power"
+        },
+        {
+          "id": "c",
+          "text": "Radar"
+        },
+        {
+          "id": "d",
+          "text": "Hovercraft"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Industrial Revolution was the rapid development of industry in Britain in the 18th and 19th centuries. Britain was the first country to industrialise on a large scale. It happened because of the development of machinery and the use of steam power.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam14-q24",
+      "exam_id": "exam14",
+      "number": 24,
+      "type": "single_choice",
+      "question": "Who was the tribal leader who fought against the Romans?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Columba"
+        },
+        {
+          "id": "b",
+          "text": "Claudius"
+        },
+        {
+          "id": "c",
+          "text": "Hadrian"
+        },
+        {
+          "id": "d",
+          "text": "Boudicca"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "One of the tribal leaders who fought against the Romans was Boudicca.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
