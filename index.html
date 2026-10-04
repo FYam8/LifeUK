@@ -20,11 +20,11 @@
 <main id="homeView">
 <section id="sessionResult" class="notice hidden" role="status"></section>
 <div class="hero">
-<section class="card"><h1>Today</h1><p class="muted">Continue where you left off, or start an exam. Each question appears once; mistakes are saved for a separate review.</p><div class="row"><button id="resumeBtn" class="btn" disabled>Resume</button><button id="reviewBtn" class="btn secondary">Review due / weak</button><button id="mistakesBtn" class="btn secondary" disabled>Mistakes only (0)</button></div><div id="resumeHint" class="tiny muted" style="margin-top:9px">No active session yet.</div></section>
+<section class="card"><h1>Today</h1><p class="muted">Continue where you left off, or start an exam. A missed question may appear once more later in the same exam, and the original mistake still counts.</p><div class="row"><button id="resumeBtn" class="btn" disabled>Resume</button><button id="reviewBtn" class="btn secondary">Review due / weak</button><button id="mistakesBtn" class="btn secondary" disabled>Mistakes only (0)</button></div><div id="resumeHint" class="tiny muted" style="margin-top:9px">No active session yet.</div></section>
 <section class="card"><h2>Progress</h2><div class="grid"><div class="metric"><b id="mAnswered">0</b><span>answered</span></div><div class="metric"><b id="mAccuracy">—</b><span>lifetime accuracy</span></div><div class="metric"><b id="mMastered">0</b><span>mastered</span></div></div></section>
 </div>
-<section class="card"><h2>Exams</h2><p id="examSummary" class="muted">Loading exam data…</p><p class="tiny muted">Equivalent questions are grouped within each exam. Original source questions and existing progress are retained.</p><p class="tiny muted">Latest accuracy uses each question’s most recent answer. Unanswered questions are excluded. Mistakes only selects questions whose latest answer was wrong; a correct retry removes them. Exact repeats are grouped in mixed sessions.</p><div id="examGrid" class="grid"></div></section>
-<section class="card section"><h2>Learning model</h2><p class="muted">Correct answers build a streak. Mistakes are saved for Review, never inserted again into the same session. Four consecutive correct answers across sessions mark a question mastered.</p><div class="row"><button id="exportBtn" class="btn ghost">Export progress</button><label class="btn ghost" style="cursor:pointer">Import progress<input id="importInput" type="file" accept="application/json" hidden></label><button id="resetBtn" class="btn ghost danger">Reset</button></div></section>
+<section class="card"><h2>Exams</h2><p id="examSummary" class="muted">Loading exam data…</p><p class="tiny muted">Equivalent questions are grouped within each exam. Original source questions and existing progress are retained.</p><p class="tiny muted">Latest accuracy uses the most recently completed exam when available, including retry attempts. A wrong attempt remains counted even if the retry is correct. Mistakes only selects questions whose latest answer is still wrong.</p><div id="examGrid" class="grid"></div></section>
+<section class="card section"><h2>Learning model</h2><p class="muted">Correct answers build a streak. A missed exam question may be retried once later in the same exam; every attempt counts toward that exam’s score. Four consecutive correct answers across sessions mark a question mastered.</p><div class="row"><button id="exportBtn" class="btn ghost">Export progress</button><label class="btn ghost" style="cursor:pointer">Import progress<input id="importInput" type="file" accept="application/json" hidden></label><button id="resetBtn" class="btn ghost danger">Reset</button></div></section>
 </main>
 <main id="studyView" class="hidden">
 <section class="card">
@@ -38,8 +38,8 @@
 </section>
 </main>
 </div>
-<p id="buildLabel" class="tiny muted" style="text-align:center">LifeUK 20261004-retry-count-1</p>
-<script src="session-core.js?v=20261004-retry-count-1"></script>
-<script src="app.js?v=20261004-retry-count-1"></script>
+<p id="buildLabel" class="tiny muted" style="text-align:center">LifeUK 20261004-retry-count-2</p>
+<script src="session-core.js?v=20261004-retry-count-2"></script>
+<script src="app.js?v=20261004-retry-count-2"></script>
 </body>
 </html>
