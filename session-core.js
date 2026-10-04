@@ -27,7 +27,7 @@
   function scheduleRetry(s,qid){if(!s||s.mode!=='exam')return false;s.retryCounts=s.retryCounts||{};if((s.retryCounts[qid]||0)>=1)return false;const remaining=s.queue.slice(s.index+1);if(remaining.includes(qid))return false;const pos=Math.min(s.queue.length,s.index+4);s.queue.splice(pos,0,qid);s.retryCounts[qid]=(s.retryCounts[qid]||0)+1;return true;}
   function isCorrect(q,selected){return selected.length===q.correct_option_ids.length&&new Set(selected).size===selected.length&&selected.every(id=>q.correct_option_ids.includes(id));}
   function restoreSession(raw,bank,progress={},time=Date.now()){
-    if(!raw||!['exam','review','mistakes'].includes(raw.mode)||!Array.isArray(raw.queue)||!Number.isInteger(raw.index)||raw.index<0||raw.index>raw.queue.length)return null;
+    if(!raw||!['exam','review','mistakes','random'].includes(raw.mode)||!Array.isArray(raw.queue)||!Number.isInteger(raw.index)||raw.index<0||raw.index>raw.queue.length)return null;
     const legacy=!(raw.version>=2),retryAware=raw.version>=5,completed=new Set(raw.queue.slice(0,raw.index).filter(id=>bank.has(id)).map(id=>questionKey(bank.get(id))));
     let skippedLegacyCurrent=false;const oldCurrent=raw.queue[raw.index],p=progress[oldCurrent];
     if(legacy&&bank.has(oldCurrent)&&Number.isFinite(raw.startedAt)&&p?.seen>0&&p.lastSeen>=raw.startedAt&&p.lastSeen<=time){completed.add(questionKey(bank.get(oldCurrent)));skippedLegacyCurrent=true;}
