@@ -48,11 +48,11 @@
       const source=exam.questions,qs=Core.uniqueQuestions(source),summary=Core.latestSummary(source,state.questions),wrongQs=Core.mistakes(source,state.questions),examId=source[0].exam_id;
       const card=element('article','exam-card');card.dataset.examId=examId;
       const last=state.lastExams[examId],latestPercent=last?last.percent:summary.percent;
-      const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',`Latest accuracy: ${latestPercent===null?'—':latestPercent+'%'}`);
-      const detail=element('p','tiny muted',last?`${last.correct} / ${last.answered||last.total} attempts correct · ${last.wrong||0} wrong`:`${summary.correct} / ${summary.answered} latest answers correct · ${summary.answered} / ${summary.total} answered`);
-      const meta=element('p','tiny muted',`${summary.total} questions · ${qs.filter(q=>qState(q.id).mastered).length} mastered${source.length>qs.length?` · ${source.length-qs.length} equivalent question grouped`:''}`);
-      const lastLine=element('p','tiny muted last-exam',last?'Latest completed exam includes retry attempts; mistakes are never erased by a later retry.':'Last completed exam: not recorded');
-      card.append(title,metric,detail,meta,lastLine);
+      const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',latestPercent===null?'—':latestPercent+'%');
+      const status=last?`${last.correct}/${last.total} correct · ${last.wrong||0} wrong`:`${summary.answered}/${summary.total} answered · ${summary.wrong} wrong`;
+      const detail=element('p','exam-status',status);
+      const meta=element('p','tiny muted',`${qs.filter(q=>qState(q.id).mastered).length} mastered`);
+      card.append(title,metric,detail,meta);
       const actions=element('div','exam-actions'),start=element('button','btn exam-btn','Start exam'),mistakes=element('button','btn secondary mistakes-exam-btn',`Mistakes only (${wrongQs.length})`);
       start.type=mistakes.type='button';start.onclick=()=>startExam(exam);mistakes.disabled=!wrongQs.length;mistakes.onclick=()=>startMistakes(exam);actions.append(start,mistakes);card.append(actions);grid.append(card);
     }
@@ -100,7 +100,7 @@
   function nextQuestion(){if(!checked||syncOtherTab()||!Core.advance(session))return;checked=false;if(session.index>=session.queue.length)finishSession();else{save();loadCurrent();}}
   function finishSession(){
     const result=session?{label:session.label,...Core.sessionScore(session)}:null;session=null;current=null;checked=false;save();showHome();
-    if(result){const panel=$('sessionResult');panel.classList.remove('hidden');panel.textContent=`${result.label} complete · ${result.correct}/${result.answered} attempts correct (${result.percent??0}%) · ${result.wrong||0} incorrect. ${result.answered<result.total?'Earlier answers in this upgraded session were not recorded. ':''}Use Mistakes only to retry remaining errors.`;}
+    if(result){const panel=$('sessionResult');panel.classList.remove('hidden');panel.textContent=`${result.label} complete · ${result.correct}/${result.total} correct (${result.percent??0}%) · ${result.wrong||0} wrong. A question missed once stays wrong for this exam even if its retry is correct. Use Mistakes only to review remaining weak items.`;}
   }
   function exportProgress(){const exported=copy(state);delete exported.activeSession;delete exported.sessionStoreVersion;delete exported.revision;const blob=new Blob([JSON.stringify({app:'LifeUK',schemaVersion:SCHEMA_VERSION,state:exported},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='lifeuk-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
   async function importProgress(ev){const file=ev.target.files?.[0];ev.target.value='';if(!file)return;try{const x=JSON.parse(await file.text());if(x.app!=='LifeUK'||x.schemaVersion!==SCHEMA_VERSION||!validState(x.state))throw new Error();if(!confirm('Replace progress on this device with the imported LifeUK progress?'))return;state={...blankState(),...x.state,lastExams:object(x.state.lastExams)?x.state.lastExams:{}};session=null;current=null;checked=false;save();showHome();notify('Progress imported. No active session was imported.');}catch{notify('This progress file is not compatible. Your existing progress has not been replaced.');}}
