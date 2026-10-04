@@ -1,0 +1,788 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 7",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 7",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam07-q01",
+      "exam_id": "exam07",
+      "number": 1,
+      "type": "multiple_choice",
+      "question": "As a British citizen, you should:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Respect and obey the law"
+        },
+        {
+          "id": "b",
+          "text": "Vote in all elections"
+        },
+        {
+          "id": "c",
+          "text": "Take part in religious activities"
+        },
+        {
+          "id": "d",
+          "text": "Look after the area in which you live and the environment"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "As a British citizen you should respect and obey the law and look after the area in which you live and the environment are the correct answers.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q02",
+      "exam_id": "exam07",
+      "number": 2,
+      "type": "single_choice",
+      "question": "When is Halloween celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5th of November"
+        },
+        {
+          "id": "b",
+          "text": "11th of November"
+        },
+        {
+          "id": "c",
+          "text": "31st of October"
+        },
+        {
+          "id": "d",
+          "text": "1st of April"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Halloween is celebrated on the 31st of October.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q03",
+      "exam_id": "exam07",
+      "number": 3,
+      "type": "true_false",
+      "question": "The Bill of Rights in 1689 gave women the right to vote.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. The Bill of Rights, 1689, confirmed the rights of Parliament and the limits of the king’s power.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q04",
+      "exam_id": "exam07",
+      "number": 4,
+      "type": "single_choice",
+      "question": "What is the name of the most famous cricket competition played between England and Australia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Ashes"
+        },
+        {
+          "id": "b",
+          "text": "The Six Nations Championship"
+        },
+        {
+          "id": "c",
+          "text": "The Grand National"
+        },
+        {
+          "id": "d",
+          "text": "The Australian Open"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The most famous cricket competition is the Ashes, which is a series of Test matches played between England and Australia.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q05",
+      "exam_id": "exam07",
+      "number": 5,
+      "type": "single_choice",
+      "question": "What was the biggest source of employment during the 18th century?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fishing"
+        },
+        {
+          "id": "b",
+          "text": "Teaching"
+        },
+        {
+          "id": "c",
+          "text": "Aircraft industry"
+        },
+        {
+          "id": "d",
+          "text": "Manufacturing"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "During the 18th century, manufacturing jobs became the main source of employment in Britain.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q06",
+      "exam_id": "exam07",
+      "number": 6,
+      "type": "true_false",
+      "question": "In 1314 the Scottish, led by Robert the Bruce, defeated the English at the battle of Bannockburn, and Scotland remained unconquered by the English.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q07",
+      "exam_id": "exam07",
+      "number": 7,
+      "type": "single_choice",
+      "question": "Which of the following is an example of criminal offence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Smoking in public places where it is not allowed"
+        },
+        {
+          "id": "b",
+          "text": "Disputes about faulty goods or services"
+        },
+        {
+          "id": "c",
+          "text": "Disputes about an unfair dismissal in the workplace"
+        },
+        {
+          "id": "d",
+          "text": "A dispute between the landlord and the tenants who have not paid the rent"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Smoking in public places. It is against the law to smoke tobacco products in nearly every enclosed public place in the UK. There are signs displayed to tell you where you cannot smoke.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q08",
+      "exam_id": "exam07",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Which Scottish clan was killed for not taking the oath?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The MacLaine of Lochbuie"
+        },
+        {
+          "id": "b",
+          "text": "The McDowalls of Garthland"
+        },
+        {
+          "id": "c",
+          "text": "The Macpherson of Cluny"
+        },
+        {
+          "id": "d",
+          "text": "The MacDonalds of Glencoe"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is the MacDonalds of Glencoe.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q09",
+      "exam_id": "exam07",
+      "number": 9,
+      "type": "multiple_choice",
+      "question": "Which two issues can the devolved administrations pass laws on?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Defence"
+        },
+        {
+          "id": "b",
+          "text": "Social security"
+        },
+        {
+          "id": "c",
+          "text": "Health"
+        },
+        {
+          "id": "d",
+          "text": "Education"
+        }
+      ],
+      "correct_option_ids": [
+        "c",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "Policy and laws governing defence, foreign affairs, immigration, taxation and social security all remain under central UK government control. However, many other public services, such as health and education, are controlled by the devolved administrations.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Devolution powers can vary by nation and over time; wording should be verified before treating as current constitutional guidance."
+      ]
+    },
+    {
+      "id": "lituk-exam07-q10",
+      "exam_id": "exam07",
+      "number": 10,
+      "type": "single_choice",
+      "question": "The assassination of the Archduke Franz Ferdinand of Austria in 1914 led to which of the following wars?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Crimean War"
+        },
+        {
+          "id": "b",
+          "text": "The First World War"
+        },
+        {
+          "id": "c",
+          "text": "The Civil War"
+        },
+        {
+          "id": "d",
+          "text": "The Second World War"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "On 28 June 1914, Archduke Franz Ferdinand of Austria was assassinated. This set off a chain of events leading to the First World War (1914-18).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q11",
+      "exam_id": "exam07",
+      "number": 11,
+      "type": "single_choice",
+      "question": "What is the capital city of Scotland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glasgow"
+        },
+        {
+          "id": "b",
+          "text": "St Andrews"
+        },
+        {
+          "id": "c",
+          "text": "Edinburgh"
+        },
+        {
+          "id": "d",
+          "text": "Aberdeen"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The capital city of Scotland is Edinburgh.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q12",
+      "exam_id": "exam07",
+      "number": 12,
+      "type": "true_false",
+      "question": "In 1833 the Emancipation Act abolished slavery throughout the British Empire.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q13",
+      "exam_id": "exam07",
+      "number": 13,
+      "type": "single_choice",
+      "question": "What is the name of the process by which many Scottish landlords destroyed individual small farms (known as ‘crofts’) to make space for large flocks of sheep and cattle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Black Death"
+        },
+        {
+          "id": "b",
+          "text": "The Corn Removal"
+        },
+        {
+          "id": "c",
+          "text": "The Highland Clearances"
+        },
+        {
+          "id": "d",
+          "text": "The Enlightenment"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "A process began which became known as the ‘Highland Clearances’. Many Scottish landlords destroyed individual small farms (known as ‘crofts’) to make space for large flocks of sheep and cattle.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q14",
+      "exam_id": "exam07",
+      "number": 14,
+      "type": "true_false",
+      "question": "The Falkland Islands are a British overseas territory and are part of the United Kingdom.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. The Falkland Islands are a British overseas territory. They are also linked to the UK but are not part of it.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q15",
+      "exam_id": "exam07",
+      "number": 15,
+      "type": "multiple_choice",
+      "question": "Which two of the following are Civil War Battles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Battle of Waterloo"
+        },
+        {
+          "id": "b",
+          "text": "The Battle of Marston Moor"
+        },
+        {
+          "id": "c",
+          "text": "The Battle of Naseby"
+        },
+        {
+          "id": "d",
+          "text": "The Battle of Agincourt"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The Battles of Marston Moor and Naseby.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q16",
+      "exam_id": "exam07",
+      "number": 16,
+      "type": "single_choice",
+      "question": "What was the name of the activist group who fought for the women‘s right to vote?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chartists"
+        },
+        {
+          "id": "b",
+          "text": "Beefeaters"
+        },
+        {
+          "id": "c",
+          "text": "Suffragettes"
+        },
+        {
+          "id": "d",
+          "text": "Quakers"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In the late 19th and early 20th centuries, an increasing number of women campaigned and demonstrated for greater rights and, in particular, the right to vote. They formed the women’s suffrage movement and became known as the ‘suffragettes’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q17",
+      "exam_id": "exam07",
+      "number": 17,
+      "type": "single_choice",
+      "question": "What UK landmark was voted as Britain’s favourite view in 2007?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Big Ben"
+        },
+        {
+          "id": "b",
+          "text": "Lake District"
+        },
+        {
+          "id": "c",
+          "text": "Snowdonia"
+        },
+        {
+          "id": "d",
+          "text": "The London Eye"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 2007, television viewers voted Wastwater (Lake District) as Britain’s favourite view.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Option says 'Lake District' while explanation names Wastwater in the Lake District; retained as supplied."
+      ]
+    },
+    {
+      "id": "lituk-exam07-q18",
+      "exam_id": "exam07",
+      "number": 18,
+      "type": "single_choice",
+      "question": "Who were the first people to live in Britain in what we call the Stone Age?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Farmers"
+        },
+        {
+          "id": "b",
+          "text": "Peasants"
+        },
+        {
+          "id": "c",
+          "text": "Hunter-gatherers"
+        },
+        {
+          "id": "d",
+          "text": "Pirates"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The first people to live in Britain were hunter-gatherers.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q19",
+      "exam_id": "exam07",
+      "number": 19,
+      "type": "single_choice",
+      "question": "What is the name of the movement against the authority of the Pope and the ideas of the Catholic Church that took place during the reign of Henry VIII?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Reformation"
+        },
+        {
+          "id": "b",
+          "text": "The Enlightenment"
+        },
+        {
+          "id": "c",
+          "text": "The Glorious Revolution"
+        },
+        {
+          "id": "d",
+          "text": "The Renaissance"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is the Reformation.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q20",
+      "exam_id": "exam07",
+      "number": 20,
+      "type": "single_choice",
+      "question": "What do you need to do to apply for a National Insurance Number?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contact the NHS"
+        },
+        {
+          "id": "b",
+          "text": "Contact the Department for Work and Pensions (DWP)"
+        },
+        {
+          "id": "c",
+          "text": "Contact your local MP"
+        },
+        {
+          "id": "d",
+          "text": "Ask you employer to get it for you"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "If you have permission to work in the UK, you will need to telephone the Department for Work and Pensions (DWP) to arrange to get a National Insurance number.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "National Insurance number application process may have changed; retained exactly from supplied source."
+      ]
+    },
+    {
+      "id": "lituk-exam07-q21",
+      "exam_id": "exam07",
+      "number": 21,
+      "type": "single_choice",
+      "question": "Which of the following is a major horse-racing event in England?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Wimbledon Championship"
+        },
+        {
+          "id": "b",
+          "text": "Royal Ascot"
+        },
+        {
+          "id": "c",
+          "text": "The Open Championship"
+        },
+        {
+          "id": "d",
+          "text": "The Six Nations Championship"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Famous horse-racing events include: Royal Ascot , a five-day race meeting in Berkshire attended by members of the Royal Family; the Grand National at Aintree near Liverpool; and the Scottish Grand National at Ayr.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q22",
+      "exam_id": "exam07",
+      "number": 22,
+      "type": "single_choice",
+      "question": "How many members form a jury in Scotland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12"
+        },
+        {
+          "id": "b",
+          "text": "14"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Scotland a jury has 15 members.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q23",
+      "exam_id": "exam07",
+      "number": 23,
+      "type": "single_choice",
+      "question": "What is known as Lent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 40 days before Christmas"
+        },
+        {
+          "id": "b",
+          "text": "The 40 days after Easter"
+        },
+        {
+          "id": "c",
+          "text": "The 40 days before Easter"
+        },
+        {
+          "id": "d",
+          "text": "The 40 days after Christmas"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The 40 days before Easter are known as Lent.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam07-q24",
+      "exam_id": "exam07",
+      "number": 24,
+      "type": "single_choice",
+      "question": "When was the last successful foreign invasion of England?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1415"
+        },
+        {
+          "id": "b",
+          "text": "1314"
+        },
+        {
+          "id": "c",
+          "text": "1066"
+        },
+        {
+          "id": "d",
+          "text": "1200"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Norman Conquest was the last successful foreign invasion of England in 1066.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
