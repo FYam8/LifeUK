@@ -28,11 +28,11 @@
   function isCorrect(q,selected){return selected.length===q.correct_option_ids.length&&new Set(selected).size===selected.length&&selected.every(id=>q.correct_option_ids.includes(id));}
   function restoreSession(raw,bank,progress={},time=Date.now()){
     if(!raw||!['exam','review','mistakes'].includes(raw.mode)||!Array.isArray(raw.queue)||!Number.isInteger(raw.index)||raw.index<0||raw.index>raw.queue.length)return null;
-    const legacy=!(raw.version>=2),completed=new Set(raw.queue.slice(0,raw.index).filter(id=>bank.has(id)).map(id=>questionKey(bank.get(id))));
+    const legacy=!(raw.version>=2),retryAware=raw.version>=5,completed=new Set(raw.queue.slice(0,raw.index).filter(id=>bank.has(id)).map(id=>questionKey(bank.get(id))));
     let skippedLegacyCurrent=false;const oldCurrent=raw.queue[raw.index],p=progress[oldCurrent];
     if(legacy&&bank.has(oldCurrent)&&Number.isFinite(raw.startedAt)&&p?.seen>0&&p.lastSeen>=raw.startedAt&&p.lastSeen<=time){completed.add(questionKey(bank.get(oldCurrent)));skippedLegacyCurrent=true;}
-    const queue=uniqueQuestions(raw.queue.filter(id=>bank.has(id)).map(id=>bank.get(id))).map(q=>q.id);
-    let index=0;while(index<queue.length&&completed.has(questionKey(bank.get(queue[index]))))index++;
+    const queue=retryAware?raw.queue.filter(id=>bank.has(id)):uniqueQuestions(raw.queue.filter(id=>bank.has(id)).map(id=>bank.get(id))).map(q=>q.id);
+    let index=retryAware?Math.min(raw.index,queue.length):0;if(!retryAware)while(index<queue.length&&completed.has(questionKey(bank.get(queue[index]))))index++;
     if(index===queue.length)return null;
     const answers={};if(!legacy&&raw.answers&&typeof raw.answers==='object')for(const id of queue){const a=raw.answers[id],q=bank.get(id);if(a&&Array.isArray(a.selected)&&a.selected.length===q.required_selection_count&&new Set(a.selected).size===a.selected.length&&a.selected.every(x=>q.options.some(o=>o.id===x)))answers[id]={selected:[...a.selected],ok:isCorrect(q,a.selected),answeredAt:a.answeredAt};}
     const attempts=Array.isArray(raw.attempts)?raw.attempts.filter(a=>Number.isInteger(a.queueIndex)&&a.queueIndex>=0&&a.queueIndex<queue.length&&bank.has(a.questionId)&&Array.isArray(a.selected)).map(a=>({queueIndex:a.queueIndex,questionId:a.questionId,selected:[...a.selected],ok:!!a.ok,answeredAt:a.answeredAt})):[];
