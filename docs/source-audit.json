@@ -1,0 +1,107 @@
+{
+  "baseline_commit": "979ba33214d85bed36ffc52ea4446d59382c674e",
+  "by_exam": [
+    {
+      "exam": "Exam 1",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "e4cf41f33a65fc3ccbc8a4e31af88c24517706ed5c23b8bcaf9ad0be550a1bc7"
+    },
+    {
+      "exam": "Exam 2",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "fa0cf6693cdecfed8dd87359ad9872e5dc1c97699b54f3b16e17ae3b46fbd060"
+    },
+    {
+      "exam": "Exam 3",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "5e9b3618b95247365ff973be4ef11b59d108422bb99352860f8541cebef30da7"
+    },
+    {
+      "exam": "Exam 4",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "f6b80a84c4601e634ce61c310c3aca60e3aac49a53ed543d79895594844bf01e"
+    },
+    {
+      "exam": "Exam 5",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "e4484e62a2174cd91a62aebee0152dafd6c4d2fca07aed382860bcf3f6a2ef6b"
+    },
+    {
+      "exam": "Exam 6",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "bb67d95e41e5f85df132787464fb5f032ed828ace492438dcc7688c57820e3d3"
+    },
+    {
+      "exam": "Exam 7",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "de3305981acdd5dcac0b6c8ed8759d41610860bf2627da23c6d4637aa008d8f8"
+    },
+    {
+      "exam": "Exam 8",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "b151799498eb5e8f3034278f099c46a6a854bf7945aecb502bdd2cc35afc2ea7"
+    },
+    {
+      "exam": "Exam 9",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "e790f503f3b1a9b934959a9f2e89f267596bfba7f36f506c27664d193b3da2e9"
+    },
+    {
+      "exam": "Exam 10",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "e26694f03248cd0db59a5496e31c6410bd260b7ca2d0a610600a1f4b2e4c7f59"
+    },
+    {
+      "exam": "Exam 11",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "1588fe8932ff8636721a7ef49208ce64616f2997ce8bd987b3b7897365723c1e"
+    },
+    {
+      "exam": "Exam 12",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "f2670be7eca8e1efe3e09260ad5b8d424f8eb275d57552271c55a0379093868d"
+    },
+    {
+      "exam": "Exam 13",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "ce2809825d8e95b79734fdbcbfa41f9f027858ec1de042573a66e4d49ac332b0"
+    },
+    {
+      "exam": "Exam 14",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "60fe800a68b6e037a0561dc5bf50f871a9d5aefea5607bc77aa7681e731eb5bd"
+    },
+    {
+      "exam": "Exam 15",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "d901c6161ca5c2841548ca0d3523d2fc1b075ba138419ccdd2629231f4512a8c"
+    },
+    {
+      "exam": "Exam 16",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "109a5f04517eb31ca84083021471bbe6b773691936daca03ce28aff10eeb99a0"
+    },
+    {
+      "exam": "Exam 17",
+      "count": 24,
+      "exact_duplicate_groups": [],
+      "source_sha256": "2a15d63903e4b67f722dc4bfb42eebf7cb64e8b98010c03f897de5ad9b94c448"
+    }
+  ]
+}

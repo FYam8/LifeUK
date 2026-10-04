@@ -2,7 +2,7 @@ name: Deploy LifeUK to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "audit/progress-20261004"]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages-v2
+  group: lifeuk-pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -19,28 +19,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate app and exam data
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser test tools
+        run: |
+          python -m pip install playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Two clean regression passes on the actual entrypoint and all exam data
         run: |
           node --check app.js
-          python - <<'PY'
-          import json, glob
-          files=sorted(glob.glob('data/life_in_the_uk_exam*.json'))
-          assert len(files)==17, files
-          total=0
-          for path in files:
-              with open(path, encoding='utf-8') as f:
-                  data=json.load(f)
-              assert data['question_count']==24
-              assert len(data['questions'])==24
-              for q in data['questions']:
-                  assert q['required_selection_count']==len(q['correct_option_ids'])
-                  assert all(any(o['id']==cid for o in q['options']) for cid in q['correct_option_ids'])
-              total += len(data['questions'])
-          assert total==408
-          print('validated', total, 'questions')
-          PY
+          node --check session-core.js
+          node --check app-v17.js
+          for pass in 1 2; do
+            node --test tests/session.test.cjs
+            QA_ROUND=$pass python tests/browser_smoke.py
+          done
+      - name: Retain browser audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lifeuk-browser-audit
+          path: |
+            qa-output/*.png
+            qa-output/browser-round*.json
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
