@@ -23,7 +23,7 @@
 <section class="card"><h1>Today</h1><p class="muted">Continue where you left off, or start an exam. A missed question may appear once more later in the same exam, and the original mistake still counts.</p><div class="row"><button id="resumeBtn" class="btn" disabled>Resume</button><button id="reviewBtn" class="btn secondary">Review due / weak</button><button id="mistakesBtn" class="btn secondary" disabled>Mistakes only (0)</button><button id="randomBtn" class="btn secondary">Random 24</button></div><div id="resumeHint" class="tiny muted" style="margin-top:9px">No active session yet.</div></section>
 <section class="card"><h2>Progress</h2><div class="grid"><div class="metric"><b id="mAnswered">0</b><span>answered</span></div><div class="metric"><b id="mAccuracy">—</b><span>lifetime accuracy</span></div><div class="metric"><b id="mMastered">0</b><span>mastered</span></div></div></section>
 </div>
-<section class="card"><h2>Exams</h2><p id="examSummary" class="muted">Loading exam data…</p><p class="tiny muted">Latest accuracy is based on the most recently completed exam. If a question is missed once, it stays wrong for that exam even when the retry is correct. Mistakes shows questions whose latest answer is still wrong.</p><div id="examGrid" class="grid"></div></section>
+<section class="card"><h2>Exams</h2><p id="examSummary" class="muted">Loading exam data…</p><p class="tiny muted">Latest exam accuracy changes only when you complete that 24-question Exam. Random 24, Mistakes only and Review update learning history, mastery and mistakes, but do not overwrite the Exam score.</p><div id="examGrid" class="grid"></div></section>
 <section class="card section"><h2>Learning model</h2><p class="muted">Correct answers build a streak. A missed exam question may be retried once later in the same exam; every attempt counts toward that exam’s score. Four consecutive correct answers across sessions mark a question mastered.</p><div class="row"><button id="exportBtn" class="btn ghost">Export progress</button><label class="btn ghost" style="cursor:pointer">Import progress<input id="importInput" type="file" accept="application/json" hidden></label><button id="resetBtn" class="btn ghost danger">Reset</button></div></section>
 </main>
 <main id="studyView" class="hidden">
@@ -38,8 +38,8 @@
 </section>
 </main>
 </div>
-<p id="buildLabel" class="tiny muted" style="text-align:center">LifeUK 20261005-random24-1</p>
-<script src="session-core.js?v=20261005-random24-1"></script>
-<script src="app.js?v=20261005-random24-1"></script>
+<p id="buildLabel" class="tiny muted" style="text-align:center">LifeUK 20261005-exam-score-separation-1</p>
+<script src="session-core.js?v=20261005-exam-score-separation-1"></script>
+<script src="app.js?v=20261005-exam-score-separation-1"></script>
 </body>
 </html>
