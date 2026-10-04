@@ -50,14 +50,14 @@
       const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',`Latest accuracy: ${summary.percent===null?'—':summary.percent+'%'}`);
       const detail=element('p','tiny muted',`${summary.correct} / ${summary.answered} latest answers correct · ${summary.answered} / ${summary.total} answered`);
       const meta=element('p','tiny muted',`${summary.total} questions · ${qs.filter(q=>qState(q.id).mastered).length} mastered${source.length>qs.length?` · ${source.length-qs.length} equivalent question grouped`:''}`);
-      const last=state.lastExams[examId];const lastLine=element('p','tiny muted last-exam',last?`Last completed exam: ${last.percent}% (${last.correct}/${last.total})`:'Last completed exam: not recorded');
+      const last=state.lastExams[examId];const lastLine=element('p','tiny muted last-exam',last?`Last completed exam: ${last.percent}% (${last.correct}/${last.answered||last.total} attempts · ${last.wrong||0} wrong)`:'Last completed exam: not recorded');
       card.append(title,metric,detail,meta,lastLine);
       const actions=element('div','exam-actions'),start=element('button','btn exam-btn','Start exam'),mistakes=element('button','btn secondary mistakes-exam-btn',`Mistakes only (${wrongQs.length})`);
       start.type=mistakes.type='button';start.onclick=()=>startExam(exam);mistakes.disabled=!wrongQs.length;mistakes.onclick=()=>startMistakes(exam);actions.append(start,mistakes);card.append(actions);grid.append(card);
     }
     renderResume();
   }
-  function renderResume(){const active=!!session&&session.index<session.queue.length;$('resumeBtn').disabled=!active;$('resumeHint').textContent=active?`${session.label}: question ${session.index+1} of ${session.queue.length}${session.answers[session.queue[session.index]]?' · Answer saved — continue with Next.':''}${session.migrated?' · Previous session upgraded without retries.':''}`:'No active session yet.';}
+  function renderResume(){const active=!!session&&session.index<session.queue.length;$('resumeBtn').disabled=!active;$('resumeHint').textContent=active?`${session.label}: question ${session.index+1} of ${session.queue.length}${Core.answerAt(session,session.index)?' · Answer saved — continue with Next.':''}${session.migrated?' · Previous session upgraded.':''}`:'No active session yet.';}
   function begin(mode,label,qs){
     if(syncOtherTab())return;if(!qs.length){notify('No questions match this mode.');return;}
     if(session&&!Core.sessionScore(session).complete&&!confirm('Start a new session? Your answers and progress are kept, but the current session will be replaced.'))return;
@@ -71,7 +71,7 @@
   function loadCurrent(){
     if(!session||session.index>=session.queue.length){finishSession();return;}
     current=bank.get(session.queue[session.index]);if(!current)throw new Error('Missing question');
-    const answer=session.answers[current.id];selected=new Set(answer?.selected||(session.draft?.id===current.id?session.draft.selected:[]));checked=!!answer;
+    const answer=Core.answerAt(session,session.index);selected=new Set(answer?.selected||(session.draft?.id===current.id?session.draft.selected:[]));checked=!!answer;
     $('feedback').className='feedback hidden';$('feedback').replaceChildren();$('nextBtn').classList.add('hidden');$('checkBtn').classList.remove('hidden');
     $('sessionLabel').textContent=session.label;$('counter').textContent=`${session.index+1} / ${session.queue.length} · Exam ${Number(current.exam_id.slice(4))} · Source Q${current.number}`;
     $('progressFill').style.width=`${100*session.index/session.queue.length}%`;$('questionText').textContent=current.question;
@@ -92,14 +92,14 @@
   function renderAnswer(answer){
     for(const b of $('options').children){const id=b.dataset.id;b.classList.toggle('correct',current.correct_option_ids.includes(id));b.classList.toggle('wrong',answer.selected.includes(id)&&!current.correct_option_ids.includes(id));b.disabled=true;}
     const f=$('feedback');f.className='feedback '+(answer.ok?'good':'bad');f.replaceChildren(element('b','',answer.ok?'Correct':'Not quite'),element('div','',current.explanation_original||''));
-    if(!answer.ok)f.append(element('p','tiny','Marked for Mistakes only. This question will not repeat in this session.'));
+    if(!answer.ok)f.append(element('p','tiny','Counted as incorrect. This question will return later in this exam; a later correct answer will not erase this mistake.'));
     $('checkBtn').classList.add('hidden');$('checkBtn').disabled=true;$('nextBtn').classList.remove('hidden');renderStreak();
   }
   function dueDelay(streak){return [0,6*3600e3,24*3600e3,3*86400e3,7*86400e3][Math.min(streak,4)]||7*86400e3;}
   function nextQuestion(){if(!checked||syncOtherTab()||!Core.advance(session))return;checked=false;if(session.index>=session.queue.length)finishSession();else{save();loadCurrent();}}
   function finishSession(){
     const result=session?{label:session.label,...Core.sessionScore(session)}:null;session=null;current=null;checked=false;save();showHome();
-    if(result){const panel=$('sessionResult');panel.classList.remove('hidden');panel.textContent=`${result.label} complete · ${result.correct}/${result.answered} correct (${result.percent??0}%). ${result.answered<result.total?'Earlier answers in this upgraded session were not recorded. ':''}Use Mistakes only to retry errors in a separate session.`;}
+    if(result){const panel=$('sessionResult');panel.classList.remove('hidden');panel.textContent=`${result.label} complete · ${result.correct}/${result.answered} attempts correct (${result.percent??0}%) · ${result.wrong||0} incorrect. ${result.answered<result.total?'Earlier answers in this upgraded session were not recorded. ':''}Use Mistakes only to retry remaining errors.`;}
   }
   function exportProgress(){const exported=copy(state);delete exported.activeSession;delete exported.sessionStoreVersion;delete exported.revision;const blob=new Blob([JSON.stringify({app:'LifeUK',schemaVersion:SCHEMA_VERSION,state:exported},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='lifeuk-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
   async function importProgress(ev){const file=ev.target.files?.[0];ev.target.value='';if(!file)return;try{const x=JSON.parse(await file.text());if(x.app!=='LifeUK'||x.schemaVersion!==SCHEMA_VERSION||!validState(x.state))throw new Error();if(!confirm('Replace progress on this device with the imported LifeUK progress?'))return;state={...blankState(),...x.state,lastExams:object(x.state.lastExams)?x.state.lastExams:{}};session=null;current=null;checked=false;save();showHome();notify('Progress imported. No active session was imported.');}catch{notify('This progress file is not compatible. Your existing progress has not been replaced.');}}
