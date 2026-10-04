@@ -12,12 +12,11 @@ test('17 exams / 408 source records / 408 unique IDs / unchanged source bytes',(
  files.forEach((file,i)=>assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data',file))).digest('hex'),audit.by_exam[i].source_sha256));
  for(const e of exams){assert.equal(e.question_count,24);assert.equal(e.questions.length,24);for(const x of e.questions){assert.equal(x.required_selection_count,x.correct_option_ids.length);assert.equal(new Set(x.options.map(o=>o.id)).size,x.options.length);assert(x.correct_option_ids.every(id=>x.options.some(o=>o.id===id)));}}
 });
-for(const e of exams) test(`${e.source.exam_label}: finite all-wrong queue, unique IDs and learning objectives`,()=>{
+for(const e of exams) test(`${e.source.exam_label}: each missed source question retries once and every miss is counted`,()=>{
  const before=JSON.stringify(e), s=C.createSession('exam',e.source.exam_label,[...e.questions,...e.questions],100);
- const expected=24;
- assert.equal(s.queue.length,expected);assert.equal(new Set(s.queue).size,expected);assert.equal(new Set(s.queue.map(id=>C.questionKey(q(id)))).size,expected);
- while(s.index<s.queue.length){const cur=q(s.queue[s.index]);assert.equal(C.advance(s),false);assert.equal(C.recordAnswer(s,cur,[],110),null);const a=C.recordAnswer(s,cur,wrong(cur),120);assert(a&&!a.ok);assert.equal(s.queue.length,expected);assert.equal(C.recordAnswer(s,cur,wrong(cur),130),null);assert(C.advance(s));}
- assert.equal(Object.keys(s.answers).length,expected);assert.equal(C.restoreSession(s,bank),null);assert.equal(JSON.stringify(e),before);
+ assert.equal(s.queue.length,24);assert.equal(new Set(s.queue).size,24);assert.equal(new Set(s.queue.map(id=>C.questionKey(q(id)))).size,24);
+ while(s.index<s.queue.length){const cur=q(s.queue[s.index]);assert.equal(C.advance(s),false);assert.equal(C.recordAnswer(s,cur,[],110),null);const a=C.recordAnswer(s,cur,wrong(cur),120+s.index);assert(a&&!a.ok);assert.equal(C.recordAnswer(s,cur,wrong(cur),130+s.index),null);assert(C.advance(s));}
+ assert.equal(s.queue.length,48);assert.equal(s.attempts.length,48);assert.deepEqual(C.sessionScore(s),{total:48,answered:48,correct:0,wrong:48,percent:0,complete:true});assert.equal(C.restoreSession(s,bank),null);assert.equal(JSON.stringify(e),before);
 });
 test('single, true/false, two- and three-answer grading: all selection subsets',()=>{
  for(const x of all)for(let mask=0;mask<(1<<x.options.length);mask++){
@@ -90,10 +89,10 @@ test('wrong-only session survives resume and has a fixed finite queue',()=>{
  const x=exams[0].questions[0],s=C.createSession('mistakes','Mistakes only',[x,x],100);C.recordAnswer(s,x,wrong(x),101);
  const r=C.restoreSession(clone(s),bank);assert.equal(r.mode,'mistakes');assert.equal(r.queue.length,1);assert.equal(C.recordAnswer(r,x,wrong(x),102),null);assert(C.advance(r));assert.equal(C.restoreSession(r,bank),null);
 });
-test('session scores count each answer once and a new attempt starts fresh',()=>{
+test('session scores retain a wrong attempt even when its one retry is correct',()=>{
  const qs=exams[0].questions.slice(0,2),s=C.createSession('exam','Exam 1',qs,10);assert.equal(C.sessionScore(s).percent,null);
  C.recordAnswer(s,qs[0],qs[0].correct_option_ids,11);assert.equal(C.sessionScore(s).percent,100);assert.equal(C.sessionScore(s).complete,false);C.advance(s);C.recordAnswer(s,qs[1],wrong(qs[1]),12);
- assert.deepEqual(C.sessionScore(s),{total:2,answered:2,correct:1,percent:50,complete:true});assert.equal(C.sessionScore(C.createSession('exam','Exam 1',qs,13)).answered,0);
+ assert.deepEqual(C.sessionScore(s),{total:3,answered:2,correct:1,wrong:1,percent:50,complete:false});assert(C.advance(s));const retry=q(s.queue[s.index]);C.recordAnswer(s,retry,retry.correct_option_ids,13);assert.deepEqual(C.sessionScore(s),{total:3,answered:3,correct:2,wrong:1,percent:67,complete:true});assert.equal(C.sessionScore(C.createSession('exam','Exam 1',qs,14)).answered,0);
 });
 test('version 2 answer receipts remain graded after the version 3 upgrade',()=>{
  const x=all[0],s=C.createSession('exam','Exam 1',[x,all[1]],1);C.recordAnswer(s,x,x.correct_option_ids,2);s.version=2;
