@@ -50,6 +50,10 @@ with sync_playwright() as p:
         page.add_init_script('window.confirm=()=>true;window.alert=()=>{};')
         if OFFLINE:page.evaluate('''exams=>{window.confirm=()=>true;window.alert=()=>{};const data={};Object.defineProperty(window,'localStorage',{value:{getItem:k=>data[k]??null,setItem:(k,v)=>{data[k]=String(v)},removeItem:k=>{delete data[k]}}});window.fetch=async path=>({ok:!!exams[path],json:async()=>exams[path]});}''',EXAMS)
         open_page(page);assert page.locator('.exam-card').count()==17
+        if mobile:
+            cols=page.evaluate("getComputedStyle(document.querySelector('#examGrid')).gridTemplateColumns.split(' ').length")
+            assert cols==2 if width>340 else cols==1
+            assert page.locator('.exam-card').nth(0).bounding_box()['height'] < 170
         assert '408 questions' in page.locator('#examSummary').inner_text()
         assert '24 questions' in page.locator('.exam-card').last.inner_text()
         assert page.locator('.exam-accuracy').first.inner_text()=='Latest accuracy: —'
@@ -71,7 +75,7 @@ with sync_playwright() as p:
             }
             if(seen.size!==24)throw Error('Not all source questions seen');
             const state=JSON.parse(localStorage.getItem(S)),id='exam'+String(exam+1).padStart(2,'0'),expectedAttempts=wrong?48:24;
-            if(attempts!==expectedAttempts||state.lastExams[id].answered!==expectedAttempts||state.lastExams[id].wrong!==(wrong?48:0)||state.lastExams[id].percent!==(wrong?0:100))throw Error('Bad completed exam');
+            if(attempts!==expectedAttempts||state.lastExams[id].answered!==24||state.lastExams[id].wrong!==(wrong?24:0)||state.lastExams[id].correct!==(wrong?0:24)||state.lastExams[id].percent!==(wrong?0:100))throw Error('Bad completed exam');
             const card=document.querySelectorAll('.exam-card')[exam];if(!card.querySelector('.exam-accuracy').textContent.endsWith((wrong?'0':'100')+'%'))throw Error('Wrong latest accuracy');
             attemptCounts.push(attempts);
           }
@@ -92,19 +96,18 @@ with sync_playwright() as p:
         page.click('#nextBtn');page.click('.option[data-id="a"]');page.click('#checkBtn');page.click('#homeBtn');page.click('#resumeBtn')
         assert page.locator('#feedback b').inner_text()=='Not quite';page.click('#nextBtn');assert not page.locator('#resumeBtn').is_disabled()
         assert page.locator('#questionText').inner_text()==qs[1]['question'];answer_current(page);page.click('#nextBtn');assert page.locator('#resumeBtn').is_disabled()
-        assert page.locator('[data-exam-id="exam06"] .exam-accuracy').inner_text()=='Latest accuracy: 67%'
-        assert '2 / 3 attempts correct · 1 wrong' in page.locator('[data-exam-id="exam06"]').inner_text()
-        assert 'mistakes are never erased' in page.locator('[data-exam-id="exam06"] .last-exam').inner_text()
+        assert page.locator('[data-exam-id="exam06"] .exam-accuracy').inner_text()=='50%'
+        assert '1/2 correct · 1 wrong' in page.locator('[data-exam-id="exam06"]').inner_text()
         # Latest accuracy excludes unseen; only last-wrong records enter either wrong-only scope.
         def st(ok,t=100):return {'seen':2,'correct':1 if ok else 0,'wrong':1 if ok else 2,'streak':1 if ok else 0,'mastered':False,'lastSeen':t,'nextDue':0,'lastCorrect':ok}
         a,b,c='lituk-exam05-q01','lituk-exam05-q02','lituk-exam06-q06'
         seed(page,{a:st(False),b:st(True),c:st(False,200)})
-        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='Latest accuracy: 50%'
+        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='50%'
         assert '(2)' in page.locator('#mistakesBtn').inner_text()
         page.click('[data-exam-id="exam05"] .mistakes-exam-btn')
         s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession");assert s['queue']==[a] and s['mode']=='mistakes'
         answer_current(page);page.click('#nextBtn')
-        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='Latest accuracy: 100%'
+        assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='100%'
         assert page.locator('[data-exam-id="exam05"] .mistakes-exam-btn').is_disabled()
         assert 'not recorded' in page.locator('[data-exam-id="exam05"] .last-exam').inner_text()
         page.click('#mistakesBtn');s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession");assert s['queue']==[c]
