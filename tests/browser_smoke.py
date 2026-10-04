@@ -56,7 +56,7 @@ with sync_playwright() as p:
             assert page.locator('.exam-card').nth(0).bounding_box()['height'] < 170
         assert '408 questions' in page.locator('#examSummary').inner_text()
         assert page.locator('.exam-card').last.locator('.exam-status').count()==1 and 'mastered' in page.locator('.exam-card').last.inner_text()
-        assert page.locator('.exam-accuracy').first.inner_text()=='Latest accuracy: —'
+        assert page.locator('.exam-accuracy').first.inner_text()=='—'
         assert page.locator('#mistakesBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
           const S='lifeuk_state_v1',attemptCounts=[];
@@ -109,7 +109,7 @@ with sync_playwright() as p:
         answer_current(page);page.click('#nextBtn')
         assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='100%'
         assert page.locator('[data-exam-id="exam05"] .mistakes-exam-btn').is_disabled()
-        assert 'not recorded' in page.locator('[data-exam-id="exam05"] .last-exam').inner_text()
+        assert page.locator('[data-exam-id="exam05"] .last-exam').count()==0
         page.click('#mistakesBtn');s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession");assert s['queue']==[c]
         answer_current(page,True);open_page(page);page.click('#resumeBtn');assert page.locator('#checkBtn').is_hidden();page.click('#nextBtn')
         assert '(1)' in page.locator('#mistakesBtn').inner_text();page.click('#mistakesBtn');answer_current(page);page.click('#nextBtn');assert page.locator('#mistakesBtn').is_disabled()
@@ -117,7 +117,7 @@ with sync_playwright() as p:
         seed(page,{a:st(False,100),'lituk-exam17-q23':{'seen':7,'correct':6,'wrong':1,'streak':2,'mastered':False,'lastSeen':1,'nextDue':2}},legacy=True)
         page.evaluate('''({a,b,c})=>{const s=JSON.parse(localStorage.getItem('lifeuk_state_v1'));delete s.sessionStoreVersion;delete s.activeSession;localStorage.setItem('lifeuk_state_v1',JSON.stringify(s));localStorage.setItem('lifeuk_active_session_v1',JSON.stringify({mode:'exam',label:'Legacy',queue:[a,b,a,c],index:2,startedAt:50}));}''',{'a':a,'b':b,'c':'lituk-exam05-q03'})
         open_page(page);page.click('#resumeBtn');assert 'Source Q3' in page.locator('#counter').inner_text();page.click('#exitBtn')
-        assert page.locator('[data-exam-id="exam17"] .exam-accuracy').inner_text()=='Latest accuracy: 100%'
+        assert page.locator('[data-exam-id="exam17"] .exam-accuracy').inner_text()=='100%'
         # Export / Reset / Import including old-format progress and new per-exam data.
         with page.expect_download() as info:page.click('#exportBtn')
         backup=OUT/f'{label}-round{ROUND}-progress.json';info.value.save_as(backup);exported=json.loads(backup.read_text())
