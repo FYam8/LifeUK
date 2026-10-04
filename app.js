@@ -47,10 +47,11 @@
     for(const exam of exams){
       const source=exam.questions,qs=Core.uniqueQuestions(source),summary=Core.latestSummary(source,state.questions),wrongQs=Core.mistakes(source,state.questions),examId=source[0].exam_id;
       const card=element('article','exam-card');card.dataset.examId=examId;
-      const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',`Latest accuracy: ${summary.percent===null?'—':summary.percent+'%'}`);
-      const detail=element('p','tiny muted',`${summary.correct} / ${summary.answered} latest answers correct · ${summary.answered} / ${summary.total} answered`);
+      const last=state.lastExams[examId],latestPercent=last?last.percent:summary.percent;
+      const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',`Latest accuracy: ${latestPercent===null?'—':latestPercent+'%'}`);
+      const detail=element('p','tiny muted',last?`${last.correct} / ${last.answered||last.total} attempts correct · ${last.wrong||0} wrong`:`${summary.correct} / ${summary.answered} latest answers correct · ${summary.answered} / ${summary.total} answered`);
       const meta=element('p','tiny muted',`${summary.total} questions · ${qs.filter(q=>qState(q.id).mastered).length} mastered${source.length>qs.length?` · ${source.length-qs.length} equivalent question grouped`:''}`);
-      const last=state.lastExams[examId];const lastLine=element('p','tiny muted last-exam',last?`Last completed exam: ${last.percent}% (${last.correct}/${last.answered||last.total} attempts · ${last.wrong||0} wrong)`:'Last completed exam: not recorded');
+      const lastLine=element('p','tiny muted last-exam',last?'Latest completed exam includes retry attempts; mistakes are never erased by a later retry.':'Last completed exam: not recorded');
       card.append(title,metric,detail,meta,lastLine);
       const actions=element('div','exam-actions'),start=element('button','btn exam-btn','Start exam'),mistakes=element('button','btn secondary mistakes-exam-btn',`Mistakes only (${wrongQs.length})`);
       start.type=mistakes.type='button';start.onclick=()=>startExam(exam);mistakes.disabled=!wrongQs.length;mistakes.onclick=()=>startMistakes(exam);actions.append(start,mistakes);card.append(actions);grid.append(card);
