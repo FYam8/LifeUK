@@ -55,7 +55,7 @@ with sync_playwright() as p:
             assert cols==2 if width>340 else cols==1
             assert page.locator('.exam-card').nth(0).bounding_box()['height'] < 170
         assert '408 questions' in page.locator('#examSummary').inner_text()
-        assert '24 questions' in page.locator('.exam-card').last.inner_text()
+        assert page.locator('.exam-card').last.locator('.exam-status').count()==1 and 'mastered' in page.locator('.exam-card').last.inner_text()
         assert page.locator('.exam-accuracy').first.inner_text()=='Latest accuracy: —'
         assert page.locator('#mistakesBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
