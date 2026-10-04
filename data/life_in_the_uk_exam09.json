@@ -1,0 +1,779 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 9",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 9",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam09-q01",
+      "exam_id": "exam09",
+      "number": 1,
+      "type": "single_choice",
+      "question": "Which flower is associated with Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The daffodil"
+        },
+        {
+          "id": "b",
+          "text": "The thistle"
+        },
+        {
+          "id": "c",
+          "text": "The shamrock"
+        },
+        {
+          "id": "d",
+          "text": "The rose"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The flower associated with Northern Ireland is the shamrock.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q02",
+      "exam_id": "exam09",
+      "number": 2,
+      "type": "true_false",
+      "question": "The last battle between Britain and France was the battle of Waterloo.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q03",
+      "exam_id": "exam09",
+      "number": 3,
+      "type": "true_false",
+      "question": "£100 is the highest value note in circulation in the UK.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is false.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q04",
+      "exam_id": "exam09",
+      "number": 4,
+      "type": "single_choice",
+      "question": "Where is the Lake District National Park located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scotland"
+        },
+        {
+          "id": "b",
+          "text": "Wales"
+        },
+        {
+          "id": "c",
+          "text": "England"
+        },
+        {
+          "id": "d",
+          "text": "Northern Ireland"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Lake District is in England.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q05",
+      "exam_id": "exam09",
+      "number": 5,
+      "type": "multiple_choice",
+      "question": "Which two responsibilities will you have as a British citizen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To buy food locally"
+        },
+        {
+          "id": "b",
+          "text": "To volunteer in a community project at least once a year"
+        },
+        {
+          "id": "c",
+          "text": "To look after yourself and your family"
+        },
+        {
+          "id": "d",
+          "text": "To respect the rights of others, including their right to their own opinions"
+        }
+      ],
+      "correct_option_ids": [
+        "c",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "If you wish to be a permanent resident or citizen of the UK, you should: respect and obey the law, look after yourself and your family, respect the rights of others, including their right to their own opinions, treat others with fairness and look after the area in which you live and the environment.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q06",
+      "exam_id": "exam09",
+      "number": 6,
+      "type": "single_choice",
+      "question": "Who was born in Stratford-upon-Avon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jane Austen"
+        },
+        {
+          "id": "b",
+          "text": "Charles Dickens"
+        },
+        {
+          "id": "c",
+          "text": "William Shakespeare"
+        },
+        {
+          "id": "d",
+          "text": "Thomas Hardy"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William Shakespeare was born in Stratford-upon-Avon, England.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q07",
+      "exam_id": "exam09",
+      "number": 7,
+      "type": "single_choice",
+      "question": "Why is 1928 an important year in women’s voting history?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Women were given the right to vote at the age of 18, the same as men."
+        },
+        {
+          "id": "b",
+          "text": "Women were given the right to vote at the age of 25."
+        },
+        {
+          "id": "c",
+          "text": "Women were given the right to vote at the age of 30."
+        },
+        {
+          "id": "d",
+          "text": "Women were given the right to vote at the age of 21, the same as men."
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Women were given the right to vote at the age of 21, the same as men.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q08",
+      "exam_id": "exam09",
+      "number": 8,
+      "type": "single_choice",
+      "question": "What does Hogmanay refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Christmas Day in Wales"
+        },
+        {
+          "id": "b",
+          "text": "New Year’s Eve in Scotland"
+        },
+        {
+          "id": "c",
+          "text": "Christmas Day in Scotland"
+        },
+        {
+          "id": "d",
+          "text": "New Year’s Eve in Wales"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Scotland, the 31st of December (New Year’s Eve) is called Hogmanay.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q09",
+      "exam_id": "exam09",
+      "number": 9,
+      "type": "single_choice",
+      "question": "What is the capital city of Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cork"
+        },
+        {
+          "id": "b",
+          "text": "Edinburgh"
+        },
+        {
+          "id": "c",
+          "text": "Belfast"
+        },
+        {
+          "id": "d",
+          "text": "Dublin"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The capital city of Northern Ireland is Belfast.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q10",
+      "exam_id": "exam09",
+      "number": 10,
+      "type": "single_choice",
+      "question": "Which of the following wars took place between 1899 and 1902 in South Africa?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Hundred Years War"
+        },
+        {
+          "id": "b",
+          "text": "The Boer War"
+        },
+        {
+          "id": "c",
+          "text": "The First World War"
+        },
+        {
+          "id": "d",
+          "text": "The Crimean War"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Boer War.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q11",
+      "exam_id": "exam09",
+      "number": 11,
+      "type": "true_false",
+      "question": "Northern Ireland uses a system called ‘individual registration’ and all those entitled to vote must complete their own registration form.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is True.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Electoral registration wording may be historically dated and should be verified before treating as current civic guidance."
+      ]
+    },
+    {
+      "id": "lituk-exam09-q12",
+      "exam_id": "exam09",
+      "number": 12,
+      "type": "multiple_choice",
+      "question": "Which two of the following policies are not controlled by the devolved administrations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Health"
+        },
+        {
+          "id": "b",
+          "text": "Education"
+        },
+        {
+          "id": "c",
+          "text": "Defence"
+        },
+        {
+          "id": "d",
+          "text": "Immigration"
+        }
+      ],
+      "correct_option_ids": [
+        "c",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "Policy and laws governing defence, foreign affairs, immigration, taxation and social security all remain under central UK government control. However, many other public services, such as education, are controlled by the devolved administrations.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Devolution powers can vary by nation and over time; wording should be verified before treating as current constitutional guidance."
+      ]
+    },
+    {
+      "id": "lituk-exam09-q13",
+      "exam_id": "exam09",
+      "number": 13,
+      "type": "single_choice",
+      "question": "How old do citizens of the UK, the Irish Republic or the Commonwealth have to be to stand for public office?",
+      "options": [
+        {
+          "id": "a",
+          "text": "18"
+        },
+        {
+          "id": "b",
+          "text": "21"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Most citizens of the UK, the Irish republic or the Commonwealth aged 18 or over can stand for public office. There are some exceptions, including: members of the armed forces, civil servants and people found guilty of certain criminal offences.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q14",
+      "exam_id": "exam09",
+      "number": 14,
+      "type": "single_choice",
+      "question": "How did the Government promote policies of free trade during the Victorian Age?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abolishing a number of taxes on imported goods"
+        },
+        {
+          "id": "b",
+          "text": "Abolishing the exportation of local produce"
+        },
+        {
+          "id": "c",
+          "text": "Preventing the importation of cheap raw materials"
+        },
+        {
+          "id": "d",
+          "text": "Preventing the importation of cheap grain"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "During Victorian times, the government began to promote policies of free trade, abolishing a number of taxes on imported goods. One example of this was the repealing of the Corn Laws in 1846. These had prevented the import of cheap grain. The reforms helped the development of the British industry, because raw materials could now be imported cheaply.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q15",
+      "exam_id": "exam09",
+      "number": 15,
+      "type": "single_choice",
+      "question": "Who was Admiral Nelson?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One of the tribal leaders who fought against the Romans"
+        },
+        {
+          "id": "b",
+          "text": "A British officer in charge of the British army at the Battle of Waterloo"
+        },
+        {
+          "id": "c",
+          "text": "A British general who established the authority of the English Parliament"
+        },
+        {
+          "id": "d",
+          "text": "A British officer in charge of the British fleet at the Battle of Trafalgar against the Spanish fleet"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Admiral Nelson was in charge of the British fleet at the Battle of Trafalgar against the Spanish fleet and was killed in the battle.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q16",
+      "exam_id": "exam09",
+      "number": 16,
+      "type": "single_choice",
+      "question": "During the Middle Ages, who were the serfs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Peasants who had a small area of their lord’s agricultural land"
+        },
+        {
+          "id": "b",
+          "text": "Soldiers who fought at the Battle of Trafalgar"
+        },
+        {
+          "id": "c",
+          "text": "Noblemen who formed part of the king’s council of advisers"
+        },
+        {
+          "id": "d",
+          "text": "A group of skilled people from Holland who came to England during the Middle Ages"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Serfs were peasants who had a small area of their lord’s land where they could grow food.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q17",
+      "exam_id": "exam09",
+      "number": 17,
+      "type": "single_choice",
+      "question": "Which invention lead to the rapid development of the industry in Britain during the 18th and 19th centuries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Radar"
+        },
+        {
+          "id": "b",
+          "text": "The Steam Power"
+        },
+        {
+          "id": "c",
+          "text": "The Jet Engine"
+        },
+        {
+          "id": "d",
+          "text": "The Turing Machine"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Industrial Revolution was the rapid development of industry in Britain in the 18th and 19th centuries. Britain was the first country to industrialise on a large scale. It happened because of the development of machinery and the use of steam power.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q18",
+      "exam_id": "exam09",
+      "number": 18,
+      "type": "true_false",
+      "question": "MPs can only be contacted by post.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. You can contact MPs by letter or telephone at their constituency office, or at their office in the House of Commons. In addition, many MPs, Assembly members, MSPs and MEPs hold regular local ‘surgeries’, where constituents can go in person to talk about issues that are of concern to them.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "References to MEPs are historically dated; retained exactly from supplied source."
+      ]
+    },
+    {
+      "id": "lituk-exam09-q19",
+      "exam_id": "exam09",
+      "number": 19,
+      "type": "single_choice",
+      "question": "What movement challenged the authority of the Pope?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Swinging Sixties"
+        },
+        {
+          "id": "b",
+          "text": "The Reformation"
+        },
+        {
+          "id": "c",
+          "text": "The Suffragettes"
+        },
+        {
+          "id": "d",
+          "text": "The Enlightenment"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Reformation was a movement against the authority of the Pope and the ideas and practices of the Roman Catholic Church.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q20",
+      "exam_id": "exam09",
+      "number": 20,
+      "type": "single_choice",
+      "question": "What English King introduced the Domesday Book?",
+      "options": [
+        {
+          "id": "a",
+          "text": "King Henry V"
+        },
+        {
+          "id": "b",
+          "text": "King Henry IV"
+        },
+        {
+          "id": "c",
+          "text": "William the Conqueror"
+        },
+        {
+          "id": "d",
+          "text": "Harold, the Saxon king of England"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "William the Conqueror sent people all over England to draw up lists of all the towns and villages. The people who lived there, who owned the land and what animals they owned were also listed. This was called the Domesday Book.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q21",
+      "exam_id": "exam09",
+      "number": 21,
+      "type": "single_choice",
+      "question": "What did ’the Butler Act’ introduce in 1944?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Free primary education in England, Wales and Scotland"
+        },
+        {
+          "id": "b",
+          "text": "Free university fees in England, Wales, Scotland and Northern Ireland"
+        },
+        {
+          "id": "c",
+          "text": "Free primary and secondary education in England, Wales and Scotland"
+        },
+        {
+          "id": "d",
+          "text": "Free secondary education in England and Wales"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Richard Austen Butler became a Conservative MP in 1923 and held several positions before becoming responsible for education in 1941. In this role, he oversaw the introduction of the Education Act 1944 (often called ‘The Butler Act’), which introduced free secondary education in England and Wales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q22",
+      "exam_id": "exam09",
+      "number": 22,
+      "type": "single_choice",
+      "question": "What is the small claims procedure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An informal way of helping people to settle minor disputes without spending a lot of time and money using a lawyer"
+        },
+        {
+          "id": "b",
+          "text": "A procedure that helps people to make small home insurance claims in certain circumstances"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The small claims procedure is an informal way of helping people to settle minor disputes without spending a lot of time and money using a lawyer.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q23",
+      "exam_id": "exam09",
+      "number": 23,
+      "type": "single_choice",
+      "question": "What building was constructed in Hyde Park to hold the Great Exhibition of 1851?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Crystal Palace"
+        },
+        {
+          "id": "b",
+          "text": "Buckingham Palace"
+        },
+        {
+          "id": "c",
+          "text": "Kensington Palace"
+        },
+        {
+          "id": "d",
+          "text": "Apsley House"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1851, the Great Exhibition opened in Hyde Park in the Crystal Palace, a huge building made of steel and glass. Exhibits ranged from huge machines to handmade goods.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam09-q24",
+      "exam_id": "exam09",
+      "number": 24,
+      "type": "single_choice",
+      "question": "Who was Florence Nightingale?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An economist"
+        },
+        {
+          "id": "b",
+          "text": "A painter"
+        },
+        {
+          "id": "c",
+          "text": "A nurse"
+        },
+        {
+          "id": "d",
+          "text": "A poet"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Florence Nightingale was a nurse. She is often regarded as the founder of modern nursing.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
