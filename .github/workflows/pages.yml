@@ -1,0 +1,59 @@
+name: Deploy LifeUK to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate app and exam data
+        run: |
+          node --check app.js
+          python - <<'PY'
+          import json, glob
+          files=sorted(glob.glob('data/life_in_the_uk_exam*.json'))
+          assert len(files)==4, files
+          total=0
+          for path in files:
+              with open(path, encoding='utf-8') as f:
+                  data=json.load(f)
+              assert data['question_count']==24
+              assert len(data['questions'])==24
+              for q in data['questions']:
+                  assert q['required_selection_count']==len(q['correct_option_ids'])
+                  assert all(any(o['id']==cid for o in q['options']) for cid in q['correct_option_ids'])
+              total += len(data['questions'])
+          assert total==96
+          print('validated', total, 'questions')
+          PY
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
