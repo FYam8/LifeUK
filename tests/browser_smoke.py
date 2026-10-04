@@ -55,28 +55,29 @@ with sync_playwright() as p:
         assert page.locator('.exam-accuracy').first.inner_text()=='Latest accuracy: —'
         assert page.locator('#mistakesBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
-          const S='lifeuk_state_v1',counts=[];
+          const S='lifeuk_state_v1',attemptCounts=[];
           for(let exam=0;exam<17;exam++){
-            document.querySelectorAll('.exam-btn')[exam].click();const expected=24,visited=new Set(),keys=new Set();
-            for(let i=0;i<expected;i++){
-              let state=JSON.parse(localStorage.getItem(S)),s=state.activeSession,id=s.queue[s.index],q=data[id],key=LifeUKSession.questionKey(q);
-              if(s.queue.length!==expected||visited.has(id)||keys.has(key))throw Error('Duplicate or growing queue');visited.add(id);keys.add(key);
+            document.querySelectorAll('.exam-btn')[exam].click();const seen=new Map();let attempts=0;
+            while(JSON.parse(localStorage.getItem(S)).activeSession){
+              let state=JSON.parse(localStorage.getItem(S)),s=state.activeSession,id=s.queue[s.index],q=data[id];
+              seen.set(id,(seen.get(id)||0)+1);if(seen.get(id)>2)throw Error('More than one retry');
               const given=[...q.correct_option_ids];if(wrong)given[0]=q.options.find(o=>!given.includes(o.id)).id;
               for(const x of given)document.querySelector(`.option[data-id="${x}"]`).click();
               const before=state.stats.answered;document.getElementById('checkBtn').click();document.getElementById('checkBtn').click();
               state=JSON.parse(localStorage.getItem(S));s=state.activeSession;
-              if(state.stats.answered!==before+1||s.queue.length!==expected||s.answers[id].ok===wrong)throw Error('Grading/retry error');
-              document.getElementById('nextBtn').click();document.getElementById('nextBtn').click();
-              if(i<expected-1&&JSON.parse(localStorage.getItem(S)).activeSession.index!==i+1)throw Error('Double Next');
+              if(state.stats.answered!==before+1||LifeUKSession.answerAt(s,s.index).ok===wrong)throw Error('Grading/retry error');
+              attempts++;document.getElementById('nextBtn').click();document.getElementById('nextBtn').click();
+              if(attempts>48)throw Error('Retry queue did not terminate');
             }
-            const state=JSON.parse(localStorage.getItem(S)),id='exam'+String(exam+1).padStart(2,'0');
-            if(state.activeSession!==null||state.lastExams[id].percent!==(wrong?0:100))throw Error('Bad completed exam');
+            if(seen.size!==24)throw Error('Not all source questions seen');
+            const state=JSON.parse(localStorage.getItem(S)),id='exam'+String(exam+1).padStart(2,'0'),expectedAttempts=wrong?48:24;
+            if(attempts!==expectedAttempts||state.lastExams[id].answered!==expectedAttempts||state.lastExams[id].wrong!==(wrong?48:0)||state.lastExams[id].percent!==(wrong?0:100))throw Error('Bad completed exam');
             const card=document.querySelectorAll('.exam-card')[exam];if(!card.querySelector('.exam-accuracy').textContent.endsWith((wrong?'0':'100')+'%'))throw Error('Wrong latest accuracy');
-            counts.push(visited.size);
+            attemptCounts.push(attempts);
           }
-          return {exams:counts.length,attempts:counts.reduce((a,b)=>a+b,0),all_wrong:wrong};
+          return {exams:attemptCounts.length,attempts:attemptCounts.reduce((a,b)=>a+b,0),all_wrong:wrong};
         }''',{'data':DATA,'wrong':ROUND==1})
-        assert bulk['attempts']==408
+        assert bulk['attempts']==(816 if ROUND==1 else 408)
         # Correct / wrong feedback, drafts and statistics across Home/Save/Resume/reload.
         qs=[DATA['lituk-exam06-q06'],DATA['lituk-exam06-q07']];seed(page,qs=qs)
         page.click('#resumeBtn');assert 'Select 3 answers' in page.locator('#multiHint').inner_text()
