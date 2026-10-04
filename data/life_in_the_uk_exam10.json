@@ -1,0 +1,782 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 10",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 10",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam10-q01",
+      "exam_id": "exam10",
+      "number": 1,
+      "type": "single_choice",
+      "question": "Who is the patron Saint of England?",
+      "options": [
+        {
+          "id": "a",
+          "text": "St George"
+        },
+        {
+          "id": "b",
+          "text": "St Patrick"
+        },
+        {
+          "id": "c",
+          "text": "St David"
+        },
+        {
+          "id": "d",
+          "text": "St Andrew"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The patron Saint of England is St George.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q02",
+      "exam_id": "exam10",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Where is Loch Lomond and the Trossachs National Park located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "England"
+        },
+        {
+          "id": "b",
+          "text": "Wales"
+        },
+        {
+          "id": "c",
+          "text": "Scotland"
+        },
+        {
+          "id": "d",
+          "text": "Northern Ireland"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Loch Lomond and the Trossachs National Park is located in the west of Scotland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q03",
+      "exam_id": "exam10",
+      "number": 3,
+      "type": "true_false",
+      "question": "Wales has its own established church.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. There is no established Church in Wales or Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q04",
+      "exam_id": "exam10",
+      "number": 4,
+      "type": "single_choice",
+      "question": "What stories are associated with Geoffrey Chaucer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Cambridge Tales"
+        },
+        {
+          "id": "b",
+          "text": "The Eastbourne Tales"
+        },
+        {
+          "id": "c",
+          "text": "The Canterbury Tales"
+        },
+        {
+          "id": "d",
+          "text": "The London Tales"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Geoffrey Chaucer wrote a series of poems in English about a group of people going to Canterbury on a pilgrimage.  This collection of poems is called The Canterbury Tales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q05",
+      "exam_id": "exam10",
+      "number": 5,
+      "type": "single_choice",
+      "question": "When is Boxing Day celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "31st October"
+        },
+        {
+          "id": "b",
+          "text": "26th December"
+        },
+        {
+          "id": "c",
+          "text": "24th December"
+        },
+        {
+          "id": "d",
+          "text": "01st January"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Boxing Day is the day after Christmas Day (26th December) and is a public holiday.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q06",
+      "exam_id": "exam10",
+      "number": 6,
+      "type": "single_choice",
+      "question": "What is the name of the holiday when banks and many other businesses are closed for the day?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Credit Holidays"
+        },
+        {
+          "id": "b",
+          "text": "Branch Holidays"
+        },
+        {
+          "id": "c",
+          "text": "Bank Holidays"
+        },
+        {
+          "id": "d",
+          "text": "Business Holidays"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are public holidays each year called bank holidays, when banks and many other businesses are closed for the day.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q07",
+      "exam_id": "exam10",
+      "number": 7,
+      "type": "single_choice",
+      "question": "Why were women given the right to vote?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In recognition of the contribution women made to the war effort during the First World War"
+        },
+        {
+          "id": "b",
+          "text": "In recognition of the contribution women made to the war effort during the Second World War"
+        },
+        {
+          "id": "c",
+          "text": "In recognition of the contribution women made to the war effort during the Crimean War"
+        },
+        {
+          "id": "d",
+          "text": "In recognition of the contribution women made to the war effort during the Civil War"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1918, women over the age of 30 were given voting rights and the right to stand for Parliament, partly in recognition of the contribution women made to the war effort during the First World War.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q08",
+      "exam_id": "exam10",
+      "number": 8,
+      "type": "single_choice",
+      "question": "What do you need to drive in the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An ‘L’ plate"
+        },
+        {
+          "id": "b",
+          "text": "A National Insurance Number"
+        },
+        {
+          "id": "c",
+          "text": "A valid driving licence"
+        },
+        {
+          "id": "d",
+          "text": "An ‘R’ plate"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In the UK, you must have a driving licence to drive on public roads.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q09",
+      "exam_id": "exam10",
+      "number": 9,
+      "type": "single_choice",
+      "question": "Where does “the Fringe” festival take place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fraserburgh"
+        },
+        {
+          "id": "b",
+          "text": "Edinburgh"
+        },
+        {
+          "id": "c",
+          "text": "Inverness"
+        },
+        {
+          "id": "d",
+          "text": "St Andrews"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Edinburgh Festival takes place in Edinburgh, Scotland, every summer. It is a series of different arts and cultural festivals, with the biggest and most well-known being the Edinburgh Festival Fringe (‘the Fringe’).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q10",
+      "exam_id": "exam10",
+      "number": 10,
+      "type": "single_choice",
+      "question": "How many members does the Welsh government have?",
+      "options": [
+        {
+          "id": "a",
+          "text": "150"
+        },
+        {
+          "id": "b",
+          "text": "120"
+        },
+        {
+          "id": "c",
+          "text": "90"
+        },
+        {
+          "id": "d",
+          "text": "60"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are 60 members of the Welsh government or members of the Senedd (SMs) and elections are held every four years using a form of proportional representation.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Welsh legislature membership and terminology may have changed; retained exactly from supplied source."
+      ]
+    },
+    {
+      "id": "lituk-exam10-q11",
+      "exam_id": "exam10",
+      "number": 11,
+      "type": "true_false",
+      "question": "The names or photographs of  young people found guilty of a crime can be published in newspapers or used by the media.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. Members of the public are not allowed in Youth Courts, and the name or photographs of the accused young person cannot be published in newspapers or used by the media.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q12",
+      "exam_id": "exam10",
+      "number": 12,
+      "type": "single_choice",
+      "question": "What was Edward Elgar famous for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He was a musician"
+        },
+        {
+          "id": "b",
+          "text": "He was a tennis player"
+        },
+        {
+          "id": "c",
+          "text": "He was a comedian"
+        },
+        {
+          "id": "d",
+          "text": "He was an actor"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Sir Edward Elgar (1857-1934) was a musician. His best known work is probably the Pomp and Circumstance Marches. March No1 (Land of Hope and Glory) is usually played at the Last Night of the Proms at the Royal Albert Hall.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q13",
+      "exam_id": "exam10",
+      "number": 13,
+      "type": "single_choice",
+      "question": "Which of the following is not a British banknote?",
+      "options": [
+        {
+          "id": "a",
+          "text": "£50"
+        },
+        {
+          "id": "b",
+          "text": "£25"
+        },
+        {
+          "id": "c",
+          "text": "£20"
+        },
+        {
+          "id": "d",
+          "text": "£5"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are no £25 notes in the UK.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q14",
+      "exam_id": "exam10",
+      "number": 14,
+      "type": "single_choice",
+      "question": "Where does the Scottish Grand National take place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fife"
+        },
+        {
+          "id": "b",
+          "text": "Edinburgh"
+        },
+        {
+          "id": "c",
+          "text": "Ayr"
+        },
+        {
+          "id": "d",
+          "text": "St Andrews"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Scottish Grand National takes place at Ayr.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q15",
+      "exam_id": "exam10",
+      "number": 15,
+      "type": "single_choice",
+      "question": "The laws passed after the Glorious Revolution marked the beginning of the ______.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Constitutional monarchy"
+        },
+        {
+          "id": "b",
+          "text": "Constitutional republic"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The laws passed after the Glorious Revolution marked the beginning of the constitutional monarchy.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q16",
+      "exam_id": "exam10",
+      "number": 16,
+      "type": "single_choice",
+      "question": "During the reign of Elizabeth I, a large fleet of ships was sent to England to conquer the country and to restore Catholicism, where did this fleet come from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "France"
+        },
+        {
+          "id": "b",
+          "text": "Portugal"
+        },
+        {
+          "id": "c",
+          "text": "Spain"
+        },
+        {
+          "id": "d",
+          "text": "Italy"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Elizabeth I became one of the most popular monarchs in English history, particularly after 1588, when the English defeated the Spanish Armada (a large fleet of ships), which had been sent by Spain to conquer England and restore Catholicism.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q17",
+      "exam_id": "exam10",
+      "number": 17,
+      "type": "single_choice",
+      "question": "What did the Habeas Corpus Act introduce?",
+      "options": [
+        {
+          "id": "a",
+          "text": "That every prisoner has a right to a court hearing"
+        },
+        {
+          "id": "b",
+          "text": "A salary for members of Parliament (MPs)"
+        },
+        {
+          "id": "c",
+          "text": "Financial help for the unemployed, old-age pensions and free school meals"
+        },
+        {
+          "id": "d",
+          "text": "Measures to improve the conditions of workers"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Habeas Corpus Act became law in 1679. This was a very important piece of legislation which remains relevant today. Habeas corpus is Latin for ‘you must present the person in court’. The Act guaranteed that no one could be held prisoner unlawfully. Every prisoner has a right to a court hearing.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q18",
+      "exam_id": "exam10",
+      "number": 18,
+      "type": "single_choice",
+      "question": "What did Emmeline Pankhurst fight for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The right to liberty and security"
+        },
+        {
+          "id": "b",
+          "text": "The right for women to vote"
+        },
+        {
+          "id": "c",
+          "text": "Freedom of expression"
+        },
+        {
+          "id": "d",
+          "text": "The right to a fair trial"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Emmeline Pankhurst she set up the women’s Franchise League in 1889, which fought to get the vote in local elections for married women. In 1903 she helped found the Women’s Social and Political Union (WSPU). This was the first group whose members were called ‘suffragettes’. The group used civil disobedience as part of their protest to gain the vote for women. In 1918, women over the age of 30 were given voting rights and the right to stand for Parliament, partly in recognition of the contribution women made to the war effort during the First World War.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q19",
+      "exam_id": "exam10",
+      "number": 19,
+      "type": "single_choice",
+      "question": "What is “the Proms”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An annual event that gives awards in a range of categories, such as best British group and best British solo artist"
+        },
+        {
+          "id": "b",
+          "text": "An annual cultural festival which includes music, dance, art and original performances largely in Welsh"
+        },
+        {
+          "id": "c",
+          "text": "An eight-week summer season of daily orchestral classical music concerts"
+        },
+        {
+          "id": "d",
+          "text": "Light-hearted plays with music and comedy"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Proms is an eight-week summer season of orchestral classical music that takes place in various venues, including the Royal Albert Hall in London.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q20",
+      "exam_id": "exam10",
+      "number": 20,
+      "type": "single_choice",
+      "question": "What was Isaac Newton known for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The discovery of insulin"
+        },
+        {
+          "id": "b",
+          "text": "The discovery of gravity"
+        },
+        {
+          "id": "c",
+          "text": "The discovery of penicillin"
+        },
+        {
+          "id": "d",
+          "text": "The discovery of steam power"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Newton‘s most famous published work was Philosophiae Naturalis Principia Mathematica (‘Mathematical Principle of Natural Philosophy’), which showed how gravity applied to the whole universe.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q21",
+      "exam_id": "exam10",
+      "number": 21,
+      "type": "single_choice",
+      "question": "When did the WWI come to an end?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In 1922"
+        },
+        {
+          "id": "b",
+          "text": "In 1918"
+        },
+        {
+          "id": "c",
+          "text": "In 1945"
+        },
+        {
+          "id": "d",
+          "text": "In 1943"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The World War I ended in 1918.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q22",
+      "exam_id": "exam10",
+      "number": 22,
+      "type": "single_choice",
+      "question": "Who built a wall in the north of England to keep out the Picts (ancestors of the Scottish people)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boudicca"
+        },
+        {
+          "id": "b",
+          "text": "Emperor Hadrian"
+        },
+        {
+          "id": "c",
+          "text": "Emperor Claudius"
+        },
+        {
+          "id": "d",
+          "text": "Julius Caesar"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Emperor Hadrian built a wall in the north of England to keep out the Picts (ancestors of the Scottish people).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q23",
+      "exam_id": "exam10",
+      "number": 23,
+      "type": "multiple_choice",
+      "question": "Which two universities participate in an annual rowing race that takes place on the River Thames?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The University of Oxford"
+        },
+        {
+          "id": "b",
+          "text": "The University of Cambridge"
+        },
+        {
+          "id": "c",
+          "text": "The University of Manchester"
+        },
+        {
+          "id": "d",
+          "text": "The University of Warwick"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "Rowing is also popular, both as a leisure activity and as a competitive sport. There is a popular yearly race on the Thames between Oxford and Cambridge Universities.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam10-q24",
+      "exam_id": "exam10",
+      "number": 24,
+      "type": "single_choice",
+      "question": "Does Britain have a written constitution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The British constitution is not written down in any single document, and therefore it is described as ‘unwritten’.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
