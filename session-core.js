@@ -1,7 +1,7 @@
 /* LifeUK session rules. Raw questions and lifetime history are never deleted. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.LifeUKSession=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
-  const VERSION=5;
+  const VERSION=6;
   // Manually reviewed equivalent learning objective, not a general topic filter.
   const EQUIVALENTS=Object.freeze({});
   const norm=text=>String(text).normalize('NFKC').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g,' ').trim();
@@ -42,6 +42,13 @@
   }
   function recordAnswer(s,q,selected,time){if(!s||s.queue[s.index]!==q.id||answerAt(s,s.index)||selected.length!==q.required_selection_count||new Set(selected).size!==selected.length||!selected.every(id=>q.options.some(o=>o.id===id)))return null;const a={queueIndex:s.index,questionId:q.id,selected:[...selected],ok:isCorrect(q,selected),answeredAt:time};s.attempts=Array.isArray(s.attempts)?s.attempts:[];s.attempts.push(a);s.answers[q.id]={selected:[...selected],ok:a.ok,answeredAt:time};if(!a.ok)scheduleRetry(s,q.id);s.draft=null;return a;}
   function advance(s){if(!s||!answerAt(s,s.index))return false;s.index++;s.draft=null;return true;}
-  function sessionScore(s){const attempts=Array.isArray(s.attempts)&&s.attempts.length?s.attempts:Object.values(s.answers||{});const correct=attempts.filter(a=>a.ok).length,answered=attempts.length,wrong=answered-correct;return {total:s.queue.length,answered,correct,wrong,percent:answered?Math.round(100*correct/answered):null,complete:answered===s.queue.length};}
+  function sessionScore(s){
+    const attempts=Array.isArray(s.attempts)&&s.attempts.length?s.attempts:Object.entries(s.answers||{}).map(([questionId,a],queueIndex)=>({...a,questionId,queueIndex}));
+    const ids=[...new Set((s.queue||[]).filter(Boolean))],byId=new Map();
+    for(const a of attempts){if(!byId.has(a.questionId))byId.set(a.questionId,[]);byId.get(a.questionId).push(a);}
+    let answered=0,correct=0,wrong=0;
+    for(const id of ids){const xs=byId.get(id)||[];if(!xs.length)continue;answered++;if(xs.some(a=>!a.ok))wrong++;else correct++;}
+    return {total:ids.length,answered,correct,wrong,percent:answered?Math.round(100*correct/answered):null,complete:attempts.length===s.queue.length};
+  }
   return Object.freeze({VERSION,EQUIVALENTS,questionKey,uniqueQuestions,groups,latestResult,latestSummary,mistakes,createSession,restoreSession,recordAnswer,advance,isCorrect,sessionScore,answerAt,scheduleRetry});
 });
