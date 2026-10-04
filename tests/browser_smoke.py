@@ -90,9 +90,11 @@ with sync_playwright() as p:
             open_page(page);page.click('#resumeBtn');assert page.locator('#checkBtn').is_hidden();assert page.locator('#feedback b').inner_text()=='Correct'
             assert page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).stats.answered")==1
         page.click('#nextBtn');page.click('.option[data-id="a"]');page.click('#checkBtn');page.click('#homeBtn');page.click('#resumeBtn')
-        assert page.locator('#feedback b').inner_text()=='Not quite';page.click('#nextBtn');assert page.locator('#resumeBtn').is_disabled()
-        assert page.locator('[data-exam-id="exam06"] .exam-accuracy').inner_text()=='Latest accuracy: 50%'
-        assert '50% (1/2)' in page.locator('[data-exam-id="exam06"] .last-exam').inner_text()
+        assert page.locator('#feedback b').inner_text()=='Not quite';page.click('#nextBtn');assert not page.locator('#resumeBtn').is_disabled()
+        assert page.locator('#questionText').inner_text()==qs[1]['question'];answer_current(page);page.click('#nextBtn');assert page.locator('#resumeBtn').is_disabled()
+        assert page.locator('[data-exam-id="exam06"] .exam-accuracy').inner_text()=='Latest accuracy: 67%'
+        assert '2 / 3 attempts correct · 1 wrong' in page.locator('[data-exam-id="exam06"]').inner_text()
+        assert 'mistakes are never erased' in page.locator('[data-exam-id="exam06"] .last-exam').inner_text()
         # Latest accuracy excludes unseen; only last-wrong records enter either wrong-only scope.
         def st(ok,t=100):return {'seen':2,'correct':1 if ok else 0,'wrong':1 if ok else 2,'streak':1 if ok else 0,'mastered':False,'lastSeen':t,'nextDue':0,'lastCorrect':ok}
         a,b,c='lituk-exam05-q01','lituk-exam05-q02','lituk-exam06-q06'
