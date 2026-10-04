@@ -1,7 +1,7 @@
 /* LifeUK session rules. Raw questions and lifetime history are never deleted. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.LifeUKSession=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
-  const VERSION=6;
+  const VERSION=7;
   // Manually reviewed equivalent learning objective, not a general topic filter.
   const EQUIVALENTS=Object.freeze({});
   const norm=text=>String(text).normalize('NFKC').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g,' ').trim();
@@ -22,6 +22,23 @@
   }
   function latestSummary(qs,progress){const list=groups(qs),known=list.map(g=>latestInGroup(g,progress)).filter(Boolean),correct=known.filter(x=>x.result).length;return {total:list.length,answered:known.length,correct,wrong:known.length-correct,percent:known.length?Math.round(100*correct/known.length):null};}
   function mistakes(qs,progress){return groups(qs).map(g=>latestInGroup(g,progress)).filter(x=>x&&x.result===false).sort((a,b)=>(Number(b.s.lastSeen)||0)-(Number(a.s.lastSeen)||0)).map(x=>x.q);}
+  function sessionWrongQuestionIds(s){
+    const attempts=Array.isArray(s?.attempts)?s.attempts:[],wrong=new Set(attempts.filter(a=>!a.ok).map(a=>a.questionId));
+    return [...new Set((s?.queue||[]).filter(id=>wrong.has(id)))];
+  }
+  function inferLegacyWrongQuestionIds(qs,progress,lastExam){
+    if(!lastExam||Array.isArray(lastExam.wrongQuestionIds)||!(Number(lastExam.wrong)>0))return Array.isArray(lastExam?.wrongQuestionIds)?[...lastExam.wrongQuestionIds]:[];
+    const completedAt=Number(lastExam.completedAt)||Infinity;
+    return uniqueQuestions(qs).filter(q=>{const s=progress[q.id];return s&&Number(s.wrong)>0&&Number(s.lastSeen)>0&&Number(s.lastSeen)<=completedAt;})
+      .sort((a,b)=>(Number(progress[b.id]?.lastSeen)||0)-(Number(progress[a.id]?.lastSeen)||0))
+      .slice(0,Math.min(Number(lastExam.wrong)||0,uniqueQuestions(qs).length)).map(q=>q.id);
+  }
+  function mistakesWithExam(qs,progress,lastExam){
+    const byId=new Map(qs.map(q=>[q.id,q])),stickyIds=inferLegacyWrongQuestionIds(qs,progress,lastExam),completedAt=Number(lastExam?.completedAt)||0;
+    const combined=[...mistakes(qs,progress)];
+    for(const id of stickyIds){const q=byId.get(id),s=progress[id];if(!q)continue;const cleared=completedAt>0&&Number(s?.lastSeen)>completedAt&&latestResult(s)===true;if(!cleared)combined.push(q);}
+    return uniqueQuestions(combined).sort((a,b)=>(Number(progress[b.id]?.lastSeen)||0)-(Number(progress[a.id]?.lastSeen)||0));
+  }
   function createSession(mode,label,qs,time){return {version:VERSION,id:`${time}-${Math.random().toString(36).slice(2)}`,mode,label,examId:mode==='exam'?qs[0]?.exam_id:null,queue:uniqueQuestions(qs).map(q=>q.id),index:0,startedAt:time,answers:{},attempts:[],retryCounts:{},draft:null};}
   function answerAt(s,index){if(!s)return null;if(Array.isArray(s.attempts))return s.attempts.find(x=>x.queueIndex===index)||null;const id=s.queue?.[index];return id&&s.answers?s.answers[id]||null:null;}
   function scheduleRetry(s,qid){if(!s||s.mode!=='exam')return false;s.retryCounts=s.retryCounts||{};if((s.retryCounts[qid]||0)>=1)return false;const remaining=s.queue.slice(s.index+1);if(remaining.includes(qid))return false;const pos=Math.min(s.queue.length,s.index+4);s.queue.splice(pos,0,qid);s.retryCounts[qid]=(s.retryCounts[qid]||0)+1;return true;}
@@ -50,5 +67,5 @@
     for(const id of ids){const xs=byId.get(id)||[];if(!xs.length)continue;answered++;if(xs.some(a=>!a.ok))wrong++;else correct++;}
     return {total:ids.length,answered,correct,wrong,percent:answered?Math.round(100*correct/answered):null,complete:attempts.length===s.queue.length};
   }
-  return Object.freeze({VERSION,EQUIVALENTS,questionKey,uniqueQuestions,groups,latestResult,latestSummary,mistakes,createSession,restoreSession,recordAnswer,advance,isCorrect,sessionScore,answerAt,scheduleRetry});
+  return Object.freeze({VERSION,EQUIVALENTS,questionKey,uniqueQuestions,groups,latestResult,latestSummary,mistakes,sessionWrongQuestionIds,inferLegacyWrongQuestionIds,mistakesWithExam,createSession,restoreSession,recordAnswer,advance,isCorrect,sessionScore,answerAt,scheduleRetry});
 });
