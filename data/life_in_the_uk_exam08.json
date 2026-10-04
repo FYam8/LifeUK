@@ -1,0 +1,787 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 8",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 8",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam08-q01",
+      "exam_id": "exam08",
+      "number": 1,
+      "type": "single_choice",
+      "question": "World War II started as a result of Germany invading which country?",
+      "options": [
+        {
+          "id": "a",
+          "text": "France"
+        },
+        {
+          "id": "b",
+          "text": "Russia"
+        },
+        {
+          "id": "c",
+          "text": "Poland"
+        },
+        {
+          "id": "d",
+          "text": "Austria"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Second World War started when Hitler invaded Poland in 1939. Britain and France declared war in order to stop his aggression.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q02",
+      "exam_id": "exam08",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Which flower is associated with Scotland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Shamrock"
+        },
+        {
+          "id": "b",
+          "text": "The Rose"
+        },
+        {
+          "id": "c",
+          "text": "The Daffodil"
+        },
+        {
+          "id": "d",
+          "text": "The Thistle"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The flower associated with Scotland is the thistle.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q03",
+      "exam_id": "exam08",
+      "number": 3,
+      "type": "true_false",
+      "question": "Police complaints can only be made by writing to the Chief Constable of the police force involved.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. Anyone can make a complaint about the police by going to a police station and writing to the Chief Constable of the police force involved. Complaints can also be made to an independent body: the Independent Police Complaints Commission in England and Wales, the Police Complaints Commissioner for Scotland or the Police Ombudsman for Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Names of police complaints bodies in the explanation may be outdated and need current verification."
+      ]
+    },
+    {
+      "id": "lituk-exam08-q04",
+      "exam_id": "exam08",
+      "number": 4,
+      "type": "single_choice",
+      "question": "Which of the following is a responsibility of the Home Secretary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Economy"
+        },
+        {
+          "id": "b",
+          "text": "Crime"
+        },
+        {
+          "id": "c",
+          "text": "Education"
+        },
+        {
+          "id": "d",
+          "text": "Defence"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Home Secretary is responsible for crime, policing and immigration.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q05",
+      "exam_id": "exam08",
+      "number": 5,
+      "type": "single_choice",
+      "question": "When is St David’s day celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1st March"
+        },
+        {
+          "id": "b",
+          "text": "17th March"
+        },
+        {
+          "id": "c",
+          "text": "23rd April"
+        },
+        {
+          "id": "d",
+          "text": "17th April"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "St David’s day, patron of Wales, is celebrated on the 1st of March.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q06",
+      "exam_id": "exam08",
+      "number": 6,
+      "type": "single_choice",
+      "question": "What happened to ‘Mary, Queen of Scots’ after she spent 20 years in prison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "She became Queen of England"
+        },
+        {
+          "id": "b",
+          "text": "She was sent to France"
+        },
+        {
+          "id": "c",
+          "text": "She escaped to Denmark"
+        },
+        {
+          "id": "d",
+          "text": "She was executed"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Mary was eventually executed, accused of plotting against Elizabeth I.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q07",
+      "exam_id": "exam08",
+      "number": 7,
+      "type": "single_choice",
+      "question": "What did Francis Crick discover?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The MRI (magnetic resonance imaging) scanner"
+        },
+        {
+          "id": "b",
+          "text": "The jet engine"
+        },
+        {
+          "id": "c",
+          "text": "The IVF (in-vitro fertilisation) therapy"
+        },
+        {
+          "id": "d",
+          "text": "The structure of the DNA molecule"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Francis Crick discovered the structure of the DNA molecule.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q08",
+      "exam_id": "exam08",
+      "number": 8,
+      "type": "true_false",
+      "question": "Northern Ireland and Scotland have their own banknotes, which are valid everywhere in the UK.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q09",
+      "exam_id": "exam08",
+      "number": 9,
+      "type": "single_choice",
+      "question": "How many national parks are there in England, Wales and Scotland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "18"
+        },
+        {
+          "id": "d",
+          "text": "42"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are 15 national parks in England, Wales and Scotland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q10",
+      "exam_id": "exam08",
+      "number": 10,
+      "type": "single_choice",
+      "question": "Is Northern Ireland part of Great Britain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "‘Great Britain’ refers only to England, Scotland and Wales, not to Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q11",
+      "exam_id": "exam08",
+      "number": 11,
+      "type": "multiple_choice",
+      "question": "If you are a dog owner, which two things should your dog’s collar have when you go out for a walk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The owner’s address"
+        },
+        {
+          "id": "b",
+          "text": "The owner’s name"
+        },
+        {
+          "id": "c",
+          "text": "The dog’s breed"
+        },
+        {
+          "id": "d",
+          "text": "The dog’s name"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "b"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "All dogs in public places must wear a collar showing the name and address of the owner.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q12",
+      "exam_id": "exam08",
+      "number": 12,
+      "type": "single_choice",
+      "question": "What day relates to the death of Jesus Christ?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Good Friday"
+        },
+        {
+          "id": "b",
+          "text": "Easter Sunday"
+        },
+        {
+          "id": "c",
+          "text": "Easter Monday"
+        },
+        {
+          "id": "d",
+          "text": "Ash Wednesday"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Easter takes place in March or April. It marks the death of Jesus Christ on Good Friday and his rising from the dead on Easter Sunday.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q13",
+      "exam_id": "exam08",
+      "number": 13,
+      "type": "single_choice",
+      "question": "A responsibility of the MPs is to represent everyone in their _______.",
+      "options": [
+        {
+          "id": "a",
+          "text": "County"
+        },
+        {
+          "id": "b",
+          "text": "Estate"
+        },
+        {
+          "id": "c",
+          "text": "District"
+        },
+        {
+          "id": "d",
+          "text": "Constituency"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "A responsibility of the MPs is to represent everyone in their constituency.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q14",
+      "exam_id": "exam08",
+      "number": 14,
+      "type": "single_choice",
+      "question": "What was achieved with the Magna Carta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It restricted the King’s power"
+        },
+        {
+          "id": "b",
+          "text": "It increased the King’s power"
+        },
+        {
+          "id": "c",
+          "text": "It restricted the rights of the farmers"
+        },
+        {
+          "id": "d",
+          "text": "It increased women’s power"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Magna Carta established the idea that even the king was subject to the law. It protected the rights of the nobility and restricted the king’s power to collect taxes or to make and change laws. In future, the king would need to involve his noblemen in decisions.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q15",
+      "exam_id": "exam08",
+      "number": 15,
+      "type": "true_false",
+      "question": "Female genital mutilation (FGM) or taking a girl or woman abroad for FGM is illegal in the UK and it is a criminal offence.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "This statement is true.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q16",
+      "exam_id": "exam08",
+      "number": 16,
+      "type": "single_choice",
+      "question": "What year were women given the right to vote?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1918"
+        },
+        {
+          "id": "b",
+          "text": "1925"
+        },
+        {
+          "id": "c",
+          "text": "1949"
+        },
+        {
+          "id": "d",
+          "text": "1914"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1918, women over the age of 30 were given voting rights and the right to stand for Parliament, partly in recognition of the contribution women made to the war effort during the First World War.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q17",
+      "exam_id": "exam08",
+      "number": 17,
+      "type": "multiple_choice",
+      "question": "Which two of the following are British overseas territories?",
+      "options": [
+        {
+          "id": "a",
+          "text": "St Helena"
+        },
+        {
+          "id": "b",
+          "text": "Solomon Islands"
+        },
+        {
+          "id": "c",
+          "text": "Mauritius"
+        },
+        {
+          "id": "d",
+          "text": "The Falkland Islands"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "There are several British overseas territories, such as St Helena and the Falkland Islands. They are linked to the UK but are not part of it.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q18",
+      "exam_id": "exam08",
+      "number": 18,
+      "type": "single_choice",
+      "question": "Who did the English defeat in 1588?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Normans"
+        },
+        {
+          "id": "b",
+          "text": "The Romans"
+        },
+        {
+          "id": "c",
+          "text": "The Spanish Armada"
+        },
+        {
+          "id": "d",
+          "text": "The Saxons"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1588 the English defeated the Spanish Armada (a large fleet of ships).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q19",
+      "exam_id": "exam08",
+      "number": 19,
+      "type": "single_choice",
+      "question": "Who designed the Cenotaph?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sir Norman Foster"
+        },
+        {
+          "id": "b",
+          "text": "Lancelot ‘Capability’ Brown"
+        },
+        {
+          "id": "c",
+          "text": "Sir Edwin Lutyens"
+        },
+        {
+          "id": "d",
+          "text": "Isambard Kingdom Brunel"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Sir Edwin Lutyens was responsible for designing many war memorials throughout the world, including the Cenotaph in Whitehall.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q20",
+      "exam_id": "exam08",
+      "number": 20,
+      "type": "single_choice",
+      "question": "How often are the members of the Welsh government elected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every 5 years"
+        },
+        {
+          "id": "b",
+          "text": "Every 2 years"
+        },
+        {
+          "id": "c",
+          "text": "Every 4 years"
+        },
+        {
+          "id": "d",
+          "text": "Every 3 years"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "There are 60 members of the Welsh government or members of the Senedd (SMs) and elections are held every four years using a form of proportional representation.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Election cycle terminology may be historically dated and should be verified before treating as current guidance."
+      ]
+    },
+    {
+      "id": "lituk-exam08-q21",
+      "exam_id": "exam08",
+      "number": 21,
+      "type": "single_choice",
+      "question": "During which period did the Beatles become popular and social laws were liberalised?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1960s"
+        },
+        {
+          "id": "b",
+          "text": "1970s"
+        },
+        {
+          "id": "c",
+          "text": "1980s"
+        },
+        {
+          "id": "d",
+          "text": "1950s"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The decade of the 1960s was a period of significant social change. It was known as the ‘swinging sixties’. There was growth in British fashion, cinema and popular music. Two well-known pop music groups at the time were The Beatles and The Rolling Stones. It was also a time when social laws were liberalised, for example in relation to divorce and to abortion in England, Wales and Scotland. The position of women in the workplace also improved.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q22",
+      "exam_id": "exam08",
+      "number": 22,
+      "type": "single_choice",
+      "question": "The Man Booker Prize is awarded in which of the following categories?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Films"
+        },
+        {
+          "id": "b",
+          "text": "Sport"
+        },
+        {
+          "id": "c",
+          "text": "Literature"
+        },
+        {
+          "id": "d",
+          "text": "Music"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Man Booker Prize for Fiction is awarded annually for the best fiction novel (literature) written by an author from the Commonwealth, Ireland or Zimbabwe. It has been awarded since 1968. Past winners include Ian McEwan, Hilary Mantel and Julian Barnes.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Prize name and eligibility rules may have changed; retained exactly from supplied source."
+      ]
+    },
+    {
+      "id": "lituk-exam08-q23",
+      "exam_id": "exam08",
+      "number": 23,
+      "type": "single_choice",
+      "question": "What sort of election takes place when a member of the Parliament (MP) dies or resigns?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coalition"
+        },
+        {
+          "id": "b",
+          "text": "Pre-selection"
+        },
+        {
+          "id": "c",
+          "text": "Random selection"
+        },
+        {
+          "id": "d",
+          "text": "By-election"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "If an MP dies or resigns, there will be a fresh election, called a by-election, in his or her constituency.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam08-q24",
+      "exam_id": "exam08",
+      "number": 24,
+      "type": "single_choice",
+      "question": "What is the Turner Prize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A literature award"
+        },
+        {
+          "id": "b",
+          "text": "A music award"
+        },
+        {
+          "id": "c",
+          "text": "A contemporary art award"
+        },
+        {
+          "id": "d",
+          "text": "A theatre award"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Turner Prize was established in 1984 and celebrates contemporary art. The Turner Prize is recognised as one of the most prestigious visual art awards in Europe.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    }
+  ]
+}
