@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const Core=globalThis.LifeUKSession,BUILD='20261005-exam-score-separation-1';
+  const Core=globalThis.LifeUKSession,BUILD='20261005-sticky-mistakes-1';
   const DATA_FILES=Array.from({length:17},(_,i)=>`data/life_in_the_uk_exam${String(i+1).padStart(2,'0')}.json`);
   const STORAGE_KEY='lifeuk_state_v1',ACTIVE_KEY='lifeuk_active_session_v1',SCHEMA_VERSION=1;
   const $=id=>document.getElementById(id),now=()=>Date.now(),copy=x=>JSON.parse(JSON.stringify(x));
@@ -42,10 +42,10 @@
   function renderHome(){
     $('mAnswered').textContent=state.stats.answered;$('mAccuracy').textContent=state.stats.answered?Math.round(100*state.stats.correct/state.stats.answered)+'%':'—';
     $('mMastered').textContent=all.filter(q=>qState(q.id).mastered).length;
-    const wrong=Core.mistakes(all,state.questions);$('mistakesBtn').textContent=`Mistakes only (${wrong.length})`;$('mistakesBtn').disabled=!wrong.length;
+    const wrong=exams.flatMap(exam=>Core.mistakesWithExam(exam.questions,state.questions,state.lastExams[exam.questions[0].exam_id]));$('mistakesBtn').textContent=`Mistakes only (${Core.uniqueQuestions(wrong).length})`;$('mistakesBtn').disabled=!wrong.length;
     const grid=$('examGrid');grid.replaceChildren();
     for(const exam of exams){
-      const source=exam.questions,qs=Core.uniqueQuestions(source),wrongQs=Core.mistakes(source,state.questions),examId=source[0].exam_id;
+      const source=exam.questions,qs=Core.uniqueQuestions(source),examId=source[0].exam_id,wrongQs=Core.mistakesWithExam(source,state.questions,state.lastExams[examId]);
       const card=element('article','exam-card');card.dataset.examId=examId;
       const last=state.lastExams[examId],latestPercent=last?last.percent:null;
       const title=element('h3','',exam.source.exam_label),metric=element('div','exam-accuracy',latestPercent===null?'—':latestPercent+'%');
@@ -65,7 +65,7 @@
     session=Core.createSession(mode,label,shuffle(Core.uniqueQuestions(qs)),now());save();notify('');$('sessionResult').classList.add('hidden');showStudy();loadCurrent();
   }
   function startExam(exam){begin('exam',exam.source.exam_label,exam.questions);}
-  function startMistakes(exam){begin('mistakes',exam?`${exam.source.exam_label} · Mistakes only`:'All exams · Mistakes only',Core.mistakes(exam?exam.questions:all,state.questions));}
+  function startMistakes(exam){const qs=exam?Core.mistakesWithExam(exam.questions,state.questions,state.lastExams[exam.questions[0].exam_id]):Core.uniqueQuestions(exams.flatMap(e=>Core.mistakesWithExam(e.questions,state.questions,state.lastExams[e.questions[0].exam_id])));begin('mistakes',exam?`${exam.source.exam_label} · Mistakes only`:'All exams · Mistakes only',qs);}
   function startReview(){const t=now();const qs=all.filter(q=>{const s=qState(q.id);return s.seen>0&&(!s.mastered||s.nextDue<=t);}).sort((a,b)=>(qState(a.id).streak-qState(b.id).streak)||(qState(a.id).lastSeen-qState(b.id).lastSeen));begin('review','Review due / weak',qs);}
   function startRandom24(){const pool=Core.uniqueQuestions(all);begin('random','Random 24',shuffle(pool).slice(0,Math.min(24,pool.length)));}
   function showStudy(){$('homeView').classList.add('hidden');$('studyView').classList.remove('hidden');$('homeBtn').classList.remove('hidden');window.scrollTo(0,0);}
@@ -88,7 +88,7 @@
     if(checked||!current||syncOtherTab())return;const answer=Core.recordAnswer(session,current,[...selected],now());if(!answer)return;checked=true;
     const s=qState(current.id);s.seen++;s.lastSeen=answer.answeredAt;s.lastCorrect=answer.ok;state.stats.answered++;
     if(answer.ok){s.correct++;s.streak++;state.stats.correct++;s.mastered=s.streak>=4;s.nextDue=now()+dueDelay(s.streak);}else{s.wrong++;s.streak=0;s.mastered=false;s.nextDue=now()+5*60*1000;}
-    const score=Core.sessionScore(session);if(session.mode==='exam'&&score.complete&&score.total===24)state.lastExams[session.examId]={...score,sessionId:session.id,completedAt:answer.answeredAt};
+    const score=Core.sessionScore(session);if(session.mode==='exam'&&score.complete&&score.total===24)state.lastExams[session.examId]={...score,sessionId:session.id,startedAt:session.startedAt,completedAt:answer.answeredAt,wrongQuestionIds:Core.sessionWrongQuestionIds(session)};
     save();renderAnswer(answer);renderHome();$('feedback').scrollIntoView({block:'nearest'});
   }
   function renderAnswer(answer){
