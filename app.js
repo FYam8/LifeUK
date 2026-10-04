@@ -4,7 +4,20 @@
     'data/life_in_the_uk_exam01.json',
     'data/life_in_the_uk_exam02.json',
     'data/life_in_the_uk_exam03.json',
-    'data/life_in_the_uk_exam04.json'
+    'data/life_in_the_uk_exam04.json',
+    'data/life_in_the_uk_exam05.json',
+    'data/life_in_the_uk_exam06.json',
+    'data/life_in_the_uk_exam07.json',
+    'data/life_in_the_uk_exam08.json',
+    'data/life_in_the_uk_exam09.json',
+    'data/life_in_the_uk_exam10.json',
+    'data/life_in_the_uk_exam11.json',
+    'data/life_in_the_uk_exam12.json',
+    'data/life_in_the_uk_exam13.json',
+    'data/life_in_the_uk_exam14.json',
+    'data/life_in_the_uk_exam15.json',
+    'data/life_in_the_uk_exam16.json',
+    'data/life_in_the_uk_exam17.json'
   ];
   const STORAGE_KEY='lifeuk_state_v1';
   const ACTIVE_KEY='lifeuk_active_session_v1';
