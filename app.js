@@ -29,7 +29,7 @@
     if(!Core)throw new Error('Session rules did not load. Please reload.');
     exams=await Promise.all(DATA_FILES.map(async f=>{const r=await fetch(f,{cache:'no-store'});if(!r.ok)throw new Error(f);return r.json();}));
     all=exams.flatMap(e=>e.questions);for(const q of all){if(bank.has(q.id))throw new Error('Duplicate question ID: '+q.id);bank.set(q.id,q);}
-    $('examSummary').textContent=`Exam 1–${exams.length} · ${all.length} source questions · ${exams.reduce((n,e)=>n+Core.uniqueQuestions(e.questions).length,0)} questions after within-exam deduplication. Source wording is preserved.`;
+    $('examSummary').textContent=`Exam 1–${exams.length} · ${all.length} questions. Source wording is preserved.`;
     $('buildLabel').textContent='LifeUK '+BUILD;restore();save();bind();renderHome();
   }
   function bind(){
