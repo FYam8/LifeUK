@@ -1,0 +1,798 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 6",
+  "source": {
+    "type": "user_supplied_text",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 6",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Question, option and explanation wording retained from supplied text.",
+    "Incorrect markers excluded; no learner response or score inferred.",
+    "Answer keys inferred from explanations, not independently verified.",
+    "Neutral import format; compatibility with english-vocab application has not yet been checked."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam06-q01",
+      "exam_id": "exam06",
+      "number": 1,
+      "type": "multiple_choice",
+      "question": "As a British citizen what are your responsibilities (choose two answers)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To respect and obey the law"
+        },
+        {
+          "id": "b",
+          "text": "To walk your dog only during the day"
+        },
+        {
+          "id": "c",
+          "text": "To go to church on Sunday"
+        },
+        {
+          "id": "d",
+          "text": "To look after yourself and your family"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "If you wish to be a permanent resident or citizen of the UK, you should: respect and obey the law, look after yourself and your family, respect the rights of others, including their right to their own opinions, treat others with fairness and look after the area in which you live and the environment.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q02",
+      "exam_id": "exam06",
+      "number": 2,
+      "type": "single_choice",
+      "question": "Who made the first coins to be minted in Britain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The people of the Stone Age"
+        },
+        {
+          "id": "b",
+          "text": "The Anglo-saxons"
+        },
+        {
+          "id": "c",
+          "text": "The people of the Iron Age"
+        },
+        {
+          "id": "d",
+          "text": "The Romans"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The people of the Iron Age made the first coins to be minted in Britain, some inscribed with the names of Iron Age kings. This marks the beginnings of British history.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q03",
+      "exam_id": "exam06",
+      "number": 3,
+      "type": "single_choice",
+      "question": "Who built the Tower of London?",
+      "options": [
+        {
+          "id": "a",
+          "text": "William the Conqueror"
+        },
+        {
+          "id": "b",
+          "text": "Queen Victoria"
+        },
+        {
+          "id": "c",
+          "text": "Queen Elizabeth I"
+        },
+        {
+          "id": "d",
+          "text": "Oliver Cromwell"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is William the Conqueror.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q04",
+      "exam_id": "exam06",
+      "number": 4,
+      "type": "single_choice",
+      "question": "There are 15 national parks in England, Wales and Scotland. What are national parks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Giant greenhouses"
+        },
+        {
+          "id": "b",
+          "text": "Land formations of columns made from volcanic lava"
+        },
+        {
+          "id": "c",
+          "text": "Areas of protected countryside"
+        },
+        {
+          "id": "d",
+          "text": "Medieval buildings"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "National Parks are areas of protected countryside that everyone can visit, and where people live, work and look after the landscape.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q05",
+      "exam_id": "exam06",
+      "number": 5,
+      "type": "true_false",
+      "question": "Northern Ireland has its own established church.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. There is no established Church in Wales or Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q06",
+      "exam_id": "exam06",
+      "number": 6,
+      "type": "multiple_choice",
+      "question": "Which three territories form Great Britain?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wales"
+        },
+        {
+          "id": "b",
+          "text": "Northern Ireland"
+        },
+        {
+          "id": "c",
+          "text": "England"
+        },
+        {
+          "id": "d",
+          "text": "Scotland"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "c",
+        "d"
+      ],
+      "required_selection_count": 3,
+      "explanation_original": "‘Great Britain’ refers only to England, Scotland and Wales, not to Northern Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q07",
+      "exam_id": "exam06",
+      "number": 7,
+      "type": "single_choice",
+      "question": "How often are ’Prime Minister’s Questions’ held in the parliament?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Every day"
+        },
+        {
+          "id": "b",
+          "text": "Every week"
+        },
+        {
+          "id": "c",
+          "text": "Every two weeks"
+        },
+        {
+          "id": "d",
+          "text": "Once a month"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Prime Minister’s Questions takes place every week while Parliament is sitting.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q08",
+      "exam_id": "exam06",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Which king was executed in 1649?",
+      "options": [
+        {
+          "id": "a",
+          "text": "James I"
+        },
+        {
+          "id": "b",
+          "text": "Charles II"
+        },
+        {
+          "id": "c",
+          "text": "James VII"
+        },
+        {
+          "id": "d",
+          "text": "Charles I"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is Charles I.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q09",
+      "exam_id": "exam06",
+      "number": 9,
+      "type": "single_choice",
+      "question": "Where was William Shakespeare born?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manchester"
+        },
+        {
+          "id": "b",
+          "text": "Oldham"
+        },
+        {
+          "id": "c",
+          "text": "Stratford-upon-Avon"
+        },
+        {
+          "id": "d",
+          "text": "Lincolnshire"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Shakespeare was born in Stratford-upon-Avon, England.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q10",
+      "exam_id": "exam06",
+      "number": 10,
+      "type": "multiple_choice",
+      "question": "Which two of the following are famous British Paralympians?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dame Kelly Holmes"
+        },
+        {
+          "id": "b",
+          "text": "Baroness Tanni Grey-Thompson"
+        },
+        {
+          "id": "c",
+          "text": "Jayne Torvill"
+        },
+        {
+          "id": "d",
+          "text": "Ellie Simmonds"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "Baroness Tanni Grey-Thompson and Ellie Simmonds are the correct answers.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q11",
+      "exam_id": "exam06",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Who was reigning in England when English settlers first began to colonise the eastern coast of America?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queen Victoria"
+        },
+        {
+          "id": "b",
+          "text": "Henry VIII"
+        },
+        {
+          "id": "c",
+          "text": "Elizabeth I"
+        },
+        {
+          "id": "d",
+          "text": "Charles II"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Elizabeth I’s time, English settlers first began to colonise the eastern coast of America.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q12",
+      "exam_id": "exam06",
+      "number": 12,
+      "type": "true_false",
+      "question": "Scotland and Wales use a system called ‘individual registration’ where all those entitled to vote must complete their own registration form.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. Northern Ireland uses a system called ‘individual registration’ and all those entitled to vote must complete their own registration form.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Electoral registration wording may be historically dated and should be verified before treating as current civic guidance."
+      ]
+    },
+    {
+      "id": "lituk-exam06-q13",
+      "exam_id": "exam06",
+      "number": 13,
+      "type": "single_choice",
+      "question": "On what day is the birth of Jesus Christ celebrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Father’s Day"
+        },
+        {
+          "id": "b",
+          "text": "Christmas Day"
+        },
+        {
+          "id": "c",
+          "text": "New Year"
+        },
+        {
+          "id": "d",
+          "text": "Boxing Day"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Christmas Day, 25th of December, celebrates the birth of Jesus Christ.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q14",
+      "exam_id": "exam06",
+      "number": 14,
+      "type": "single_choice",
+      "question": "What sort of battle was the ’Battle of Britain’, fought between Germany and Britain in the summer of 1940?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A battle in the sea"
+        },
+        {
+          "id": "b",
+          "text": "An aerial battle"
+        },
+        {
+          "id": "c",
+          "text": "A battle in the mountains"
+        },
+        {
+          "id": "d",
+          "text": "A battle without rifles"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "‘The Battle of Britain’ was a crucial aerial battle fought between Germany and Britain in the summer of 1940.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q15",
+      "exam_id": "exam06",
+      "number": 15,
+      "type": "single_choice",
+      "question": "Where is Swansea located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "England"
+        },
+        {
+          "id": "b",
+          "text": "Northern Ireland"
+        },
+        {
+          "id": "c",
+          "text": "Scotland"
+        },
+        {
+          "id": "d",
+          "text": "Wales"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Swansea it is located in Wales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q16",
+      "exam_id": "exam06",
+      "number": 16,
+      "type": "multiple_choice",
+      "question": "Which two political parties formed a coalition in 2010?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Conservative Party"
+        },
+        {
+          "id": "b",
+          "text": "The Green Party"
+        },
+        {
+          "id": "c",
+          "text": "The Labour Party"
+        },
+        {
+          "id": "d",
+          "text": "The Liberal Democrats Party"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "In May 2010 the Conservative and Liberal Democrat parties formed a coalition and the leader of the Conservative Party, David Cameron, became Prime Minister.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q17",
+      "exam_id": "exam06",
+      "number": 17,
+      "type": "single_choice",
+      "question": "Who established the Church of England?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Henry VIII"
+        },
+        {
+          "id": "b",
+          "text": "Oliver Cromwell"
+        },
+        {
+          "id": "c",
+          "text": "Winston Churchill"
+        },
+        {
+          "id": "d",
+          "text": "William of Orange"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The correct answer is Henry VIII.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q18",
+      "exam_id": "exam06",
+      "number": 18,
+      "type": "single_choice",
+      "question": "In 1348, one third of the population in England, Wales and Scotland died as a result of which disease?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Measles"
+        },
+        {
+          "id": "b",
+          "text": "Leprosy"
+        },
+        {
+          "id": "c",
+          "text": "Smallpox"
+        },
+        {
+          "id": "d",
+          "text": "The Black Death"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1348, a disease, probably a form of plague, came to Britain. This was known as the Black Death. One third of the population of England died and a similar proportion in Scotland and Wales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q19",
+      "exam_id": "exam06",
+      "number": 19,
+      "type": "single_choice",
+      "question": "Haggis is a traditional food from which area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wales"
+        },
+        {
+          "id": "b",
+          "text": "England"
+        },
+        {
+          "id": "c",
+          "text": "Northern Ireland"
+        },
+        {
+          "id": "d",
+          "text": "Scotland"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Haggis is a traditional food from Scotland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q20",
+      "exam_id": "exam06",
+      "number": 20,
+      "type": "single_choice",
+      "question": "Which court deals with minor criminal offences in Scotland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Sheriff Court"
+        },
+        {
+          "id": "b",
+          "text": "The Magistrates’ Court"
+        },
+        {
+          "id": "c",
+          "text": "The Crown Court"
+        },
+        {
+          "id": "d",
+          "text": "The Justice of the Peace Court"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Scotland, minor criminal offences go to a Justice of the Peace Court.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q21",
+      "exam_id": "exam06",
+      "number": 21,
+      "type": "multiple_choice",
+      "question": "Which two of the following records give us information about England during the reign of William I?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Magna Carta"
+        },
+        {
+          "id": "b",
+          "text": "The Domesday Book"
+        },
+        {
+          "id": "c",
+          "text": "The Bayeux Tapestry"
+        },
+        {
+          "id": "d",
+          "text": "The Canterbury Tales"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The Domesday Book and the Bayeux Tapestry.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q22",
+      "exam_id": "exam06",
+      "number": 22,
+      "type": "single_choice",
+      "question": "In 1913, the British government promised ‘Home Rule’ for Ireland, why were changes in Ireland delayed until 1921?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Due to the outbreak of the First World War"
+        },
+        {
+          "id": "b",
+          "text": "Due to the outbreak of the Second World War"
+        },
+        {
+          "id": "c",
+          "text": "Because there was not a king on the British throne"
+        },
+        {
+          "id": "d",
+          "text": "Due to the outbreak of the Black Death"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The outbreak of the First World War led the British government to postpone any changes in Ireland.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q23",
+      "exam_id": "exam06",
+      "number": 23,
+      "type": "single_choice",
+      "question": "Which of the following statements is true:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elizabeth I was a Protestant and she succeeded in finding a balance between the views of the Catholics and the more extreme Protestants."
+        },
+        {
+          "id": "b",
+          "text": "Elizabeth I was a Catholic and she succeeded in finding a balance between the views of the Catholics and the more extreme Protestants."
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Elizabeth I was a Protestant and she succeeded in finding a balance between the views of the Catholics and the more extreme Protestants.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": []
+    },
+    {
+      "id": "lituk-exam06-q24",
+      "exam_id": "exam06",
+      "number": 24,
+      "type": "multiple_choice",
+      "question": "Which two documents do you need to apply for a National Insurance number?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A document with your address on it, such as a tenancy agreement"
+        },
+        {
+          "id": "b",
+          "text": "Documents that prove that you have permission to work in the UK"
+        },
+        {
+          "id": "c",
+          "text": "A contract from your employer"
+        },
+        {
+          "id": "d",
+          "text": "Documents that prove your identity"
+        }
+      ],
+      "correct_option_ids": [
+        "b",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "To apply for a National Insurance number you need documents that prove your identity and that you have permission to work in the UK.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "National Insurance number application requirements may change and should be verified before treating as current guidance."
+      ]
+    }
+  ]
+}
