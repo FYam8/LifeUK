@@ -13,7 +13,7 @@ Life in the UK study app built around the learning-flow principles of `FYam8/eng
 
 ## Data
 
-Exam 1–4 contain 96 questions in total. Source wording is retained from the user-supplied exam text. Answer keys are inferred from the supplied explanations and are marked as not independently verified in the JSON.
+Exam 1–17 contain 408 questions in total. Source wording is retained from the user-supplied exam text. Answer keys are inferred from the supplied explanations and are marked as not independently verified in the JSON.
 
 ## Deployment
 
