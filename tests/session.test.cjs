@@ -58,7 +58,7 @@ test('review sessions also finish after one pass, even if every answer is wrong'
  const s=C.createSession('review','Review',[all[0],all[0]],100);assert.equal(s.queue.length,1);C.recordAnswer(s,all[0],wrong(all[0]),101);assert.equal(s.queue.length,1);assert(C.advance(s));assert.equal(C.restoreSession(s,bank),null);
 });
 test('HTML loads the actual validated app with a versioned session core',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261005-random24-1/);assert.match(html,/app\.js\?v=20261005-random24-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261005-exam-score-separation-1/);assert.match(html,/app\.js\?v=20261005-exam-score-separation-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
 });
 
 const progress=(lastCorrect,lastSeen=100)=>({seen:3,correct:lastCorrect?2:1,wrong:lastCorrect?1:2,streak:lastCorrect?1:0,lastSeen,lastCorrect});
@@ -97,4 +97,9 @@ test('a question missed once stays wrong for that exam even when its retry is co
 test('version 2 answer receipts remain graded after the version 3 upgrade',()=>{
  const x=all[0],s=C.createSession('exam','Exam 1',[x,all[1]],1);C.recordAnswer(s,x,x.correct_option_ids,2);s.version=2;
  const r=C.restoreSession(s,bank);assert(r.answers[x.id].ok);assert.equal(C.recordAnswer(r,x,x.correct_option_ids,3),null);
+});
+
+
+test('Random 24 sessions survive resume without becoming official exam sessions',()=>{
+ const qs=exams[0].questions.slice(0,4),s=C.createSession('random','Random 24',qs,100);C.recordAnswer(s,qs[0],qs[0].correct_option_ids,101);assert(C.advance(s));const r=C.restoreSession(clone(s),bank);assert(r);assert.equal(r.mode,'random');assert.equal(r.examId,null);assert.equal(r.index,1);
 });
