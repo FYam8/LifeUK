@@ -25,7 +25,7 @@ jobs:
           python - <<'PY'
           import json, glob
           files=sorted(glob.glob('data/life_in_the_uk_exam*.json'))
-          assert len(files)==4, files
+          assert len(files)==17, files
           total=0
           for path in files:
               with open(path, encoding='utf-8') as f:
@@ -36,7 +36,7 @@ jobs:
                   assert q['required_selection_count']==len(q['correct_option_ids'])
                   assert all(any(o['id']==cid for o in q['options']) for cid in q['correct_option_ids'])
               total += len(data['questions'])
-          assert total==96
+          assert total==408
           print('validated', total, 'questions')
           PY
 
