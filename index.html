@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Life in the UK Coach</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#18202a;--muted:#6b7280;--line:#dfe4ea;--accent:#173b6c;--accent2:#2f6fb3;--good:#157347;--bad:#b42318;--soft:#eef4fb;--radius:18px;--shadow:0 10px 28px rgba(28,44,64,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}button,input{font:inherit}button{cursor:pointer}.wrap{max-width:980px;margin:0 auto;padding:18px 16px 80px}.topbar{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:18px}.brand{font-size:22px;font-weight:800}.sub{font-size:12px;color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.metric{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}.metric b{font-size:24px;display:block}.metric span{font-size:12px;color:var(--muted)}.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:14px;margin-bottom:14px}@media(max-width:740px){.hero{grid-template-columns:1fr}.wrap{padding:12px 10px 64px}.card{padding:16px}}h1,h2,h3{margin:0 0 10px}.muted{color:var(--muted)}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:700;background:var(--accent);color:white}.btn.secondary{background:white;color:var(--accent);border:1px solid var(--line)}.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}.btn:disabled{opacity:.45;cursor:not-allowed}.exam-btn{width:100%;text-align:left;padding:15px;border-radius:14px;border:1px solid var(--line);background:#fff}.exam-btn strong{display:block}.exam-btn small{color:var(--muted)}.qhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.pill{display:inline-flex;padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--accent);font-size:12px;font-weight:700}.question{font-size:22px;font-weight:750;margin:18px 0}.options{display:grid;gap:10px}.option{display:flex;gap:12px;align-items:flex-start;width:100%;padding:14px;border:1px solid var(--line);border-radius:14px;background:white;text-align:left;color:var(--ink)}.option:hover{border-color:#aebdce}.option.selected{border-color:var(--accent2);background:var(--soft)}.option.correct{border-color:#8cc9a8;background:#eefaf3}.option.wrong{border-color:#e3a6a1;background:#fff2f1}.badge{min-width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#eef1f4;font-weight:800}.option.selected .badge{background:var(--accent);color:white}.feedback{margin-top:16px;padding:14px;border-radius:14px;border:1px solid var(--line);background:#fafbfc}.feedback.good{border-color:#a8d8bc;background:#f0faf4}.feedback.bad{border-color:#efb0aa;background:#fff4f3}.feedback b{display:block;margin-bottom:6px}.progressbar{height:8px;background:#e9edf2;border-radius:999px;overflow:hidden}.progressbar>div{height:100%;background:var(--accent2);width:0}.section{margin-top:14px}.hidden{display:none!important}.tiny{font-size:12px}.danger{color:var(--bad)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="topbar"><div><div class="brand">Life in the UK Coach</div><div class="sub">Waseda Vocabulary Coach learning-flow adaptation · LifeUK</div></div><button id="homeBtn" class="btn secondary hidden">Home</button></div>
+<main id="homeView">
+<div class="hero">
+<section class="card"><h1>Today</h1><p class="muted">Continue where you left off, or start a focused 24-question exam.</p><div class="row"><button id="resumeBtn" class="btn" disabled>Resume</button><button id="reviewBtn" class="btn secondary">Review due / weak</button></div><div id="resumeHint" class="tiny muted" style="margin-top:9px">No active session yet.</div></section>
+<section class="card"><h2>Progress</h2><div class="grid"><div class="metric"><b id="mAnswered">0</b><span>answered</span></div><div class="metric"><b id="mAccuracy">—</b><span>accuracy</span></div><div class="metric"><b id="mMastered">0</b><span>mastered</span></div></div></section>
+</div>
+<section class="card"><h2>Exams</h2><p class="muted">Exam 1–4. Source wording is preserved.</p><div id="examGrid" class="grid"></div></section>
+<section class="card section"><h2>Learning model</h2><p class="muted">Correct answers build a streak. Wrong answers return sooner. Four consecutive correct answers marks a question mastered.</p><div class="row"><button id="exportBtn" class="btn ghost">Export progress</button><label class="btn ghost" style="cursor:pointer">Import progress<input id="importInput" type="file" accept="application/json" hidden></label><button id="resetBtn" class="btn ghost danger">Reset</button></div></section>
+</main>
+<main id="studyView" class="hidden">
+<section class="card">
+<div class="qhead"><div><span id="sessionLabel" class="pill">Exam</span><div id="counter" class="tiny muted" style="margin-top:8px"></div></div><div id="streakLabel" class="tiny muted"></div></div>
+<div class="progressbar" style="margin-top:12px"><div id="progressFill"></div></div>
+<div id="questionText" class="question"></div>
+<div id="multiHint" class="tiny muted hidden">Select all required answers, then press Check.</div>
+<div id="options" class="options"></div>
+<div id="feedback" class="feedback hidden"></div>
+<div class="row" style="margin-top:16px"><button id="checkBtn" class="btn" disabled>Check</button><button id="nextBtn" class="btn hidden">Next</button><button id="exitBtn" class="btn secondary">Save & exit</button></div>
+</section>
+</main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
