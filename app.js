@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const Core=globalThis.LifeUKSession,BUILD='20261005-sticky-mistakes-1';
+  const Core=globalThis.LifeUKSession,BUILD='20261011-ever-wrong-1';
   const DATA_FILES=Array.from({length:17},(_,i)=>`data/life_in_the_uk_exam${String(i+1).padStart(2,'0')}.json`);
   const STORAGE_KEY='lifeuk_state_v1',ACTIVE_KEY='lifeuk_active_session_v1',SCHEMA_VERSION=1;
   const $=id=>document.getElementById(id),now=()=>Date.now(),copy=x=>JSON.parse(JSON.stringify(x));
@@ -34,7 +34,7 @@
   }
   function bind(){
     $('homeBtn').onclick=showHome;$('exitBtn').onclick=()=>{save();showHome();};$('resumeBtn').onclick=()=>{if(syncOtherTab())return;if(session){showStudy();loadCurrent();}};
-    $('reviewBtn').onclick=startReview;$('mistakesBtn').onclick=()=>startMistakes();$('randomBtn').onclick=startRandom24;$('checkBtn').onclick=checkAnswer;$('nextBtn').onclick=nextQuestion;
+    $('reviewBtn').onclick=startReview;$('everWrongBtn').onclick=startEverWrong;$('mistakesBtn').onclick=()=>startMistakes();$('randomBtn').onclick=startRandom24;$('checkBtn').onclick=checkAnswer;$('nextBtn').onclick=nextQuestion;
     $('exportBtn').onclick=exportProgress;$('importInput').onchange=importProgress;$('resetBtn').onclick=resetProgress;
     window.addEventListener('storage',e=>{if(e.key===STORAGE_KEY)syncOtherTab();});
   }
@@ -43,6 +43,7 @@
     $('mAnswered').textContent=state.stats.answered;$('mAccuracy').textContent=state.stats.answered?Math.round(100*state.stats.correct/state.stats.answered)+'%':'—';
     $('mMastered').textContent=all.filter(q=>qState(q.id).mastered).length;
     const wrong=exams.flatMap(exam=>Core.mistakesWithExam(exam.questions,state.questions,state.lastExams[exam.questions[0].exam_id]));$('mistakesBtn').textContent=`Mistakes only (${Core.uniqueQuestions(wrong).length})`;$('mistakesBtn').disabled=!wrong.length;
+    const everWrong=Core.everWrongQuestions(all,state.questions);$('everWrongBtn').textContent=`Ever Wrong (${everWrong.length})`;$('everWrongBtn').disabled=!everWrong.length;
     const grid=$('examGrid');grid.replaceChildren();
     for(const exam of exams){
       const source=exam.questions,qs=Core.uniqueQuestions(source),examId=source[0].exam_id,wrongQs=Core.mistakesWithExam(source,state.questions,state.lastExams[examId]);
@@ -66,6 +67,7 @@
   }
   function startExam(exam){begin('exam',exam.source.exam_label,exam.questions);}
   function startMistakes(exam){const qs=exam?Core.mistakesWithExam(exam.questions,state.questions,state.lastExams[exam.questions[0].exam_id]):Core.uniqueQuestions(exams.flatMap(e=>Core.mistakesWithExam(e.questions,state.questions,state.lastExams[e.questions[0].exam_id])));begin('mistakes',exam?`${exam.source.exam_label} · Mistakes only`:'All exams · Mistakes only',qs);}
+  function startEverWrong(){begin('ever-wrong','All exams · Ever Wrong',Core.everWrongQuestions(all,state.questions));}
   function startReview(){const t=now();const qs=all.filter(q=>{const s=qState(q.id);return s.seen>0&&(!s.mastered||s.nextDue<=t);}).sort((a,b)=>(qState(a.id).streak-qState(b.id).streak)||(qState(a.id).lastSeen-qState(b.id).lastSeen));begin('review','Review due / weak',qs);}
   function startRandom24(){const pool=Core.uniqueQuestions(all);begin('random','Random 24',shuffle(pool).slice(0,Math.min(24,pool.length)));}
   function showStudy(){$('homeView').classList.add('hidden');$('studyView').classList.remove('hidden');$('homeBtn').classList.remove('hidden');window.scrollTo(0,0);}
