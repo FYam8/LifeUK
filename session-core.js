@@ -1,7 +1,7 @@
 /* LifeUK session rules. Raw questions and lifetime history are never deleted. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.LifeUKSession=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
-  const VERSION=7;
+  const VERSION=8;
   // Manually reviewed equivalent learning objective, not a general topic filter.
   const EQUIVALENTS=Object.freeze({});
   const norm=text=>String(text).normalize('NFKC').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/\s+/g,' ').trim();
@@ -22,6 +22,7 @@
   }
   function latestSummary(qs,progress){const list=groups(qs),known=list.map(g=>latestInGroup(g,progress)).filter(Boolean),correct=known.filter(x=>x.result).length;return {total:list.length,answered:known.length,correct,wrong:known.length-correct,percent:known.length?Math.round(100*correct/known.length):null};}
   function mistakes(qs,progress){return groups(qs).map(g=>latestInGroup(g,progress)).filter(x=>x&&x.result===false).sort((a,b)=>(Number(b.s.lastSeen)||0)-(Number(a.s.lastSeen)||0)).map(x=>x.q);}
+  function everWrongQuestions(qs,progress){return groups(qs).filter(g=>g.some(q=>Number(progress[q.id]?.wrong)>0)).map(g=>g.find(q=>Number(progress[q.id]?.wrong)>0)||g[0]);}
   function sessionWrongQuestionIds(s){
     const attempts=Array.isArray(s?.attempts)?s.attempts:[],wrong=new Set(attempts.filter(a=>!a.ok).map(a=>a.questionId));
     return [...new Set((s?.queue||[]).filter(id=>wrong.has(id)))];
@@ -44,7 +45,7 @@
   function scheduleRetry(s,qid){if(!s||s.mode!=='exam')return false;s.retryCounts=s.retryCounts||{};if((s.retryCounts[qid]||0)>=1)return false;const remaining=s.queue.slice(s.index+1);if(remaining.includes(qid))return false;const pos=Math.min(s.queue.length,s.index+4);s.queue.splice(pos,0,qid);s.retryCounts[qid]=(s.retryCounts[qid]||0)+1;return true;}
   function isCorrect(q,selected){return selected.length===q.correct_option_ids.length&&new Set(selected).size===selected.length&&selected.every(id=>q.correct_option_ids.includes(id));}
   function restoreSession(raw,bank,progress={},time=Date.now()){
-    if(!raw||!['exam','review','mistakes','random'].includes(raw.mode)||!Array.isArray(raw.queue)||!Number.isInteger(raw.index)||raw.index<0||raw.index>raw.queue.length)return null;
+    if(!raw||!['exam','review','mistakes','random','ever-wrong'].includes(raw.mode)||!Array.isArray(raw.queue)||!Number.isInteger(raw.index)||raw.index<0||raw.index>raw.queue.length)return null;
     const legacy=!(raw.version>=2),retryAware=raw.version>=5,completed=new Set(raw.queue.slice(0,raw.index).filter(id=>bank.has(id)).map(id=>questionKey(bank.get(id))));
     let skippedLegacyCurrent=false;const oldCurrent=raw.queue[raw.index],p=progress[oldCurrent];
     if(legacy&&bank.has(oldCurrent)&&Number.isFinite(raw.startedAt)&&p?.seen>0&&p.lastSeen>=raw.startedAt&&p.lastSeen<=time){completed.add(questionKey(bank.get(oldCurrent)));skippedLegacyCurrent=true;}
@@ -67,5 +68,5 @@
     for(const id of ids){const xs=byId.get(id)||[];if(!xs.length)continue;answered++;if(xs.some(a=>!a.ok))wrong++;else correct++;}
     return {total:ids.length,answered,correct,wrong,percent:answered?Math.round(100*correct/answered):null,complete:attempts.length===s.queue.length};
   }
-  return Object.freeze({VERSION,EQUIVALENTS,questionKey,uniqueQuestions,groups,latestResult,latestSummary,mistakes,sessionWrongQuestionIds,inferLegacyWrongQuestionIds,mistakesWithExam,createSession,restoreSession,recordAnswer,advance,isCorrect,sessionScore,answerAt,scheduleRetry});
+  return Object.freeze({VERSION,EQUIVALENTS,questionKey,uniqueQuestions,groups,latestResult,latestSummary,mistakes,everWrongQuestions,sessionWrongQuestionIds,inferLegacyWrongQuestionIds,mistakesWithExam,createSession,restoreSession,recordAnswer,advance,isCorrect,sessionScore,answerAt,scheduleRetry});
 });
