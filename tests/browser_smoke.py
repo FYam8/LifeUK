@@ -58,6 +58,7 @@ with sync_playwright() as p:
         assert page.locator('.exam-card').last.locator('.exam-status').count()==1 and 'mastered' in page.locator('.exam-card').last.inner_text()
         assert page.locator('.exam-accuracy').first.inner_text()=='—'
         assert page.locator('#mistakesBtn').is_disabled()
+        assert page.locator('#everWrongRandomBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
           const S='lifeuk_state_v1',attemptCounts=[];
           for(let exam=0;exam<18;exam++){
@@ -108,6 +109,27 @@ with sync_playwright() as p:
         assert page.locator(f'[data-exam-id="{random_exam_id}"] .exam-accuracy').inner_text()=='—'
         # Latest accuracy excludes unseen; only last-wrong records enter either wrong-only scope.
         def st(ok,t=100):return {'seen':2,'correct':1 if ok else 0,'wrong':1 if ok else 2,'streak':1 if ok else 0,'mastered':False,'lastSeen':t,'nextDue':0,'lastCorrect':ok}
+        # Ever Wrong Random 24 includes old mistakes even when the last answer was correct.
+        eligible=page.evaluate('data=>LifeUKSession.uniqueQuestions(Object.values(data)).slice(0,30).map(q=>q.id)',DATA)
+        seed(page,{qid:st(i%2==0,100+i) for i,qid in enumerate(eligible)})
+        assert 'Ever Wrong Random 24 (30)' in page.locator('#everWrongRandomBtn').inner_text()
+        page.click('#everWrongRandomBtn')
+        s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession")
+        assert s['mode']=='ever-wrong-random24' and s['examId'] is None
+        assert len(s['queue'])==24 and len(set(s['queue']))==24 and set(s['queue']).issubset(set(eligible))
+        first=s['queue'][0]
+        answer_current(page);page.click('#exitBtn');open_page(page);page.click('#resumeBtn')
+        assert 'Ever Wrong Random 24' in page.locator('#sessionLabel').inner_text()
+        assert page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession")['queue']==s['queue']
+        page.click('#exitBtn')
+        assert 'Ever Wrong Random 24 (30)' in page.locator('#everWrongRandomBtn').inner_text()
+        assert page.locator(f'[data-exam-id="{DATA[first]["exam_id"]}"] .exam-accuracy').inner_text()=='—'
+        seed(page,{eligible[0]:st(True)})
+        page.click('#everWrongRandomBtn')
+        s=page.evaluate("JSON.parse(localStorage.getItem('lifeuk_state_v1')).activeSession")
+        assert s['mode']=='ever-wrong-random24' and s['queue']==[eligible[0]]
+        answer_current(page);page.click('#nextBtn')
+        assert 'Ever Wrong Random 24 (1)' in page.locator('#everWrongRandomBtn').inner_text()
         a,b,c='lituk-exam05-q01','lituk-exam05-q02','lituk-exam06-q06'
         seed(page,{a:st(False),b:st(True),c:st(False,200)})
         assert page.locator('[data-exam-id="exam05"] .exam-accuracy').inner_text()=='—'
@@ -151,7 +173,7 @@ with sync_playwright() as p:
             next_box=point_check(page,width,height,'nextBtn');assert abs(next_box['x']-check_box['x'])<1 and abs(next_box['y']-check_box['y'])<1
             page.screenshot(path=str(OUT/f'{label}-controls-round{ROUND}.png'),full_page=False)
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');assert not errors,errors
-        results.append({'viewport':label,'width':width,**bulk,'latest_accuracy':'PASS','last_exam':'PASS','mistakes_only_by_exam_and_all':'PASS','correct_retry_removes_error':'PASS','reload_no_double_grade':'PASS','legacy_migration':'PASS','export_import':'PASS','mobile_bottom_right':'PASS' if mobile else 'not applicable','errors':errors})
+        results.append({'viewport':label,'width':width,**bulk,'latest_accuracy':'PASS','last_exam':'PASS','mistakes_only_by_exam_and_all':'PASS','ever_wrong_random24':'PASS','correct_retry_removes_error':'PASS','reload_no_double_grade':'PASS','legacy_migration':'PASS','export_import':'PASS','mobile_bottom_right':'PASS' if mobile else 'not applicable','errors':errors})
         context.close()
     browser.close()
 report={'round':ROUND,'transport':'offline synthetic storage/fetch' if OFFLINE else 'routed HTTP with real browser storage','results':results}

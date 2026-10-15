@@ -7,6 +7,7 @@ Life in the UK practice app. Exam 1–17 retain 408 unchanged original source re
 - Each Exam, Review, and Mistakes-only session is a finite deduplicated pass. Incorrect answers are never reinserted into the active queue.
 - Every Exam card shows **Latest accuracy**: correct latest answers / questions with a known latest answer. Unanswered questions are excluded. This updates after any mode. It is not lifetime accuracy.
 - **Last completed exam** separately records the most recent full normal Exam session. A partial or mistakes-only session never overwrites it. Old complete-session results were not recorded and are not invented.
+- **Ever Wrong Random 24** selects 24 distinct questions randomly from lifetime mistakes, even when the last answer is correct. Fewer than 24 are shown only when fewer qualify. It supports Resume and does not change the normal Exam score.
 - **Mistakes only** exists for each Exam and across all Exams. Only the most recent incorrect answers qualify. A correct retry removes the question. Known equivalent variants use the most recent known result. Exact repeats are grouped in mixed sessions.
 - The previous engine’s streak determines the latest result only where possible. Unknown old results are not inferred. Original counters are retained.
 - Check and Next share a fixed bottom-right slot on mobile, including landscape, with safe-area padding.
@@ -15,7 +16,7 @@ Life in the UK practice app. Exam 1–17 retain 408 unchanged original source re
 
 ## Verification
 
-Release key: `20261015-exam18-1`. Original Exam 1–17 source records are byte-for-byte preserved. Exam 18 new items were curated separately; the John Logie Baird London–Glasgow date is 1932 in the Life in the UK study guide.
+Release key: `20261015-ever-wrong-random24-1`. Original Exam 1–17 source records are byte-for-byte preserved. Exam 18 new items were curated separately; the John Logie Baird London–Glasgow date is 1932 in the Life in the UK study guide.
 
 Run `node --test tests/session.test.cjs` (34 tests). Browser regression: `QA_ROUND=1 python tests/browser_smoke.py`, then `QA_ROUND=2 python tests/browser_smoke.py` using Python Playwright 1.57.0 and Chromium. CI uses routed HTTP with native browser localStorage. Local `QA_OFFLINE=1` uses isolated synthetic fetch/storage when navigation is unavailable, and is explicitly labelled as such in reports.
 

@@ -58,7 +58,7 @@ test('review sessions also finish after one pass, even if every answer is wrong'
  const s=C.createSession('review','Review',[all[0],all[0]],100);assert.equal(s.queue.length,1);C.recordAnswer(s,all[0],wrong(all[0]),101);assert.equal(s.queue.length,1);assert(C.advance(s));assert.equal(C.restoreSession(s,bank),null);
 });
 test('HTML loads the actual validated app with a versioned session core',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261015-exam18-1/);assert.match(html,/app\.js\?v=20261015-exam18-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261015-ever-wrong-random24-1/);assert.match(html,/app\.js\?v=20261015-ever-wrong-random24-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
 });
 
 const progress=(lastCorrect,lastSeen=100)=>({seen:3,correct:lastCorrect?2:1,wrong:lastCorrect?1:2,streak:lastCorrect?1:0,lastSeen,lastCorrect});
@@ -100,6 +100,23 @@ test('version 2 answer receipts remain graded after the version 3 upgrade',()=>{
 });
 
 
+test('Ever Wrong Random 24 keeps historical errors even after correction and resumes fixed 24-item queue',()=>{
+ const qs=C.uniqueQuestions(all).slice(0,30),progress=Object.fromEntries(qs.map((q,i)=>[q.id,{seen:2,correct:1,wrong:1,streak:1,lastCorrect:true,lastSeen:i+1}]));
+ const pool=C.everWrongQuestions(all,progress);
+ assert.equal(pool.length,30);assert.equal(C.mistakes(qs,progress).length,0);
+ const selected=pool.slice(2,26),s=C.createSession('ever-wrong-random24','Ever Wrong Random 24',selected,100);
+ assert.equal(s.queue.length,24);assert.equal(new Set(s.queue).size,24);assert.equal(s.examId,null);
+ C.recordAnswer(s,selected[0],selected[0].correct_option_ids,101);assert(C.advance(s));
+ const restored=C.restoreSession(clone(s),bank,progress,200);
+ assert(restored);assert.equal(restored.mode,'ever-wrong-random24');assert.equal(restored.queue.length,24);assert.equal(restored.index,1);assert.equal(restored.attempts.length,1);
+ assert.equal(C.sessionScore(restored).total,24);assert.equal(C.everWrongQuestions(all,progress).length,30);
+});
+test('Ever Wrong equivalent variants deduplicate; a shorter pool is never padded with unseen items',()=>{
+ const original=all[0],twin={...original,id:'equivalent-copy'};
+ assert.deepEqual(C.everWrongQuestions([original,twin],{[twin.id]:{wrong:1}}).map(q=>q.id),[twin.id]);
+ const pool=C.everWrongQuestions(all,{[original.id]:{seen:2,correct:1,wrong:1,lastCorrect:true}});
+ assert.equal(pool.length,1);assert.equal(C.createSession('ever-wrong-random24','Ever Wrong Random 24',pool,300).queue.length,1);
+});
 test('Random 24 sessions survive resume without becoming official exam sessions',()=>{
  const qs=exams[0].questions.slice(0,4),s=C.createSession('random','Random 24',qs,100);C.recordAnswer(s,qs[0],qs[0].correct_option_ids,101);assert(C.advance(s));const r=C.restoreSession(clone(s),bank);assert(r);assert.equal(r.mode,'random');assert.equal(r.examId,null);assert.equal(r.index,1);
 });
