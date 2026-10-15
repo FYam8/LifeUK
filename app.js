@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const Core=globalThis.LifeUKSession,BUILD='20261015-ever-wrong-random24-1';
+  const Core=globalThis.LifeUKSession,BUILD='20261015-wrong-count-filters-1';
   const DATA_FILES=Array.from({length:18},(_,i)=>`data/life_in_the_uk_exam${String(i+1).padStart(2,'0')}.json`);
   const STORAGE_KEY='lifeuk_state_v1',ACTIVE_KEY='lifeuk_active_session_v1',SCHEMA_VERSION=1;
   const $=id=>document.getElementById(id),now=()=>Date.now(),copy=x=>JSON.parse(JSON.stringify(x));
@@ -34,7 +34,7 @@
   }
   function bind(){
     $('homeBtn').onclick=showHome;$('exitBtn').onclick=()=>{save();showHome();};$('resumeBtn').onclick=()=>{if(syncOtherTab())return;if(session){showStudy();loadCurrent();}};
-    $('reviewBtn').onclick=startReview;$('everWrongBtn').onclick=startEverWrong;$('everWrongRandomBtn').onclick=startEverWrongRandom24;$('mistakesBtn').onclick=()=>startMistakes();$('randomBtn').onclick=startRandom24;$('checkBtn').onclick=checkAnswer;$('nextBtn').onclick=nextQuestion;
+    $('reviewBtn').onclick=startReview;$('everWrongBtn').onclick=startEverWrong;$('wrong2Btn').onclick=()=>startWrongCount(2);$('wrong3Btn').onclick=()=>startWrongCount(3);$('wrong4PlusBtn').onclick=()=>startWrongCount(4);$('everWrongRandomBtn').onclick=startEverWrongRandom24;$('mistakesBtn').onclick=()=>startMistakes();$('randomBtn').onclick=startRandom24;$('checkBtn').onclick=checkAnswer;$('nextBtn').onclick=nextQuestion;
     $('exportBtn').onclick=exportProgress;$('importInput').onchange=importProgress;$('resetBtn').onclick=resetProgress;
     window.addEventListener('storage',e=>{if(e.key===STORAGE_KEY)syncOtherTab();});
   }
@@ -44,6 +44,7 @@
     $('mMastered').textContent=all.filter(q=>qState(q.id).mastered).length;
     const wrong=exams.flatMap(exam=>Core.mistakesWithExam(exam.questions,state.questions,state.lastExams[exam.questions[0].exam_id]));$('mistakesBtn').textContent=`Mistakes only (${Core.uniqueQuestions(wrong).length})`;$('mistakesBtn').disabled=!wrong.length;
     const everWrong=Core.everWrongQuestions(all,state.questions);$('everWrongBtn').textContent=`Ever Wrong (${everWrong.length})`;$('everWrongBtn').disabled=!everWrong.length;$('everWrongRandomBtn').textContent=`Ever Wrong Random 24 (${everWrong.length})`;$('everWrongRandomBtn').disabled=!everWrong.length;
+    for(const [threshold,id,label] of [[2,'wrong2Btn','Wrong 2'],[3,'wrong3Btn','Wrong 3'],[4,'wrong4PlusBtn','Wrong 4+']]){const pool=questionsByWrongCount(threshold);$(id).textContent=`${label} (${pool.length})`;$(id).disabled=!pool.length;}
     const grid=$('examGrid');grid.replaceChildren();
     for(const exam of exams){
       const source=exam.questions,qs=Core.uniqueQuestions(source),examId=source[0].exam_id,wrongQs=Core.mistakesWithExam(source,state.questions,state.lastExams[examId]);
@@ -67,6 +68,8 @@
   }
   function startExam(exam){begin('exam',exam.source.exam_label,exam.questions);}
   function startMistakes(exam){const qs=exam?Core.mistakesWithExam(exam.questions,state.questions,state.lastExams[exam.questions[0].exam_id]):Core.uniqueQuestions(exams.flatMap(e=>Core.mistakesWithExam(e.questions,state.questions,state.lastExams[e.questions[0].exam_id])));begin('mistakes',exam?`${exam.source.exam_label} · Mistakes only`:'All exams · Mistakes only',qs);}
+  function questionsByWrongCount(threshold){return Core.groups(all).map(group=>({group,count:group.reduce((sum,q)=>sum+(Number(state.questions[q.id]?.wrong)||0),0)})).filter(({count})=>threshold===4?count>=4:count===threshold).map(({group})=>group.find(q=>(Number(state.questions[q.id]?.wrong)||0)>0)||group[0]);}
+  function startWrongCount(threshold){const label=threshold===4?'Wrong 4+':`Wrong ${threshold}`;begin('ever-wrong',`All exams · ${label}`,questionsByWrongCount(threshold));}
   function startEverWrong(){begin('ever-wrong','All exams · Ever Wrong',Core.everWrongQuestions(all,state.questions));}
   function startEverWrongRandom24(){const pool=Core.everWrongQuestions(all,state.questions);begin('ever-wrong-random24','Ever Wrong Random 24',shuffle(pool).slice(0,24));}
   function startReview(){const t=now();const qs=all.filter(q=>{const s=qState(q.id);return s.seen>0&&(!s.mastered||s.nextDue<=t);}).sort((a,b)=>(qState(a.id).streak-qState(b.id).streak)||(qState(a.id).lastSeen-qState(b.id).lastSeen));begin('review','Review due / weak',qs);}
