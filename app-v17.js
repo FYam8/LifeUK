@@ -1,8 +1,8 @@
 /* Compatibility entrypoint for previously cached HTML. */
 (() => {
-  const version='20261015-ever-wrong-random24-1';
+  const version='20261015-wrong-count-filters-2';
   function load(src,next){const s=document.createElement('script');s.src=src+'?v='+version;s.onload=next;s.onerror=()=>{document.body.textContent='Unable to load LifeUK. Please reload the page.';};document.head.appendChild(s);}
   // Cached HTML must upgrade as a unit; it lacks the new controls.
-  if(!document.getElementById('everWrongRandomBtn')){const u=new URL(location.href);if(u.searchParams.get('v')!==version){u.searchParams.set('v',version);location.replace(u.href);}else{document.body.textContent='LifeUK is updating. Please reload this page.';}return;}
+  if(!document.getElementById('wrong2Btn')||!document.getElementById('wrong3Btn')||!document.getElementById('wrong4PlusBtn')){const u=new URL(location.href);if(u.searchParams.get('v')!==version){u.searchParams.set('v',version);location.replace(u.href);}else{document.body.textContent='LifeUK is updating. Please reload this page.';}return;}
   load('session-core.js',()=>load('app.js',()=>{}));
 })();
