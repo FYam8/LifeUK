@@ -1,0 +1,865 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 18 · Weakness Revision",
+  "source": {
+    "type": "curated_weakness_revision",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 18",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "Questions 1–12 reproduce the learner's 12 weak-question stems, with newly authored choices and explanations.",
+    "Questions 13–24 are copied from existing Exams 1–17; wording, choices, answers and explanations are retained.",
+    "Prior Exam 1–17 source files and progress are unchanged.",
+    "John Logie Baird London–Glasgow broadcast: 1932 according to the Life in the UK study guide."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "lituk-exam18-q01",
+      "exam_id": "exam18",
+      "number": 1,
+      "type": "single_choice",
+      "question": "What happened in Northern Ireland in 1972?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Direct rule from Westminster was imposed after the Northern Ireland Parliament was suspended."
+        },
+        {
+          "id": "b",
+          "text": "The Good Friday Agreement was signed."
+        },
+        {
+          "id": "c",
+          "text": "The Scottish Parliament was established."
+        },
+        {
+          "id": "d",
+          "text": "Northern Ireland became an independent republic."
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1972, the UK government suspended the Northern Ireland Parliament and imposed direct rule from Westminster. Bloody Sunday also occurred in 1972.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q02",
+      "exam_id": "exam18",
+      "number": 2,
+      "type": "single_choice",
+      "question": "The Scottish Parliament was established in:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1979"
+        },
+        {
+          "id": "b",
+          "text": "1999"
+        },
+        {
+          "id": "c",
+          "text": "1707"
+        },
+        {
+          "id": "d",
+          "text": "2014"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The modern Scottish Parliament first met in 1999, following the 1997 referendum on devolution.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q03",
+      "exam_id": "exam18",
+      "number": 3,
+      "type": "single_choice",
+      "question": "What is the purpose of a jury in a UK court?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To decide the sentence after conviction."
+        },
+        {
+          "id": "b",
+          "text": "To decide whether the accused person is guilty or not guilty."
+        },
+        {
+          "id": "c",
+          "text": "To bring criminal charges against a suspect."
+        },
+        {
+          "id": "d",
+          "text": "To write new laws for Parliament."
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In a criminal trial, the jury decides whether the accused is guilty or not guilty on the evidence presented. The judge handles the law and sentencing.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q04",
+      "exam_id": "exam18",
+      "number": 4,
+      "type": "single_choice",
+      "question": "What is the longest river in the United Kingdom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The River Thames"
+        },
+        {
+          "id": "b",
+          "text": "The River Clyde"
+        },
+        {
+          "id": "c",
+          "text": "The River Severn"
+        },
+        {
+          "id": "d",
+          "text": "The River Trent"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The River Severn is generally recognised as the longest river in the UK; the Thames is often mistaken for it.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q05",
+      "exam_id": "exam18",
+      "number": 5,
+      "type": "single_choice",
+      "question": "Henry V's great victory at Agincourt in 1415 was fought against:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scotland"
+        },
+        {
+          "id": "b",
+          "text": "France"
+        },
+        {
+          "id": "c",
+          "text": "Spain"
+        },
+        {
+          "id": "d",
+          "text": "Germany"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "King Henry V defeated the French army at the Battle of Agincourt in 1415, during the Hundred Years' War.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q06",
+      "exam_id": "exam18",
+      "number": 6,
+      "type": "single_choice",
+      "question": "Which classic film, about British athletes, was directed by Hugh Hudson in 1981?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chariots of Fire"
+        },
+        {
+          "id": "b",
+          "text": "The King's Speech"
+        },
+        {
+          "id": "c",
+          "text": "The 39 Steps"
+        },
+        {
+          "id": "d",
+          "text": "Brief Encounter"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Chariots of Fire (1981), directed by Hugh Hudson, follows British athletes preparing for the 1924 Olympic Games.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q07",
+      "exam_id": "exam18",
+      "number": 7,
+      "type": "single_choice",
+      "question": "The Pre-Raphaelites were a group of artists in the:",
+      "options": [
+        {
+          "id": "a",
+          "text": "17th century"
+        },
+        {
+          "id": "b",
+          "text": "18th century"
+        },
+        {
+          "id": "c",
+          "text": "19th century"
+        },
+        {
+          "id": "d",
+          "text": "20th century"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Pre-Raphaelite Brotherhood formed in 1848, in the 19th century.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q08",
+      "exam_id": "exam18",
+      "number": 8,
+      "type": "single_choice",
+      "question": "Who can stand for public office in the UK?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only UK citizens aged 21 or over."
+        },
+        {
+          "id": "b",
+          "text": "Any UK resident aged 16 or over."
+        },
+        {
+          "id": "c",
+          "text": "Most UK, Irish Republic or eligible Commonwealth citizens aged 18 or over."
+        },
+        {
+          "id": "d",
+          "text": "Only members of the House of Commons."
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Most citizens of the UK, the Irish Republic or the Commonwealth aged 18 or over can stand for public office, subject to exceptions and election-specific eligibility rules.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q09",
+      "exam_id": "exam18",
+      "number": 9,
+      "type": "single_choice",
+      "question": "Where is the UK's Supreme Court located?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Belfast"
+        },
+        {
+          "id": "b",
+          "text": "Edinburgh"
+        },
+        {
+          "id": "c",
+          "text": "Cardiff"
+        },
+        {
+          "id": "d",
+          "text": "London"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Supreme Court of the United Kingdom is housed at Middlesex Guildhall in Parliament Square, London.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q10",
+      "exam_id": "exam18",
+      "number": 10,
+      "type": "single_choice",
+      "question": "The Great Exhibition of 1851 was held in which huge iron-and-glass building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Royal Albert Hall"
+        },
+        {
+          "id": "b",
+          "text": "The Crystal Palace"
+        },
+        {
+          "id": "c",
+          "text": "The Palace of Westminster"
+        },
+        {
+          "id": "d",
+          "text": "St Paul's Cathedral"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Great Exhibition of 1851 was held in the Crystal Palace, a large iron-and-glass structure built in Hyde Park, London.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q11",
+      "exam_id": "exam18",
+      "number": 11,
+      "type": "single_choice",
+      "question": "Charles Dickens is famous for writing novels that highlighted:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Poverty and social problems"
+        },
+        {
+          "id": "b",
+          "text": "Royal military campaigns"
+        },
+        {
+          "id": "c",
+          "text": "Astronomy and discoveries about the planets"
+        },
+        {
+          "id": "d",
+          "text": "Ancient Greek mythology"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Charles Dickens wrote novels, including Oliver Twist, drawing attention to poverty and social problems in Victorian Britain.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q12",
+      "exam_id": "exam18",
+      "number": 12,
+      "type": "single_choice",
+      "question": "John Logie Baird made the first television broadcast between London and Glasgow in which year?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1926"
+        },
+        {
+          "id": "b",
+          "text": "1927"
+        },
+        {
+          "id": "c",
+          "text": "1932"
+        },
+        {
+          "id": "d",
+          "text": "1945"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "For the Life in the UK study guide, the London–Glasgow television broadcast is dated to 1932. Do not confuse this with Baird's earlier television demonstrations.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam18",
+      "review_notes": [
+        "Original question stem provided by learner; options and explanation newly created for Exam 18."
+      ]
+    },
+    {
+      "id": "lituk-exam18-q13",
+      "exam_id": "exam18",
+      "number": 13,
+      "type": "true_false",
+      "question": "The Bill of Rights of 1689 confirmed the right to vote for all adult men.",
+      "options": [
+        {
+          "id": "a",
+          "text": "True"
+        },
+        {
+          "id": "b",
+          "text": "False"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "False. The Bill of Rights, 1689, confirmed the rights of Parliament and the limits of the king’s power.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam01; source question lituk-exam01-q07."
+      ],
+      "source_question_id": "lituk-exam01-q07"
+    },
+    {
+      "id": "lituk-exam18-q14",
+      "exam_id": "exam18",
+      "number": 14,
+      "type": "single_choice",
+      "question": "When was the Magna Carta created?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1514"
+        },
+        {
+          "id": "b",
+          "text": "1215"
+        },
+        {
+          "id": "c",
+          "text": "1415"
+        },
+        {
+          "id": "d",
+          "text": "1314"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Magna Carta was created in 1215.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam02; source question lituk-exam02-q12."
+      ],
+      "source_question_id": "lituk-exam02-q12"
+    },
+    {
+      "id": "lituk-exam18-q15",
+      "exam_id": "exam18",
+      "number": 15,
+      "type": "single_choice",
+      "question": "How many members does a jury have in England, Wales and Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "15"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In England, Wales and Northern Ireland a jury has 12 members.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam02; source question lituk-exam02-q15."
+      ],
+      "source_question_id": "lituk-exam02-q15"
+    },
+    {
+      "id": "lituk-exam18-q16",
+      "exam_id": "exam18",
+      "number": 16,
+      "type": "single_choice",
+      "question": "Who was the leader of the suffragettes, the group that campaigned for women’s rights to vote?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queen Victoria"
+        },
+        {
+          "id": "b",
+          "text": "Oliver Cromwell"
+        },
+        {
+          "id": "c",
+          "text": "Florence Nightingale"
+        },
+        {
+          "id": "d",
+          "text": "Emmeline Pankhurst"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Emmeline Pankhurst was the leader of the suffragettes.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam03; source question lituk-exam03-q20."
+      ],
+      "source_question_id": "lituk-exam03-q20"
+    },
+    {
+      "id": "lituk-exam18-q17",
+      "exam_id": "exam18",
+      "number": 17,
+      "type": "multiple_choice",
+      "question": "Which two houses form the UK Parliament?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The House of Lords"
+        },
+        {
+          "id": "b",
+          "text": "House of Members"
+        },
+        {
+          "id": "c",
+          "text": "House of Commons"
+        },
+        {
+          "id": "d",
+          "text": "House of Fraser"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "c"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The UK Parliament is formed of the House of Commons and the House of Lords.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam04; source question lituk-exam04-q10."
+      ],
+      "source_question_id": "lituk-exam04-q10"
+    },
+    {
+      "id": "lituk-exam18-q18",
+      "exam_id": "exam18",
+      "number": 18,
+      "type": "single_choice",
+      "question": "Who supported King Charles I during the Civil War?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roundheads"
+        },
+        {
+          "id": "b",
+          "text": "Suffragettes"
+        },
+        {
+          "id": "c",
+          "text": "Quakers"
+        },
+        {
+          "id": "d",
+          "text": "Cavaliers"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "During the civil war between the king and Parliament the country split into those who supported the king (the Cavaliers) and those who supported Parliament (the Roundheads).",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam04; source question lituk-exam04-q16."
+      ],
+      "source_question_id": "lituk-exam04-q16"
+    },
+    {
+      "id": "lituk-exam18-q19",
+      "exam_id": "exam18",
+      "number": 19,
+      "type": "single_choice",
+      "question": "In 1348, one third of the population in England, Wales and Scotland died as a result of which disease?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Measles"
+        },
+        {
+          "id": "b",
+          "text": "Leprosy"
+        },
+        {
+          "id": "c",
+          "text": "Smallpox"
+        },
+        {
+          "id": "d",
+          "text": "The Black Death"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1348, a disease, probably a form of plague, came to Britain. This was known as the Black Death. One third of the population of England died and a similar proportion in Scotland and Wales.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam06; source question lituk-exam06-q18."
+      ],
+      "source_question_id": "lituk-exam06-q18"
+    },
+    {
+      "id": "lituk-exam18-q20",
+      "exam_id": "exam18",
+      "number": 20,
+      "type": "single_choice",
+      "question": "What does Hogmanay refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Christmas Day in Wales"
+        },
+        {
+          "id": "b",
+          "text": "New Year’s Eve in Scotland"
+        },
+        {
+          "id": "c",
+          "text": "Christmas Day in Scotland"
+        },
+        {
+          "id": "d",
+          "text": "New Year’s Eve in Wales"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In Scotland, the 31st of December (New Year’s Eve) is called Hogmanay.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam09; source question lituk-exam09-q08."
+      ],
+      "source_question_id": "lituk-exam09-q08"
+    },
+    {
+      "id": "lituk-exam18-q21",
+      "exam_id": "exam18",
+      "number": 21,
+      "type": "single_choice",
+      "question": "What is the capital city of Northern Ireland?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cork"
+        },
+        {
+          "id": "b",
+          "text": "Edinburgh"
+        },
+        {
+          "id": "c",
+          "text": "Belfast"
+        },
+        {
+          "id": "d",
+          "text": "Dublin"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The capital city of Northern Ireland is Belfast.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam09; source question lituk-exam09-q09."
+      ],
+      "source_question_id": "lituk-exam09-q09"
+    },
+    {
+      "id": "lituk-exam18-q22",
+      "exam_id": "exam18",
+      "number": 22,
+      "type": "multiple_choice",
+      "question": "The Northern Ireland Assembly cannot make decisions on which two of the following issues?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Immigration"
+        },
+        {
+          "id": "b",
+          "text": "Education"
+        },
+        {
+          "id": "c",
+          "text": "Agriculture"
+        },
+        {
+          "id": "d",
+          "text": "Defence"
+        }
+      ],
+      "correct_option_ids": [
+        "a",
+        "d"
+      ],
+      "required_selection_count": 2,
+      "explanation_original": "The Northern Ireland Assembly can make decisions on issues such as: education, agriculture, the environment health and social services, but it cannot make decisions on immigration or defence issues.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam11; source question lituk-exam11-q16."
+      ],
+      "source_question_id": "lituk-exam11-q16"
+    },
+    {
+      "id": "lituk-exam18-q23",
+      "exam_id": "exam18",
+      "number": 23,
+      "type": "single_choice",
+      "question": "What happened to Charles I after he was in prison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "He moved to Spain"
+        },
+        {
+          "id": "b",
+          "text": "He became a priest"
+        },
+        {
+          "id": "c",
+          "text": "He escaped to France"
+        },
+        {
+          "id": "d",
+          "text": "He was executed"
+        }
+      ],
+      "correct_option_ids": [
+        "d"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Charles I’s army was defeated at the Battles of Marston Moor and Naseby. Charles was held prisoner by the parliamentary army. As he was unwilling to reach any agreement with the Parliament, in 1649 he was executed.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam17; source question lituk-exam17-q09."
+      ],
+      "source_question_id": "lituk-exam17-q09"
+    },
+    {
+      "id": "lituk-exam18-q24",
+      "exam_id": "exam18",
+      "number": 24,
+      "type": "single_choice",
+      "question": "In which of the following matters can the Scottish Parliament legislate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Education"
+        },
+        {
+          "id": "b",
+          "text": "Immigration"
+        },
+        {
+          "id": "c",
+          "text": "Security"
+        },
+        {
+          "id": "d",
+          "text": "Defence"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Scottish Parliament can legislate on: civil and criminal law, health, education, planning and additional tax-raising powers.",
+      "answer_basis": "inferred_from_user_supplied_explanation",
+      "verification_status": "not_independently_verified",
+      "review_notes": [
+        "Reused verbatim from exam17; source question lituk-exam17-q24."
+      ],
+      "source_question_id": "lituk-exam17-q24"
+    }
+  ]
+}

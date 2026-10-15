@@ -1,7 +1,7 @@
 (() => {
   'use strict';
-  const Core=globalThis.LifeUKSession,BUILD='20261011-ever-wrong-1';
-  const DATA_FILES=Array.from({length:17},(_,i)=>`data/life_in_the_uk_exam${String(i+1).padStart(2,'0')}.json`);
+  const Core=globalThis.LifeUKSession,BUILD='20261015-exam18-1';
+  const DATA_FILES=Array.from({length:18},(_,i)=>`data/life_in_the_uk_exam${String(i+1).padStart(2,'0')}.json`);
   const STORAGE_KEY='lifeuk_state_v1',ACTIVE_KEY='lifeuk_active_session_v1',SCHEMA_VERSION=1;
   const $=id=>document.getElementById(id),now=()=>Date.now(),copy=x=>JSON.parse(JSON.stringify(x));
   const object=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);

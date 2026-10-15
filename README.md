@@ -1,6 +1,6 @@
 # LifeUK
 
-Life in the UK practice app. Exam 1–17 contain 408 unchanged source records. Exam 17 Q3/Q23 ask the same learning objective (Shadow Cabinet) and are grouped into a single normal question: 23 questions in Exam 17 and 24 in every other exam. No source data or previous Q23 history is deleted.
+Life in the UK practice app. Exam 1–17 retain 408 unchanged original source records. Exam 18 adds 24 records: 12 user-supplied weak question stems with newly authored choices and explanations, and 12 verbatim items from earlier exams under new Exam 18 IDs. Each of the 18 exams contains 24 distinct questions.
 
 ## Learning and progress
 
@@ -15,8 +15,8 @@ Life in the UK practice app. Exam 1–17 contain 408 unchanged source records. E
 
 ## Verification
 
-Release key: `20261004-progress-1`. Source facts/answer keys are preserved, not newly fact-checked.
+Release key: `20261015-exam18-1`. Original Exam 1–17 source records are byte-for-byte preserved. Exam 18 new items were curated separately; the John Logie Baird London–Glasgow date is 1932 in the Life in the UK study guide.
 
 Run `node --test tests/session.test.cjs` (34 tests). Browser regression: `QA_ROUND=1 python tests/browser_smoke.py`, then `QA_ROUND=2 python tests/browser_smoke.py` using Python Playwright 1.57.0 and Chromium. CI uses routed HTTP with native browser localStorage. Local `QA_OFFLINE=1` uses isolated synthetic fetch/storage when navigation is unavailable, and is explicitly labelled as such in reports.
 
-Both browser passes cover all 407 normal questions at 1440px and 390px, error-only sessions, latest accuracy, completed results, reload/Home/Resume, partial three-choice selections, duplicate Check/Next events, legacy migration, Export/Reset/Import, and fixed controls at 320px, 390px and 844px landscape. Pass 1 answers every normal question incorrectly; pass 2 correctly. A validated main commit is deployed to GitHub Pages.
+Both browser passes cover all 432 exam records at 1440px and 390px, error-only sessions, latest accuracy, completed results, reload/Home/Resume, partial three-choice selections, duplicate Check/Next events, legacy migration, Export/Reset/Import, and fixed controls at 320px, 390px and 844px landscape. Pass 1 answers every normal question incorrectly; pass 2 correctly. A validated main commit is deployed to GitHub Pages.

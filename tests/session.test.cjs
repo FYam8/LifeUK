@@ -6,10 +6,10 @@ const exams=files.map(f=>JSON.parse(fs.readFileSync(path.join(root,'data',f),'ut
 const all=exams.flatMap(e=>e.questions), bank=new Map(all.map(q=>[q.id,q]));
 const q=id=>bank.get(id), clone=x=>JSON.parse(JSON.stringify(x));
 const wrong=q=>{const a=[...q.correct_option_ids];a[0]=q.options.find(o=>!a.includes(o.id)).id;return a};
-test('17 exams / 408 source records / 408 unique IDs / unchanged source bytes',()=>{
- assert.equal(exams.length,17);assert.equal(all.length,408);assert.equal(bank.size,408);
+test('18 exams / 432 source records / 432 unique IDs / unchanged original source bytes',()=>{
+ assert.equal(exams.length,18);assert.equal(all.length,432);assert.equal(bank.size,432);
  const audit=JSON.parse(fs.readFileSync(path.join(root,'docs/source-audit.json'),'utf8'));
- files.forEach((file,i)=>assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data',file))).digest('hex'),audit.by_exam[i].source_sha256));
+ files.slice(0,17).forEach((file,i)=>assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data',file))).digest('hex'),audit.by_exam[i].source_sha256));
  for(const e of exams){assert.equal(e.question_count,24);assert.equal(e.questions.length,24);for(const x of e.questions){assert.equal(x.required_selection_count,x.correct_option_ids.length);assert.equal(new Set(x.options.map(o=>o.id)).size,x.options.length);assert(x.correct_option_ids.every(id=>x.options.some(o=>o.id===id)));}}
 });
 for(const e of exams) test(`${e.source.exam_label}: each missed source question retries once and every miss is counted`,()=>{
@@ -24,11 +24,11 @@ test('single, true/false, two- and three-answer grading: all selection subsets',
   if(selected.length!==x.required_selection_count)assert.equal(a,null);else{assert(a);assert.equal(a.ok,x.correct_option_ids.every(id=>selected.includes(id)));}
  }
 });
-test('all 17 exams retain 24 distinct source questions',()=>{
+test('all 18 exams retain 24 distinct source questions',()=>{
  assert.notEqual(C.questionKey(q('lituk-exam17-q03')),C.questionKey(q('lituk-exam17-q23')));
  assert.notEqual(C.questionKey(q('lituk-exam16-q09')),C.questionKey(q('lituk-exam16-q24')));
  assert.notEqual(C.questionKey(q('lituk-exam17-q08')),C.questionKey(q('lituk-exam17-q11')));
- const keys=exams.map(e=>C.uniqueQuestions(e.questions).length);assert.deepEqual(keys,Array(17).fill(24));assert.equal(keys.reduce((a,b)=>a+b,0),408);
+ const keys=exams.map(e=>C.uniqueQuestions(e.questions).length);assert.deepEqual(keys,Array(18).fill(24));assert.equal(keys.reduce((a,b)=>a+b,0),432);
 });
 test('exact reordered options deduplicate; generic stems with different options do not',()=>{
  const a=q('lituk-exam05-q01'), b={...a,id:'copy',options:[...a.options].reverse()};assert.equal(C.uniqueQuestions([a,b]).length,1);
@@ -58,7 +58,7 @@ test('review sessions also finish after one pass, even if every answer is wrong'
  const s=C.createSession('review','Review',[all[0],all[0]],100);assert.equal(s.queue.length,1);C.recordAnswer(s,all[0],wrong(all[0]),101);assert.equal(s.queue.length,1);assert(C.advance(s));assert.equal(C.restoreSession(s,bank),null);
 });
 test('HTML loads the actual validated app with a versioned session core',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261005-sticky-mistakes-1/);assert.match(html,/app\.js\?v=20261005-sticky-mistakes-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261015-exam18-1/);assert.match(html,/app\.js\?v=20261015-exam18-1/);assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
 });
 
 const progress=(lastCorrect,lastSeen=100)=>({seen:3,correct:lastCorrect?2:1,wrong:lastCorrect?1:2,streak:lastCorrect?1:0,lastSeen,lastCorrect});
@@ -129,4 +129,16 @@ test('legacy completed exam can infer sticky mistake IDs from stored wrong count
  const last={wrong:2,completedAt:120};
  assert.deepEqual(C.inferLegacyWrongQuestionIds(qs,progress,last),[qs[1].id,qs[0].id]);
  assert.deepEqual(C.mistakesWithExam(qs,progress,last).map(x=>x.id),[qs[1].id,qs[0].id]);
+});
+
+test('Exam 18 contains twelve user weak stems and twelve unchanged borrowed questions',()=>{
+ const e=exams[17];assert.equal(e.source.exam_label,'Exam 18');
+ assert.deepEqual(e.questions.slice(0,12).map(q=>q.question),["What happened in Northern Ireland in 1972?","The Scottish Parliament was established in:","What is the purpose of a jury in a UK court?","What is the longest river in the United Kingdom?","Henry V's great victory at Agincourt in 1415 was fought against:","Which classic film, about British athletes, was directed by Hugh Hudson in 1981?","The Pre-Raphaelites were a group of artists in the:","Who can stand for public office in the UK?","Where is the UK's Supreme Court located?","The Great Exhibition of 1851 was held in which huge iron-and-glass building?","Charles Dickens is famous for writing novels that highlighted:","John Logie Baird made the first television broadcast between London and Glasgow in which year?"]);
+ const sourceIds=["lituk-exam01-q07","lituk-exam02-q12","lituk-exam02-q15","lituk-exam03-q20","lituk-exam04-q10","lituk-exam04-q16","lituk-exam06-q18","lituk-exam09-q08","lituk-exam09-q09","lituk-exam11-q16","lituk-exam17-q09","lituk-exam17-q24"];
+ e.questions.slice(12).forEach((q,i)=>{
+   assert.equal(q.source_question_id,sourceIds[i]);const original=bank.get(sourceIds[i]);assert(original);
+   for(const field of ['question','type','options','correct_option_ids','required_selection_count','explanation_original']) assert.deepEqual(q[field],original[field],field+' '+q.id);
+ });
+ const q=e.questions[11];assert.deepEqual(q.correct_option_ids.map(id=>q.options.find(o=>o.id===id).text),['1932']);
+ assert.equal(C.uniqueQuestions(e.questions).length,24);
 });

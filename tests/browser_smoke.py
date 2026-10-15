@@ -49,18 +49,18 @@ with sync_playwright() as p:
         page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
         page.add_init_script('window.confirm=()=>true;window.alert=()=>{};')
         if OFFLINE:page.evaluate('''exams=>{window.confirm=()=>true;window.alert=()=>{};const data={};Object.defineProperty(window,'localStorage',{value:{getItem:k=>data[k]??null,setItem:(k,v)=>{data[k]=String(v)},removeItem:k=>{delete data[k]}}});window.fetch=async path=>({ok:!!exams[path],json:async()=>exams[path]});}''',EXAMS)
-        open_page(page);assert page.locator('.exam-card').count()==17
+        open_page(page);assert page.locator('.exam-card').count()==18
         if mobile:
             cols=page.evaluate("getComputedStyle(document.querySelector('#examGrid')).gridTemplateColumns.split(' ').length")
             assert cols==2 if width>340 else cols==1
             assert page.locator('.exam-card').nth(0).bounding_box()['height'] < 170
-        assert '408 questions' in page.locator('#examSummary').inner_text()
+        assert '432 questions' in page.locator('#examSummary').inner_text()
         assert page.locator('.exam-card').last.locator('.exam-status').count()==1 and 'mastered' in page.locator('.exam-card').last.inner_text()
         assert page.locator('.exam-accuracy').first.inner_text()=='—'
         assert page.locator('#mistakesBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
           const S='lifeuk_state_v1',attemptCounts=[];
-          for(let exam=0;exam<17;exam++){
+          for(let exam=0;exam<18;exam++){
             document.querySelectorAll('.exam-btn')[exam].click();const seen=new Map();let attempts=0;
             while(JSON.parse(localStorage.getItem(S)).activeSession){
               let state=JSON.parse(localStorage.getItem(S)),s=state.activeSession,id=s.queue[s.index],q=data[id];
@@ -82,7 +82,7 @@ with sync_playwright() as p:
           }
           return {exams:attemptCounts.length,attempts:attemptCounts.reduce((a,b)=>a+b,0),all_wrong:wrong};
         }''',{'data':DATA,'wrong':ROUND==1})
-        assert bulk['attempts']==(816 if ROUND==1 else 408)
+        assert bulk['attempts']==(864 if ROUND==1 else 432)
         # Correct / wrong feedback, drafts and statistics across Home/Save/Resume/reload.
         qs=[DATA['lituk-exam06-q06'],DATA['lituk-exam06-q07']];seed(page,qs=qs)
         page.click('#resumeBtn');assert 'Select 3 answers' in page.locator('#multiHint').inner_text()
