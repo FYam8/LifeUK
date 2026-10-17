@@ -142,10 +142,12 @@
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "British actors to have won Oscars include Colin Firth, Sir Antony Hopkins, Dame Judi Dench, Kate Winslet and Tilda Swinton. Emily Watson has not won an Oscar yet.",
+      "explanation_original": "As of the 2026 Academy Awards, Tilda Swinton, Judi Dench and Kate Winslet have won acting Oscars; Emily Watson has received nominations but has not won. This is a time-sensitive question and should be reviewed after future awards.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.oscars.org/oscars/ceremonies/2026",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam14-q05",
@@ -720,10 +722,12 @@
         "d"
       ],
       "required_selection_count": 1,
-      "explanation_original": "Britain and France developed the world’s only supersonic commercial airliner, Concorde.",
+      "explanation_original": "Britain and France jointly developed Concorde. It was not the only supersonic passenger airliner; the Soviet Tu-144 also carried passengers for a limited time.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://airandspace.si.edu/stories/editorial/what-happened-concordes",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam14-q23",
