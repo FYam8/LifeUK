@@ -68,10 +68,11 @@
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "The BBC is the largest broadcaster in the world. It is the only wholly state-funded media organisation that is independent of government.",
+      "explanation_original": "No. The BBC is a public-service broadcaster editorially independent of government. It is chiefly financed through the television licence fee rather than being simply a wholly state-funded broadcaster.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam12-q03",
@@ -572,10 +573,12 @@
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "False. Anyone who is on the electoral register and is aged 18 to 70 can serve on a jury.",
+      "explanation_original": "False. In England and Wales, jurors are generally eligible from age 18 to 75, subject to electoral registration, residency and disqualification requirements. Different rules apply elsewhere in the UK.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.gov.uk/jury-service/who-can-be-on-jury",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam12-q19",
