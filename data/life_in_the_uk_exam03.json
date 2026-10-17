@@ -366,10 +366,11 @@
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "Snowdonia is in Wales.",
+      "explanation_original": "Snowdonia is in north-west Wales. Eryri is the Welsh name used officially by the National Park Authority.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam03-q12",
