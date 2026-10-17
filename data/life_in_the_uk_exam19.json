@@ -10,7 +10,7 @@
   "notes": [
     "22 learner-provided weak questions plus 2 supplementary existing-exam questions.",
     "Original question wording preserved; authored answers for previously missing items.",
-    "Dolly born in 1996, announced 1997; John Logie Baird London–Glasgow broadcast 1932.",
+    "Dolly cloned from an adult cell and born in 1996, announced 1997; John Logie Baird London–Glasgow broadcast 1932.",
     "Earlier exam data and progress remain unchanged."
   ],
   "question_count": 24,
@@ -52,7 +52,7 @@
     },
     {
       "type": "single_choice",
-      "question": "In which year did Dolly the sheep become the first mammal to be successfully cloned?",
+      "question": "In which year was Dolly the sheep born as the first mammal cloned from an adult cell?",
       "options": [
         {
           "id": "a",
@@ -75,15 +75,17 @@
         "a"
       ],
       "required_selection_count": 1,
-      "explanation_original": "Dolly was born on 5 July 1996, the first mammal cloned from an adult cell. Her creation was announced in 1997; earlier mammals had been cloned from embryonic cells.",
+      "explanation_original": "Dolly was born on 5 July 1996, and the achievement was announced on 22 February 1997. Other mammals had been cloned earlier from embryonic cells; Dolly was the first cloned from an adult cell.",
       "answer_basis": "curated_for_weakness_review",
-      "verification_status": "reviewed_for_exam19",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Learner supplied question stem; choices and explanation newly authored."
       ],
-      "id": "lituk-exam19-q02",
+      "id": "lituk-exam19-q02-r2026",
       "exam_id": "exam19",
-      "number": 2
+      "number": 2,
+      "source_url": "https://vet.ed.ac.uk/roslin/about/history/dolly/facts/life-of-dolly",
+      "reviewed_on": "2026-10-17"
     },
     {
       "type": "single_choice",
@@ -264,7 +266,7 @@
     },
     {
       "type": "single_choice",
-      "question": "What is the name of the Northern Ireland Assembly's power-sharing arrangement called?",
+      "question": "Which method is used to allocate most ministerial positions in the Northern Ireland Executive proportionally among parties?",
       "options": [
         {
           "id": "a",
@@ -287,15 +289,17 @@
         "a"
       ],
       "required_selection_count": 1,
-      "explanation_original": "The d’Hondt system apportions most ministerial offices proportionally within the power-sharing Northern Ireland Executive.",
+      "explanation_original": "The d’Hondt method allocates most Northern Ireland Executive ministerial posts in proportion to Assembly party strength. It is part of the power-sharing arrangements but not the name of the entire arrangement; First Minister and deputy First Minister and Justice Minister are selected differently.",
       "answer_basis": "curated_for_weakness_review",
-      "verification_status": "reviewed_for_exam19",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Learner supplied question stem; choices and explanation newly authored."
       ],
-      "id": "lituk-exam19-q08",
+      "id": "lituk-exam19-q08-r2026",
       "exam_id": "exam19",
-      "number": 8
+      "number": 8,
+      "source_url": "https://www.niassembly.gov.uk/news-and-media/assembly-explained/understanding-the-dhondt-method-its-use-in-the-northern-ireland-assembly/",
+      "reviewed_on": "2026-10-17"
     },
     {
       "type": "single_choice",
