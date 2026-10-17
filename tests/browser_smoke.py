@@ -49,12 +49,12 @@ with sync_playwright() as p:
         page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
         page.add_init_script('window.confirm=()=>true;window.alert=()=>{};')
         if OFFLINE:page.evaluate('''exams=>{window.confirm=()=>true;window.alert=()=>{};const data={};Object.defineProperty(window,'localStorage',{value:{getItem:k=>data[k]??null,setItem:(k,v)=>{data[k]=String(v)},removeItem:k=>{delete data[k]}}});window.fetch=async path=>({ok:!!exams[path],json:async()=>exams[path]});}''',EXAMS)
-        open_page(page);assert page.locator('.exam-card').count()==18
+        open_page(page);assert page.locator('.exam-card').count()==19
         if mobile:
             cols=page.evaluate("getComputedStyle(document.querySelector('#examGrid')).gridTemplateColumns.split(' ').length")
             assert cols==2 if width>340 else cols==1
             assert page.locator('.exam-card').nth(0).bounding_box()['height'] < 170
-        assert '432 questions' in page.locator('#examSummary').inner_text()
+        assert '456 questions' in page.locator('#examSummary').inner_text()
         assert page.locator('.exam-card').last.locator('.exam-status').count()==1 and 'mastered' in page.locator('.exam-card').last.inner_text()
         assert page.locator('.exam-accuracy').first.inner_text()=='—'
         assert page.locator('#mistakesBtn').is_disabled()
@@ -83,7 +83,7 @@ with sync_playwright() as p:
           }
           return {exams:attemptCounts.length,attempts:attemptCounts.reduce((a,b)=>a+b,0),all_wrong:wrong};
         }''',{'data':DATA,'wrong':ROUND==1})
-        assert bulk['attempts']==(864 if ROUND==1 else 432)
+        assert bulk['attempts']==(912 if ROUND==1 else 456)
         # Correct / wrong feedback, drafts and statistics across Home/Save/Resume/reload.
         qs=[DATA['lituk-exam06-q06'],DATA['lituk-exam06-q07']];seed(page,qs=qs)
         page.click('#resumeBtn');assert 'Select 3 answers' in page.locator('#multiHint').inner_text()
