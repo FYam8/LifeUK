@@ -305,11 +305,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam10-q10",
+      "id": "lituk-exam10-q10-r2026",
       "exam_id": "exam10",
       "number": 10,
       "type": "single_choice",
-      "question": "How many members does the Welsh government have?",
+      "question": "How many elected Members are there in the Senedd (Welsh Parliament) since May 2026?",
       "options": [
         {
           "id": "a",
@@ -321,7 +321,7 @@
         },
         {
           "id": "c",
-          "text": "90"
+          "text": "96"
         },
         {
           "id": "d",
@@ -329,15 +329,17 @@
         }
       ],
       "correct_option_ids": [
-        "d"
+        "c"
       ],
       "required_selection_count": 1,
-      "explanation_original": "There are 60 members of the Welsh government or members of the Senedd (SMs) and elections are held every four years using a form of proportional representation.",
+      "explanation_original": "The Senedd expanded from 60 to 96 Members following the 7 May 2026 election. The 96 are elected from 16 constituencies with six Members each under closed-list proportional representation. Senedd Members are not the same as Welsh Government ministers.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Welsh legislature membership and terminology may have changed; retained exactly from supplied source."
-      ]
+      ],
+      "source_url": "https://senedd.wales/how-we-work/our-role/future-senedd-reform/frequently-asked-questions/",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam10-q11",
