@@ -74,29 +74,39 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam09-q03",
+      "id": "lituk-exam09-q03-r2026",
       "exam_id": "exam09",
       "number": 3,
       "type": "true_false",
-      "question": "£100 is the highest value note in circulation in the UK.",
+      "question": "What is the highest denomination of banknote currently issued by the Bank of England?",
       "options": [
         {
           "id": "a",
-          "text": "True"
+          "text": "£100"
         },
         {
           "id": "b",
-          "text": "False"
+          "text": "£50"
+        },
+        {
+          "id": "c",
+          "text": "£20"
+        },
+        {
+          "id": "d",
+          "text": "£200"
         }
       ],
       "correct_option_ids": [
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "This statement is false.",
+      "explanation_original": "The Bank of England issues £5, £10, £20 and £50 notes. Authorised Scottish banks also issue £100 notes, so the old statement that £100 is not the highest note circulating in the UK was misleading.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.bankofengland.co.uk/banknotes/uk-notes-and-coins",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam09-q04",
@@ -350,12 +360,14 @@
         "a"
       ],
       "required_selection_count": 1,
-      "explanation_original": "This statement is True.",
+      "explanation_original": "True. Northern Ireland uses individual electoral registration. England, Scotland and Wales also introduced individual electoral registration in 2014.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Electoral registration wording may be historically dated and should be verified before treating as current civic guidance."
-      ]
+      ],
+      "source_url": "https://www.gov.uk/government/collections/individual-electoral-registration",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam09-q12",
@@ -386,12 +398,14 @@
         "d"
       ],
       "required_selection_count": 2,
-      "explanation_original": "Policy and laws governing defence, foreign affairs, immigration, taxation and social security all remain under central UK government control. However, many other public services, such as education, are controlled by the devolved administrations.",
+      "explanation_original": "Defence and immigration remain reserved to the UK Government. Scotland has devolved powers in some taxation and social security areas, so describing all taxation and social security as fully reserved is incorrect.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Devolution powers can vary by nation and over time; wording should be verified before treating as current constitutional guidance."
-      ]
+      ],
+      "source_url": "https://www.parliament.scot/about/how-parliament-works/devolved-and-reserved-powers",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam09-q13",
@@ -487,10 +501,11 @@
         "d"
       ],
       "required_selection_count": 1,
-      "explanation_original": "Admiral Nelson was in charge of the British fleet at the Battle of Trafalgar against the Spanish fleet and was killed in the battle.",
+      "explanation_original": "Admiral Nelson commanded the British fleet against combined French and Spanish forces at Trafalgar in 1805; he died during the battle.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam09-q16",
