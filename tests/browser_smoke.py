@@ -61,7 +61,7 @@ with sync_playwright() as p:
         assert page.locator('#everWrongRandomBtn').is_disabled()
         bulk=page.evaluate('''({data,wrong})=>{
           const S='lifeuk_state_v1',attemptCounts=[];
-          for(let exam=0;exam<18;exam++){
+          for(let exam=0;exam<19;exam++){
             document.querySelectorAll('.exam-btn')[exam].click();const seen=new Map();let attempts=0;
             while(JSON.parse(localStorage.getItem(S)).activeSession){
               let state=JSON.parse(localStorage.getItem(S)),s=state.activeSession,id=s.queue[s.index],q=data[id];
