@@ -77,7 +77,7 @@
       "id": "lituk-exam09-q03-r2026",
       "exam_id": "exam09",
       "number": 3,
-      "type": "true_false",
+      "type": "single_choice",
       "question": "What is the highest denomination of banknote currently issued by the Bank of England?",
       "options": [
         {
