@@ -1,0 +1,869 @@
+{
+  "schema_version": "1.0",
+  "title": "Life in the UK — Exam 19 · Weakness Revision",
+  "source": {
+    "type": "curated_weakness_revision",
+    "reference_url": "https://lifeintheuktestweb.co.uk/exams/",
+    "exam_label": "Exam 19",
+    "exact_exam_url": null
+  },
+  "notes": [
+    "22 learner-provided weak questions plus 2 supplementary existing-exam questions.",
+    "Original question wording preserved; authored answers for previously missing items.",
+    "Dolly born in 1996, announced 1997; John Logie Baird London–Glasgow broadcast 1932.",
+    "Earlier exam data and progress remain unchanged."
+  ],
+  "question_count": 24,
+  "questions": [
+    {
+      "type": "single_choice",
+      "question": "When was the Bill of Rights passed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1689"
+        },
+        {
+          "id": "b",
+          "text": "1707"
+        },
+        {
+          "id": "c",
+          "text": "1215"
+        },
+        {
+          "id": "d",
+          "text": "1832"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Bill of Rights was passed in 1689 following the Glorious Revolution.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q01",
+      "exam_id": "exam19",
+      "number": 1
+    },
+    {
+      "type": "single_choice",
+      "question": "In which year did Dolly the sheep become the first mammal to be successfully cloned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1996"
+        },
+        {
+          "id": "b",
+          "text": "1997"
+        },
+        {
+          "id": "c",
+          "text": "1984"
+        },
+        {
+          "id": "d",
+          "text": "2001"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Dolly was born on 5 July 1996, the first mammal cloned from an adult cell. Her creation was announced in 1997; earlier mammals had been cloned from embryonic cells.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q02",
+      "exam_id": "exam19",
+      "number": 2
+    },
+    {
+      "type": "single_choice",
+      "question": "Scotland was joined to England in 1707 but retained which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its own legal system, education system and established Church"
+        },
+        {
+          "id": "b",
+          "text": "Its own separate monarch"
+        },
+        {
+          "id": "c",
+          "text": "A separate army and foreign policy"
+        },
+        {
+          "id": "d",
+          "text": "An independent Parliament at Westminster"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The 1707 Union united the kingdoms, but Scotland retained distinct legal and education systems and the Church of Scotland.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q03",
+      "exam_id": "exam19",
+      "number": 3
+    },
+    {
+      "id": "lituk-exam19-q04",
+      "exam_id": "exam19",
+      "number": 4,
+      "type": "single_choice",
+      "question": "What happened in Northern Ireland in 1972?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Direct rule from Westminster was imposed after the Northern Ireland Parliament was suspended."
+        },
+        {
+          "id": "b",
+          "text": "The Good Friday Agreement was signed."
+        },
+        {
+          "id": "c",
+          "text": "The Scottish Parliament was established."
+        },
+        {
+          "id": "d",
+          "text": "Northern Ireland became an independent republic."
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In 1972, the UK government suspended the Northern Ireland Parliament and imposed direct rule from Westminster. Bloody Sunday also occurred in 1972.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q01"
+    },
+    {
+      "id": "lituk-exam19-q05",
+      "exam_id": "exam19",
+      "number": 5,
+      "type": "single_choice",
+      "question": "What is the Turner Prize?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A literature award"
+        },
+        {
+          "id": "b",
+          "text": "A music award"
+        },
+        {
+          "id": "c",
+          "text": "A contemporary art award"
+        },
+        {
+          "id": "d",
+          "text": "A theatre award"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Turner Prize was established in 1984 and celebrates contemporary art. The Turner Prize is recognised as one of the most prestigious visual art awards in Europe.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam08-q24"
+    },
+    {
+      "type": "single_choice",
+      "question": "Sir Francis Drake completed his circumnavigation of the globe in which year?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1580"
+        },
+        {
+          "id": "b",
+          "text": "1492"
+        },
+        {
+          "id": "c",
+          "text": "1605"
+        },
+        {
+          "id": "d",
+          "text": "1707"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Sir Francis Drake returned to England in 1580 after circumnavigating the globe.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q06",
+      "exam_id": "exam19",
+      "number": 6
+    },
+    {
+      "type": "single_choice",
+      "question": "Hitler became Chancellor of Germany in which year?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1933"
+        },
+        {
+          "id": "b",
+          "text": "1939"
+        },
+        {
+          "id": "c",
+          "text": "1929"
+        },
+        {
+          "id": "d",
+          "text": "1945"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Hitler became Chancellor of Germany in January 1933.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q07",
+      "exam_id": "exam19",
+      "number": 7
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the name of the Northern Ireland Assembly's power-sharing arrangement called?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The d’Hondt system"
+        },
+        {
+          "id": "b",
+          "text": "First past the post"
+        },
+        {
+          "id": "c",
+          "text": "The Salisbury Convention"
+        },
+        {
+          "id": "d",
+          "text": "The Barnett formula"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The d’Hondt system apportions most ministerial offices proportionally within the power-sharing Northern Ireland Executive.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q08",
+      "exam_id": "exam19",
+      "number": 8
+    },
+    {
+      "type": "single_choice",
+      "question": "What is the Caledonian Canal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A canal across the Scottish Highlands connecting the east and west coasts"
+        },
+        {
+          "id": "b",
+          "text": "A river forming the England-Scotland border"
+        },
+        {
+          "id": "c",
+          "text": "A tunnel beneath the English Channel"
+        },
+        {
+          "id": "d",
+          "text": "A canal connecting London and Birmingham"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Caledonian Canal links Inverness and Fort William through the Scottish Highlands.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q09",
+      "exam_id": "exam19",
+      "number": 9
+    },
+    {
+      "type": "single_choice",
+      "question": "The Boers, whom Britain fought in the Boer War, were settlers originally from which country?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Netherlands"
+        },
+        {
+          "id": "b",
+          "text": "France"
+        },
+        {
+          "id": "c",
+          "text": "Germany"
+        },
+        {
+          "id": "d",
+          "text": "Portugal"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Boers were descendants principally of Dutch settlers in southern Africa.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q10",
+      "exam_id": "exam19",
+      "number": 10
+    },
+    {
+      "type": "single_choice",
+      "question": "On what date did the D-Day landings in Normandy take place?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 June 1944"
+        },
+        {
+          "id": "b",
+          "text": "8 May 1945"
+        },
+        {
+          "id": "c",
+          "text": "1 September 1939"
+        },
+        {
+          "id": "d",
+          "text": "11 November 1918"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Allied D-Day landings in Normandy began on 6 June 1944.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q11",
+      "exam_id": "exam19",
+      "number": 11
+    },
+    {
+      "type": "single_choice",
+      "question": "The scientist Ernest Rutherford, who first split the atom, was born in which country?",
+      "options": [
+        {
+          "id": "a",
+          "text": "New Zealand"
+        },
+        {
+          "id": "b",
+          "text": "Scotland"
+        },
+        {
+          "id": "c",
+          "text": "England"
+        },
+        {
+          "id": "d",
+          "text": "Australia"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Ernest Rutherford was born in New Zealand and worked in atomic physics in Britain.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q12",
+      "exam_id": "exam19",
+      "number": 12
+    },
+    {
+      "id": "lituk-exam19-q13",
+      "exam_id": "exam19",
+      "number": 13,
+      "type": "single_choice",
+      "question": "Which classic film, about British athletes, was directed by Hugh Hudson in 1981?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chariots of Fire"
+        },
+        {
+          "id": "b",
+          "text": "The King's Speech"
+        },
+        {
+          "id": "c",
+          "text": "The 39 Steps"
+        },
+        {
+          "id": "d",
+          "text": "Brief Encounter"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Chariots of Fire (1981), directed by Hugh Hudson, follows British athletes preparing for the 1924 Olympic Games.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q06"
+    },
+    {
+      "type": "single_choice",
+      "question": "Durham, Lincoln, Canterbury and Salisbury are famous examples of what?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cathedrals"
+        },
+        {
+          "id": "b",
+          "text": "Universities"
+        },
+        {
+          "id": "c",
+          "text": "Roman forts"
+        },
+        {
+          "id": "d",
+          "text": "Royal palaces"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Durham, Lincoln, Canterbury and Salisbury are famous English cathedral cities.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q14",
+      "exam_id": "exam19",
+      "number": 14
+    },
+    {
+      "type": "single_choice",
+      "question": "Who became the first Tudor monarch after the Wars of the Roses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Henry VII"
+        },
+        {
+          "id": "b",
+          "text": "Henry VIII"
+        },
+        {
+          "id": "c",
+          "text": "Richard III"
+        },
+        {
+          "id": "d",
+          "text": "Edward VI"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Henry Tudor defeated Richard III at Bosworth Field in 1485 and became Henry VII, first Tudor monarch.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q15",
+      "exam_id": "exam19",
+      "number": 15
+    },
+    {
+      "id": "lituk-exam19-q16",
+      "exam_id": "exam19",
+      "number": 16,
+      "type": "single_choice",
+      "question": "The Scottish Parliament was established in:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1979"
+        },
+        {
+          "id": "b",
+          "text": "1999"
+        },
+        {
+          "id": "c",
+          "text": "1707"
+        },
+        {
+          "id": "d",
+          "text": "2014"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The modern Scottish Parliament first met in 1999, following the 1997 referendum on devolution.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q02"
+    },
+    {
+      "id": "lituk-exam19-q17",
+      "exam_id": "exam19",
+      "number": 17,
+      "type": "single_choice",
+      "question": "What is the purpose of a jury in a UK court?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To decide the sentence after conviction."
+        },
+        {
+          "id": "b",
+          "text": "To decide whether the accused person is guilty or not guilty."
+        },
+        {
+          "id": "c",
+          "text": "To bring criminal charges against a suspect."
+        },
+        {
+          "id": "d",
+          "text": "To write new laws for Parliament."
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "In a criminal trial, the jury decides whether the accused is guilty or not guilty on the evidence presented. The judge handles the law and sentencing.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q03"
+    },
+    {
+      "id": "lituk-exam19-q18",
+      "exam_id": "exam19",
+      "number": 18,
+      "type": "single_choice",
+      "question": "What is the longest river in the United Kingdom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The River Thames"
+        },
+        {
+          "id": "b",
+          "text": "The River Clyde"
+        },
+        {
+          "id": "c",
+          "text": "The River Severn"
+        },
+        {
+          "id": "d",
+          "text": "The River Trent"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The River Severn is generally recognised as the longest river in the UK; the Thames is often mistaken for it.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q04"
+    },
+    {
+      "id": "lituk-exam19-q19",
+      "exam_id": "exam19",
+      "number": 19,
+      "type": "single_choice",
+      "question": "Henry V's great victory at Agincourt in 1415 was fought against:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scotland"
+        },
+        {
+          "id": "b",
+          "text": "France"
+        },
+        {
+          "id": "c",
+          "text": "Spain"
+        },
+        {
+          "id": "d",
+          "text": "Germany"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "King Henry V defeated the French army at the Battle of Agincourt in 1415, during the Hundred Years' War.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q05"
+    },
+    {
+      "id": "lituk-exam19-q20",
+      "exam_id": "exam19",
+      "number": 20,
+      "type": "single_choice",
+      "question": "John Logie Baird made the first television broadcast between London and Glasgow in which year?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1926"
+        },
+        {
+          "id": "b",
+          "text": "1927"
+        },
+        {
+          "id": "c",
+          "text": "1932"
+        },
+        {
+          "id": "d",
+          "text": "1945"
+        }
+      ],
+      "correct_option_ids": [
+        "c"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "For the Life in the UK study guide, the London–Glasgow television broadcast is dated to 1932. Do not confuse this with Baird's earlier television demonstrations.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q12"
+    },
+    {
+      "type": "single_choice",
+      "question": "Bonnie Prince Charlie's Jacobite rebellion ended at which battle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Battle of Culloden"
+        },
+        {
+          "id": "b",
+          "text": "The Battle of Bannockburn"
+        },
+        {
+          "id": "c",
+          "text": "The Battle of Waterloo"
+        },
+        {
+          "id": "d",
+          "text": "The Battle of Hastings"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Jacobite rising was defeated at Culloden in 1746.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q21",
+      "exam_id": "exam19",
+      "number": 21
+    },
+    {
+      "type": "single_choice",
+      "question": "Which Anglo-Saxon poem tells of its hero's battles against monsters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beowulf"
+        },
+        {
+          "id": "b",
+          "text": "The Canterbury Tales"
+        },
+        {
+          "id": "c",
+          "text": "Paradise Lost"
+        },
+        {
+          "id": "d",
+          "text": "Sir Gawain and the Green Knight"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "Beowulf is an Old English epic featuring fights with Grendel, his mother and a dragon.",
+      "answer_basis": "curated_for_weakness_review",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Learner supplied question stem; choices and explanation newly authored."
+      ],
+      "id": "lituk-exam19-q22",
+      "exam_id": "exam19",
+      "number": 22
+    },
+    {
+      "id": "lituk-exam19-q23",
+      "exam_id": "exam19",
+      "number": 23,
+      "type": "single_choice",
+      "question": "When was the Magna Carta created?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1514"
+        },
+        {
+          "id": "b",
+          "text": "1215"
+        },
+        {
+          "id": "c",
+          "text": "1415"
+        },
+        {
+          "id": "d",
+          "text": "1314"
+        }
+      ],
+      "correct_option_ids": [
+        "b"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Magna Carta was created in 1215.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q14"
+    },
+    {
+      "id": "lituk-exam19-q24",
+      "exam_id": "exam19",
+      "number": 24,
+      "type": "single_choice",
+      "question": "In which of the following matters can the Scottish Parliament legislate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Education"
+        },
+        {
+          "id": "b",
+          "text": "Immigration"
+        },
+        {
+          "id": "c",
+          "text": "Security"
+        },
+        {
+          "id": "d",
+          "text": "Defence"
+        }
+      ],
+      "correct_option_ids": [
+        "a"
+      ],
+      "required_selection_count": 1,
+      "explanation_original": "The Scottish Parliament can legislate on: civil and criminal law, health, education, planning and additional tax-raising powers.",
+      "answer_basis": "reused_from_existing_exam",
+      "verification_status": "reviewed_for_exam19",
+      "review_notes": [
+        "Reused from an existing LifeUK exam."
+      ],
+      "source_question_id": "lituk-exam18-q24"
+    }
+  ]
+}
