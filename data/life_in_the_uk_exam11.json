@@ -306,7 +306,7 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam11-q10",
+      "id": "lituk-exam11-q10-r2026",
       "exam_id": "exam11",
       "number": 10,
       "type": "true_false",
@@ -322,13 +322,15 @@
         }
       ],
       "correct_option_ids": [
-        "a"
+        "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "This statement is true.",
+      "explanation_original": "False. Ofcom requires due impartiality and appropriate weighting for political parties and significant views, but it does not require exactly equal airtime for each rival party or viewpoint.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.ofcom.org.uk/tv-radio-and-on-demand/broadcast-standards/holding-broadcasters-to-account-during-upcoming-elections-what-you-need-to-know",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam11-q11",
