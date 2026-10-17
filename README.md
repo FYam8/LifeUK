@@ -1,6 +1,8 @@
 # LifeUK
 
-Life in the UK practice app. Exam 1–17 retain 408 unchanged original source records. Exam 18 adds 24 records: 12 user-supplied weak question stems with newly authored choices and explanations, and 12 verbatim items from earlier exams under new Exam 18 IDs. Each of the 18 exams contains 24 distinct questions.
+Life in the UK practice app. **Exam 1–19: 456 questions (24 per exam)**. Exams 18 and 19 are targeted revision sets based on weak questions and selected prior exams.
+
+**Content audit (17 October 2026):** 456 questions screened and 35 outdated or misleading records corrected, including Welsh Parliament 2026 reforms, jury age, National Citizen Service closure, electoral registration, National Insurance applications and banknotes. See [2026 content audit](docs/currentness-audit-2026-10-17.md). Revised questions receive new IDs to avoid treating old history as answers to changed questions. Stored learning progress and all 19 exams remain available.
 
 ## Learning and progress
 
@@ -16,8 +18,8 @@ Life in the UK practice app. Exam 1–17 retain 408 unchanged original source re
 
 ## Verification
 
-Release key: `20261015-ever-wrong-random24-1`. Original Exam 1–17 source records are byte-for-byte preserved. Exam 18 new items were curated separately; the John Logie Baird London–Glasgow date is 1932 in the Life in the UK study guide.
+Release key: `20261017-content-audit-1`. The historical source-audit snapshot preserves original import hashes, while the current question files intentionally contain verified corrections. Exam 18 new items were curated separately; the John Logie Baird London–Glasgow date is 1932 in the Life in the UK study guide.
 
 Run `node --test tests/session.test.cjs` (34 tests). Browser regression: `QA_ROUND=1 python tests/browser_smoke.py`, then `QA_ROUND=2 python tests/browser_smoke.py` using Python Playwright 1.57.0 and Chromium. CI uses routed HTTP with native browser localStorage. Local `QA_OFFLINE=1` uses isolated synthetic fetch/storage when navigation is unavailable, and is explicitly labelled as such in reports.
 
-Both browser passes cover all 432 exam records at 1440px and 390px, error-only sessions, latest accuracy, completed results, reload/Home/Resume, partial three-choice selections, duplicate Check/Next events, legacy migration, Export/Reset/Import, and fixed controls at 320px, 390px and 844px landscape. Pass 1 answers every normal question incorrectly; pass 2 correctly. A validated main commit is deployed to GitHub Pages.
+Updated regression tests cover all 456 exam records at 1440px and 390px, error-only sessions, latest accuracy, completed results, reload/Home/Resume, partial three-choice selections, duplicate Check/Next events, legacy migration, Export/Reset/Import, and fixed controls at 320px, 390px and 844px landscape. Pass 1 answers every normal question incorrectly; pass 2 correctly. A validated main commit is deployed to GitHub Pages.
