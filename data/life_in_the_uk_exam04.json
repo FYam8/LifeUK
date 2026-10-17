@@ -115,11 +115,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam04-q04",
+      "id": "lituk-exam04-q04-r2026",
       "exam_id": "exam04",
       "number": 4,
       "type": "single_choice",
-      "question": "How often are general elections held in the UK?",
+      "question": "What is the maximum interval between UK general elections?",
       "options": [
         {
           "id": "a",
@@ -142,10 +142,12 @@
         "c"
       ],
       "required_selection_count": 1,
-      "explanation_original": "MPs are elected at a General Election, which is held at least every five years.",
+      "explanation_original": "A UK Parliament can last for up to five years, but a general election can be called sooner. The government may request an earlier dissolution of Parliament.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.parliament.uk/about/how/elections-and-voting/general/dissolution/",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam04-q05-r2026",
