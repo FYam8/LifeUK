@@ -761,11 +761,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam06-q24",
+      "id": "lituk-exam06-q24-r2026",
       "exam_id": "exam06",
       "number": 24,
       "type": "multiple_choice",
-      "question": "Which two documents do you need to apply for a National Insurance number?",
+      "question": "Which TWO things do you need to establish when applying for a National Insurance number?",
       "options": [
         {
           "id": "a",
@@ -789,12 +789,15 @@
         "d"
       ],
       "required_selection_count": 2,
-      "explanation_original": "To apply for a National Insurance number you need documents that prove your identity and that you have permission to work in the UK.",
+      "explanation_original": "Applicants must be living in the UK with the right to work and must verify their identity. The application is normally made online. A passport is useful but there are alternative identification checks.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
-        "National Insurance number application requirements may change and should be verified before treating as current guidance."
-      ]
+        "National Insurance number application requirements may change and should be verified before treating as current guidance.",
+        "Updated in 2026 audit; revised question identity."
+      ],
+      "source_url": "https://www.gov.uk/apply-national-insurance-number/how-to-apply",
+      "reviewed_on": "2026-10-17"
     }
   ]
 }
