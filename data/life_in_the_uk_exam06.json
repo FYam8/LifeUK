@@ -375,7 +375,7 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam06-q12",
+      "id": "lituk-exam06-q12-r2026",
       "exam_id": "exam06",
       "number": 12,
       "type": "true_false",
@@ -391,15 +391,17 @@
         }
       ],
       "correct_option_ids": [
-        "b"
+        "a"
       ],
       "required_selection_count": 1,
-      "explanation_original": "False. Northern Ireland uses a system called ‘individual registration’ and all those entitled to vote must complete their own registration form.",
+      "explanation_original": "True. Individual Electoral Registration was introduced in England and Wales in 2014 and Scotland later in 2014. Northern Ireland also uses individual registration.",
       "answer_basis": "inferred_from_user_supplied_explanation",
       "verification_status": "not_independently_verified",
       "review_notes": [
         "Electoral registration wording may be historically dated and should be verified before treating as current civic guidance."
-      ]
+      ],
+      "reviewed_on": "2026-10-17",
+      "source_url": "https://www.gov.uk/government/news/date-confirmed-for-individual-electoral-registration-ier"
     },
     {
       "id": "lituk-exam06-q13",
