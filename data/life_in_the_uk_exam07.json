@@ -369,11 +369,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam07-q12",
+      "id": "lituk-exam07-q12-r2026",
       "exam_id": "exam07",
       "number": 12,
       "type": "true_false",
-      "question": "In 1833 the Emancipation Act abolished slavery throughout the British Empire.",
+      "question": "Parliament passed a Slavery Abolition Act in 1833 which provided for ending slavery in most British colonies.",
       "options": [
         {
           "id": "a",
@@ -388,10 +388,12 @@
         "a"
       ],
       "required_selection_count": 1,
-      "explanation_original": "This statement is true.",
+      "explanation_original": "True. The Slavery Abolition Act was passed in 1833 and took effect from 1834 in most British colonies, with exceptions such as East India Company territories. An apprenticeship system delayed full freedom for many formerly enslaved people until 1838.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://heritagecollections.parliament.uk/stories/the-transatlantic-slave-trade/",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam07-q13",
