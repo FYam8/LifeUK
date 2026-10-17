@@ -241,11 +241,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam08-q08",
+      "id": "lituk-exam08-q08-r2026",
       "exam_id": "exam08",
       "number": 8,
       "type": "true_false",
-      "question": "Northern Ireland and Scotland have their own banknotes, which are valid everywhere in the UK.",
+      "question": "Must all shops throughout the UK accept Scottish and Northern Irish banknotes?",
       "options": [
         {
           "id": "a",
@@ -257,13 +257,15 @@
         }
       ],
       "correct_option_ids": [
-        "a"
+        "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "This statement is true.",
+      "explanation_original": "False. Scottish and Northern Irish banknotes are genuine UK currency, but shops can decide which payment methods and banknotes to accept.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.bankofengland.co.uk/explainers/what-is-legal-tender",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam08-q09",
@@ -615,11 +617,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam08-q20",
+      "id": "lituk-exam08-q20-r2026",
       "exam_id": "exam08",
       "number": 20,
       "type": "single_choice",
-      "question": "How often are the members of the Welsh government elected?",
+      "question": "How often are Members of the Senedd (Welsh Parliament) elected under the rules introduced in 2026?",
       "options": [
         {
           "id": "a",
@@ -642,12 +644,14 @@
         "c"
       ],
       "required_selection_count": 1,
-      "explanation_original": "There are 60 members of the Welsh government or members of the Senedd (SMs) and elections are held every four years using a form of proportional representation.",
+      "explanation_original": "Members of the Senedd are elected every four years from 2026. The Senedd has 96 Members, with six elected in each of 16 constituencies using closed-list proportional representation. The legislature is separate from the Welsh Government.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Election cycle terminology may be historically dated and should be verified before treating as current guidance."
-      ]
+      ],
+      "source_url": "https://senedd.wales/how-we-work/our-role/future-senedd-reform/frequently-asked-questions/",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam08-q21",
@@ -683,11 +687,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam08-q22",
+      "id": "lituk-exam08-q22-r2026",
       "exam_id": "exam08",
       "number": 22,
       "type": "single_choice",
-      "question": "The Man Booker Prize is awarded in which of the following categories?",
+      "question": "The Booker Prize (formerly the Man Booker Prize) is awarded in which category?",
       "options": [
         {
           "id": "a",
@@ -710,12 +714,14 @@
         "c"
       ],
       "required_selection_count": 1,
-      "explanation_original": "The Man Booker Prize for Fiction is awarded annually for the best fiction novel (literature) written by an author from the Commonwealth, Ireland or Zimbabwe. It has been awarded since 1968. Past winners include Ian McEwan, Hilary Mantel and Julian Barnes.",
+      "explanation_original": "The Booker Prize is a literature award, called the Man Booker Prize between 2002 and 2019, and renamed the Booker Prize in 2019.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Prize name and eligibility rules may have changed; retained exactly from supplied source."
-      ]
+      ],
+      "source_url": "https://thebookerprizes.com/the-booker-library/features/booker-prizes-facts-and-figures",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam08-q23",
