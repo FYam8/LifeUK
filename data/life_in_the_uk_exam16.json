@@ -215,11 +215,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam16-q07",
+      "id": "lituk-exam16-q07-r2026",
       "exam_id": "exam16",
       "number": 7,
       "type": "single_choice",
-      "question": "Who came from the Netherlands to become the British monarch?",
+      "question": "Which monarch returned from exile in the Netherlands in 1660 to become King of England and Scotland?",
       "options": [
         {
           "id": "a",
@@ -242,17 +242,18 @@
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "In May 1660, Parliament invited Charles II to come back from exile in the Netherlands. He was crowned King Charles II of England, Wales, Scotland and Ireland.",
+      "explanation_original": "Charles II, who had been in exile in the Netherlands, was invited to return at the Restoration of the monarchy in 1660.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "reviewed_on": "2026-10-17"
     },
     {
-      "id": "lituk-exam16-q08",
+      "id": "lituk-exam16-q08-r2026",
       "exam_id": "exam16",
       "number": 8,
       "type": "single_choice",
-      "question": "Who can apply for the National Citizen Service programme?",
+      "question": "Before the National Citizen Service programme ended in 2025, which age group was it primarily designed for?",
       "options": [
         {
           "id": "a",
@@ -275,10 +276,12 @@
         "c"
       ],
       "required_selection_count": 1,
-      "explanation_original": "The National Citizen Service programme gives 16- and 17-year-olds the opportunity to enjoy outdoor activities, develop their skills and take part in a community project.",
+      "explanation_original": "The National Citizen Service programme served mainly 16- and 17-year-olds in England. Its delivery ended on 31 March 2025 and the NCS Trust closed in July 2025.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.gov.uk/government/organisations/national-citizen-service/about",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam16-q09",
@@ -347,37 +350,38 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam16-q11",
+      "id": "lituk-exam16-q11-r2026",
       "exam_id": "exam16",
       "number": 11,
       "type": "single_choice",
-      "question": "What percentage of the UK population has a parent or grandparent born outside of the UK?",
+      "question": "What information does a population census primarily collect?",
       "options": [
         {
           "id": "a",
-          "text": "Around 5%"
+          "text": "Only the number of tourists visiting the UK"
         },
         {
           "id": "b",
-          "text": "Around 10%"
+          "text": "Information on people and households to help plan public services"
         },
         {
           "id": "c",
-          "text": "Around 15%"
+          "text": "Only the number of MPs in Parliament"
         },
         {
           "id": "d",
-          "text": "Around 20%"
+          "text": "Only the number of cars on UK roads"
         }
       ],
       "correct_option_ids": [
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "Nearly 10% of the population has a parent or grandparent born outside the UK.",
+      "explanation_original": "A census provides information about the population and households, supporting government and local authorities in planning public services. The previous figure of about 10% with a foreign-born parent or grandparent was an undated and outdated generalisation.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam16-q12",

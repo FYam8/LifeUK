@@ -606,11 +606,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam15-q19",
+      "id": "lituk-exam15-q19-r2026",
       "exam_id": "exam15",
       "number": 19,
       "type": "single_choice",
-      "question": "What is the minimum age required to drive a motorcycle?",
+      "question": "What is the minimum age for riding a light motorcycle (licence category A1, up to 125cc) in the UK?",
       "options": [
         {
           "id": "a",
@@ -633,10 +633,12 @@
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "In the UK, you must be at least 17 years to drive a car or motorcycle and you must have a driving licence to drive on public roads.",
+      "explanation_original": "The minimum age for an A1 light motorcycle is 17. Mopeds (category AM) may be ridden from age 16 with the required licence or provisional licence and training. Higher-powered motorcycle categories have higher age limits.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.gov.uk/ride-motorcycle-moped/bike-categories-ages-and-licence-requirements",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam15-q20",
@@ -664,11 +666,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam15-q21",
+      "id": "lituk-exam15-q21-r2026",
       "exam_id": "exam15",
       "number": 21,
       "type": "single_choice",
-      "question": "When did the Emancipation Act abolish slavery throughout the British Empire?",
+      "question": "When did Parliament pass the Slavery Abolition Act, which provided for ending slavery in most British colonies?",
       "options": [
         {
           "id": "a",
@@ -691,10 +693,12 @@
         "d"
       ],
       "required_selection_count": 1,
-      "explanation_original": "In 1833 the Emancipation Act abolished slavery throughout the British Empire.",
+      "explanation_original": "The Act was passed in 1833 and took effect in 1834 in most British colonies; it included exceptions and a transitional apprenticeship system ending by 1838.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://heritagecollections.parliament.uk/stories/the-transatlantic-slave-trade/",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam15-q22",

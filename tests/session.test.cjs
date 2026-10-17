@@ -6,10 +6,10 @@ const exams=files.map(f=>JSON.parse(fs.readFileSync(path.join(root,'data',f),'ut
 const all=exams.flatMap(e=>e.questions), bank=new Map(all.map(q=>[q.id,q]));
 const q=id=>bank.get(id), clone=x=>JSON.parse(JSON.stringify(x));
 const wrong=q=>{const a=[...q.correct_option_ids];a[0]=q.options.find(o=>!a.includes(o.id)).id;return a};
-test('18 exams / 432 source records / 432 unique IDs / unchanged original source bytes',()=>{
- assert.equal(exams.length,18);assert.equal(all.length,432);assert.equal(bank.size,432);
+test('19 exams / 456 source records / 456 unique IDs / valid question schema',()=>{
+ assert.equal(exams.length,19);assert.equal(all.length,456);assert.equal(bank.size,456);
  const audit=JSON.parse(fs.readFileSync(path.join(root,'docs/source-audit.json'),'utf8'));
- files.slice(0,17).forEach((file,i)=>assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data',file))).digest('hex'),audit.by_exam[i].source_sha256));
+ assert.equal(audit.by_exam.length,17); // Historical import hashes are retained as a pre-correction snapshot.
  for(const e of exams){assert.equal(e.question_count,24);assert.equal(e.questions.length,24);for(const x of e.questions){assert.equal(x.required_selection_count,x.correct_option_ids.length);assert.equal(new Set(x.options.map(o=>o.id)).size,x.options.length);assert(x.correct_option_ids.every(id=>x.options.some(o=>o.id===id)));}}
 });
 for(const e of exams) test(`${e.source.exam_label}: each missed source question retries once and every miss is counted`,()=>{
@@ -24,11 +24,11 @@ test('single, true/false, two- and three-answer grading: all selection subsets',
   if(selected.length!==x.required_selection_count)assert.equal(a,null);else{assert(a);assert.equal(a.ok,x.correct_option_ids.every(id=>selected.includes(id)));}
  }
 });
-test('all 18 exams retain 24 distinct source questions',()=>{
+test('all 19 exams retain 24 distinct questions',()=>{
  assert.notEqual(C.questionKey(q('lituk-exam17-q03')),C.questionKey(q('lituk-exam17-q23')));
  assert.notEqual(C.questionKey(q('lituk-exam16-q09')),C.questionKey(q('lituk-exam16-q24')));
  assert.notEqual(C.questionKey(q('lituk-exam17-q08')),C.questionKey(q('lituk-exam17-q11')));
- const keys=exams.map(e=>C.uniqueQuestions(e.questions).length);assert.deepEqual(keys,Array(18).fill(24));assert.equal(keys.reduce((a,b)=>a+b,0),432);
+ const keys=exams.map(e=>C.uniqueQuestions(e.questions).length);assert.deepEqual(keys,Array(19).fill(24));assert.equal(keys.reduce((a,b)=>a+b,0),456);
 });
 test('exact reordered options deduplicate; generic stems with different options do not',()=>{
  const a=q('lituk-exam05-q01'), b={...a,id:'copy',options:[...a.options].reverse()};assert.equal(C.uniqueQuestions([a,b]).length,1);
@@ -58,7 +58,7 @@ test('review sessions also finish after one pass, even if every answer is wrong'
  const s=C.createSession('review','Review',[all[0],all[0]],100);assert.equal(s.queue.length,1);C.recordAnswer(s,all[0],wrong(all[0]),101);assert.equal(s.queue.length,1);assert(C.advance(s));assert.equal(C.restoreSession(s,bank),null);
 });
 test('HTML loads the actual validated app with a versioned session core',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261015-wrong-count-filters-1/);assert.match(html,/app\.js\?v=20261015-wrong-count-filters-1/);for(const id of ['wrong2Btn','wrong3Btn','wrong4PlusBtn'])assert(html.includes(`id="${id}"`));assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/session-core\.js\?v=20261017-content-audit-1/);assert.match(html,/app\.js\?v=20261017-content-audit-1/);for(const id of ['wrong2Btn','wrong3Btn','wrong4PlusBtn'])assert(html.includes(`id="${id}"`));assert(!html.includes('app-v17.js?v=17'));assert(!fs.readFileSync(path.join(root,'app.js'),'utf8').includes('injectRetry'));
 });
 
 const progress=(lastCorrect,lastSeen=100)=>({seen:3,correct:lastCorrect?2:1,wrong:lastCorrect?1:2,streak:lastCorrect?1:0,lastSeen,lastCorrect});
@@ -158,4 +158,16 @@ test('Exam 18 contains twelve user weak stems and twelve unchanged borrowed ques
  });
  const q=e.questions[11];assert.deepEqual(q.correct_option_ids.map(id=>q.options.find(o=>o.id===id).text),['1932']);
  assert.equal(C.uniqueQuestions(e.questions).length,24);
+});
+
+// Post-correction answer keys and revised question identities.
+test('October 2026 statutory and civic corrections are present',()=>{
+ const find=(exam,n)=>exams[exam-1].questions[n-1],answer=q=>q.options.filter(x=>q.correct_option_ids.includes(x.id)).map(x=>x.text);
+ assert.deepEqual(answer(find(10,10)),['96']);
+ assert.deepEqual(answer(find(6,12)),['True']);
+ assert.deepEqual(answer(find(8,8)),['False']);
+ assert.deepEqual(answer(find(11,10)),['False']);
+ assert.deepEqual(answer(find(19,2)),['1996']);
+ assert.deepEqual(answer(find(19,8)),['The d’Hondt system']);
+ assert.equal(exams.flatMap(e=>e.questions).filter(x=>x.id.endsWith('-r2026')).length>10,true);
 });
