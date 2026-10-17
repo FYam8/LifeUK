@@ -293,12 +293,14 @@
         "d"
       ],
       "required_selection_count": 2,
-      "explanation_original": "Policy and laws governing defence, foreign affairs, immigration, taxation and social security all remain under central UK government control. However, many other public services, such as health and education, are controlled by the devolved administrations.",
+      "explanation_original": "Health and education are devolved matters. Defence and immigration are reserved. Scotland also has important powers over some taxes and social security benefits, so it is inaccurate to say all taxation and all social security remain under UK Government control.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
         "Devolution powers can vary by nation and over time; wording should be verified before treating as current constitutional guidance."
-      ]
+      ],
+      "source_url": "https://www.parliament.scot/about/how-parliament-works/devolved-and-reserved-powers",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam07-q10",
@@ -618,39 +620,42 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam07-q20",
+      "id": "lituk-exam07-q20-r2026",
       "exam_id": "exam07",
       "number": 20,
       "type": "single_choice",
-      "question": "What do you need to do to apply for a National Insurance Number?",
+      "question": "How do you normally apply for a National Insurance number in Great Britain?",
       "options": [
         {
           "id": "a",
-          "text": "Contact the NHS"
+          "text": "By contacting the NHS"
         },
         {
           "id": "b",
-          "text": "Contact the Department for Work and Pensions (DWP)"
+          "text": "Online through the GOV.UK National Insurance number service"
         },
         {
           "id": "c",
-          "text": "Contact your local MP"
+          "text": "By contacting your local MP"
         },
         {
           "id": "d",
-          "text": "Ask you employer to get it for you"
+          "text": "By asking your employer to apply on your behalf"
         }
       ],
       "correct_option_ids": [
         "b"
       ],
       "required_selection_count": 1,
-      "explanation_original": "If you have permission to work in the UK, you will need to telephone the Department for Work and Pensions (DWP) to arrange to get a National Insurance number.",
+      "explanation_original": "Apply online through GOV.UK and prove your identity. Telephone helplines provide assistance, but phoning DWP is no longer the standard required first step.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
+      "verification_status": "reviewed_2026_10_17",
       "review_notes": [
-        "National Insurance number application process may have changed; retained exactly from supplied source."
-      ]
+        "National Insurance number application process may have changed; retained exactly from supplied source.",
+        "Updated in 2026 audit; revised question identity."
+      ],
+      "source_url": "https://www.gov.uk/apply-national-insurance-number/how-to-apply",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam07-q21",
