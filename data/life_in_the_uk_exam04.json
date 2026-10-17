@@ -148,11 +148,11 @@
       "review_notes": []
     },
     {
-      "id": "lituk-exam04-q05",
+      "id": "lituk-exam04-q05-r2026",
       "exam_id": "exam04",
       "number": 5,
       "type": "true_false",
-      "question": "Scotland has its own banknotes, which are valid everywhere in the UK.",
+      "question": "Do Scottish banks issue their own genuine pound sterling banknotes?",
       "options": [
         {
           "id": "a",
@@ -167,10 +167,12 @@
         "a"
       ],
       "required_selection_count": 1,
-      "explanation_original": "This statement is true.",
+      "explanation_original": "Yes. Three Scottish banks are authorised to issue sterling banknotes regulated by the Bank of England. Individual shops can decide whether to accept them.",
       "answer_basis": "inferred_from_user_supplied_explanation",
-      "verification_status": "not_independently_verified",
-      "review_notes": []
+      "verification_status": "reviewed_2026_10_17",
+      "review_notes": [],
+      "source_url": "https://www.bankofengland.co.uk/banknotes/scottish-and-northern-ireland-banknotes",
+      "reviewed_on": "2026-10-17"
     },
     {
       "id": "lituk-exam04-q06",
